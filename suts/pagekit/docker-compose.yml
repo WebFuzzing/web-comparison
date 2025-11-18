@@ -1,0 +1,10 @@
+services:
+  web:
+    image: php:7.2-apache
+    container_name: pagekit_web
+    ports:
+      - "8080:80"
+    volumes:
+      - /opt/homebrew/var/www/pagekit:/var/www/html
+    depends_on:
+      - db
