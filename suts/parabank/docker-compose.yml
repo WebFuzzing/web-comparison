@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  parabank:
+    build: .
+    container_name: parabank-app
+    ports:
+      - "8080:8080"
+    networks:
+      - parabank-network
+
+networks:
+  parabank-network:
+    driver: bridge
