@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    container_name: addressbook-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - addressbook-net
+
+  db:
+    image: mysql:5.6
+    container_name: addressbook-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: addressbook
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+    command: --sql-mode=""
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - addressbook-net
+
+volumes:
+  dbdata:
+
+networks:
+  addressbook-net:
