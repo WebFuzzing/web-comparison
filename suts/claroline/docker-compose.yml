@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: claroline-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - claroline-net
+
+  db:
+    image: mysql:5.5
+    container_name: claroline-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: claroline
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+    command: --sql-mode=""
+
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - claroline-net
+
+volumes:
+  dbdata:
+
+networks:
+  claroline-net:
