@@ -1,0 +1,1633 @@
+2022-05-25 17:58:22 WARNING  Starting
+2022-05-25 17:58:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:25 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:25 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:25 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:43 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:43 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:43 WARNING  redoing process
+2022-05-25 17:58:44 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:44 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:47 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:47 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:54 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:54 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:59 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:59 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:59 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:58:59 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:04 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:04 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:04 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:04 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:14 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:59:14 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:59:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:17 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:17 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:21 WARNING  redoing process
+2022-05-25 17:59:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:25 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:25 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:36 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:36 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:42 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:42 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:47 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:47 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:54 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:54 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 17:59:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:00 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:00 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:05 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:05 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:09 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:09 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:11 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:11 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:31 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:00:31 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:00:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:33 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:33 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:33 WARNING  redoing process
+2022-05-25 18:00:36 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:36 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:40 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:00:40 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:00:40 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:00:40 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:00:40 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:00:40 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:00:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:48 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:48 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:48 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:48 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:00:58 WARNING  redoing process
+2022-05-25 18:00:59 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:00:59 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:01:01 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:01 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:06 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:06 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:07 WARNING  redoing process
+2022-05-25 18:01:08 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:01:08 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:01:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:17 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:17 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:19 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:19 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:24 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:24 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:29 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:29 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:31 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:31 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:42 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:42 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:47 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:47 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:47 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:47 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:52 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:01:52 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:01:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:54 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:54 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:55 WARNING  redoing process
+2022-05-25 18:01:56 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:01:56 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:01:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:59 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:01:59 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:01 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:02:01 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:02:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:04 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:04 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:13 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:13 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:20 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:20 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:26 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:26 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:34 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:34 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:41 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:41 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:46 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:46 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:48 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:48 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:53 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:53 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:02:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:00 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:00 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:04 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:04 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:04 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:04 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:09 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:09 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:11 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:11 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:21 WARNING  redoing process
+2022-05-25 18:03:27 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:03:27 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:03:28 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:28 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:29 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:29 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:33 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:33 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:34 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:34 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:44 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:44 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:50 WARNING  redoing process
+2022-05-25 18:03:54 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:54 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:56 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:56 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:03:57 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:03:57 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:04:00 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:00 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:01 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:01 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:04 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:04 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:09 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:09 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:11 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:11 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:28 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:28 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:30 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:30 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:34 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:34 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:40 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:40 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:46 WARNING  redoing process
+2022-05-25 18:04:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:55 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:04:55 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:04:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:59 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:04:59 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:04 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:04 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:04 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:04 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:06 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:06 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:13 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:13 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:19 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:19 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:21 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:21 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:26 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:26 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:33 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:33 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:39 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:39 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:46 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:46 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:50 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:50 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:51 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:51 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:56 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:56 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:05:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:01 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:01 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:01 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:01 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:02 WARNING  redoing process
+2022-05-25 18:06:04 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:04 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:10 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:10 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:17 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:17 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:22 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:22 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:28 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:28 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:33 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:33 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:33 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:33 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:35 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:35 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:42 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:42 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:47 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:47 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:47 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:47 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:49 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:49 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:55 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:55 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:06:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:07 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:07:07 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:07:09 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:09 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:12 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:07:12 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:07:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:22 WARNING  redoing process
+2022-05-25 18:07:25 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:25 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:29 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:07:29 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:07:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:36 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:36 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:36 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:36 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:44 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:07:44 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:07:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:46 WARNING  redoing process
+2022-05-25 18:07:48 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:07:48 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:07:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:53 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:53 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:07:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:00 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:00 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:05 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:05 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:17 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:17 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:25 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:08:25 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:08:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:28 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:28 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:32 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:32 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:37 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:37 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:44 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:44 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:50 WARNING  redoing process
+2022-05-25 18:08:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:59 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:08:59 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:02 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:02 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:05 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:05 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:12 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:12 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:17 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:17 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:25 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:09:25 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:09:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:28 WARNING  redoing process
+2022-05-25 18:09:30 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:09:30 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:09:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:33 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:33 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:35 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:09:35 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:09:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:44 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:44 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:48 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:48 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:48 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:48 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:09:58 WARNING  redoing process
+2022-05-25 18:09:59 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:09:59 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:10:01 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:01 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:05 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:10:05 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:10:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:11 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:11 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:17 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:17 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:26 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:26 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:29 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:29 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:29 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:29 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:31 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:31 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:36 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:36 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:36 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:36 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:38 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:38 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:43 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:43 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:46 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:46 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:50 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:50 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:51 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:51 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:55 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:55 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:55 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:55 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:57 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:10:57 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:02 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:02 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:02 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:02 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:04 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:04 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:09 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:09 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:09 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:09 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:17 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:17 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:23 WARNING  redoing process
+2022-05-25 18:11:24 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:24 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:29 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:29 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:29 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:29 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:31 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:31 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:34 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:34 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:37 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:37 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:42 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:42 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:47 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:47 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:48 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:48 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:49 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:49 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:55 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:11:55 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:00 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:00 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:00 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:00 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:02 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:02 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:06 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:06 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:08 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:08 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:13 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:13 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:15 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:15 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:28 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:28 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:32 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:12:32 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:12:34 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:34 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:39 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:12:39 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:12:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:46 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:46 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:46 WARNING  redoing process
+2022-05-25 18:12:51 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:12:51 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:12:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:54 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:54 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:56 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:12:56 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:12:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:12:59 WARNING  redoing process
+2022-05-25 18:13:02 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:02 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:06 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:13:06 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:13:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:23 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:23 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:28 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:28 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:28 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:28 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:30 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:30 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:42 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:13:42 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:13:43 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:43 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:46 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:13:46 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:13:48 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:48 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:50 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:50 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:50 WARNING  redoing process
+2022-05-25 18:13:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:54 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:54 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:56 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:56 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:59 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:59 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:59 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:13:59 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:04 WARNING  redoing process
+2022-05-25 18:14:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:09 WARNING  redoing process
+2022-05-25 18:14:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:13 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:13 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:17 WARNING  redoing process
+2022-05-25 18:14:18 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:14:18 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:14:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:25 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:14:25 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:14:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:30 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:30 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:37 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:37 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:44 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:44 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:47 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:47 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:48 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:48 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:50 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:50 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:55 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:55 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:55 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:55 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:57 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:14:57 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:00 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:00 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:01 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:01 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:03 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:03 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:10 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:10 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:15 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:15 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:17 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:17 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:22 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:22 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:34 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:34 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:38 WARNING  redoing process
+2022-05-25 18:15:40 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:40 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:46 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:46 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:53 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:53 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:15:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:00 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:00 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:07 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:07 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:13 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:13 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:14 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:14 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:20 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:20 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:25 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:25 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:25 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:25 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:27 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:27 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:34 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:34 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:42 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:42 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:43 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:43 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:47 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:47 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:48 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:48 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:50 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:16:50 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:16:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:16:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:00 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:00 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:00 WARNING  redoing process
+2022-05-25 18:17:03 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:17:03 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:17:04 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:04 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:06 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:06 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:09 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:09 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:14 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:14 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:17 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:17 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:17 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:17 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:19 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:19 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:26 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:26 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:34 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:34 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:35 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:35 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:37 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:37 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:40 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:40 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:41 WARNING  redoing process
+2022-05-25 18:17:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:47 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:47 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:49 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:17:49 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:17:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:53 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:53 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:59 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:17:59 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:00 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:00 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:06 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:06 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:07 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:07 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:13 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:13 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:15 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:15 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:19 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:19 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:22 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:22 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:29 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:29 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:34 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:34 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:40 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:40 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:47 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:47 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:18:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:04 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:19:04 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:19:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:06 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:06 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:06 WARNING  redoing process
+2022-05-25 18:19:07 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:07 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:13 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:13 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:20 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:20 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:23 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:23 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:26 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:26 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:33 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:33 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:40 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:40 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:50 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:50 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:50 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:50 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:52 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:52 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:55 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:55 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:56 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:19:56 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:01 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:01 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:02 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:02 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:04 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:20:04 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:20:06 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:06 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:07 WARNING  redoing process
+2022-05-25 18:20:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:17 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:17 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:18 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:25 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:20:25 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:20:28 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:28 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:29 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:29 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:32 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:32 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:39 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:39 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:50 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:20:50 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:20:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:53 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:53 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:20:58 WARNING  redoing process
+2022-05-25 18:21:01 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:01 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:06 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:06 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:08 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:08 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:13 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:13 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:20 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:20 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:26 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:26 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:33 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:33 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:39 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:39 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:46 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:46 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:53 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:53 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:21:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:02 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:02 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:02 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:02 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:10 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:22:10 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:22:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:22 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:22 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:25 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:22:25 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:22:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:28 WARNING  redoing process
+2022-05-25 18:22:30 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:22:30 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:22:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:33 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:33 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:34 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:34 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:40 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:40 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:47 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:47 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:54 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:54 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:22:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:00 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:00 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:07 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:07 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:14 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:14 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:19 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:19 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:19 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:19 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:21 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:21 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:29 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:29 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:41 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:41 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:43 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:43 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:50 WARNING  redoing process
+2022-05-25 18:23:56 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:56 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:23:59 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:23:59 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:24:01 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:01 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:02 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:02 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:06 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:06 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:09 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:09 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:14 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:14 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:15 WARNING  redoing process
+2022-05-25 18:24:16 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:24:16 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:24:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:21 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:24:21 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:24:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:27 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:27 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:30 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:30 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:32 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:32 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:40 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:40 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:45 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:45 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:49 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:49 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:50 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:50 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:24:59 WARNING  redoing process
+2022-05-25 18:25:02 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:02 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:09 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:09 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:13 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:13 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:15 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:15 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:18 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:18 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:20 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:20 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:26 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:26 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:31 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:31 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:33 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:33 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:39 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:39 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:46 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:46 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:53 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:53 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:25:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:07 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:07 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:08 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:08 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:11 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:11 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:12 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:12 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:17 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:26:17 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:26:19 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:19 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:20 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:20 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:20 WARNING  redoing process
+2022-05-25 18:26:21 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:21 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:26 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:26 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:27 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:27 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:28 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:28 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:33 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:33 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:34 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:34 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:36 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:36 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:39 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:39 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:39 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:39 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:44 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:44 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:46 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:46 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:58 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:58 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:59 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:26:59 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:01 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:27:01 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:27:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:05 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:05 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:13 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:13 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:14 WARNING  redoing process
+2022-05-25 18:27:17 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:17 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:19 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:19 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:21 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:21 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:24 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:24 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:25 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:25 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:27 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:27 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:32 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:32 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:34 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:34 ERROR    Failure: http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:37 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:37 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:38 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:38 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:39 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:39 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:43 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:43 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:43 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:43 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:46 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:46 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:51 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:51 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:52 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:52 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:53 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:53 ERROR    Failure: http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:57 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:57 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:59 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:27:59 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:03 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:03 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:05 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:05 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:10 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:10 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:12 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:12 ERROR    Failure: http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:16 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:16 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:21 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:21 ERROR    Failure: http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:25 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:28:25 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:28:26 WARNING  Finished
+2022-05-25 18:28:26 WARNING  (Failure Count, Coverage Percentage) : (10, 50.968039587536815)
+2022-05-25 18:28:26 ERROR    http://localhost:4000/ -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:26 ERROR    http://localhost:4000/ -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:26 ERROR    http://localhost:4000/boards/1-move-building-attentio -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:26 ERROR    http://localhost:4000/boards/1-move-building-attentio -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:26 ERROR    http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 18:28:26 ERROR    http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 18:28:26 ERROR    http://localhost:4000/boards/2-situation-the -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:26 ERROR    http://localhost:4000/boards/2-situation-the -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:26 ERROR    http://localhost:4000/boards/3-election-current-enough-responsibilit -> net::ERR_NAME_RESOLUTION_FAILED
+2022-05-25 18:28:26 ERROR    http://localhost:4000/boards/3-election-current-enough-responsibilit -> Failed to load resource: net::ERR_NAME_RESOLUTION_FAILED

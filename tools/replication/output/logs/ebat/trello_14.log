@@ -1,0 +1,112 @@
+2022-05-25 16:49:33 WARNING  Starting
+2022-05-25 16:49:56 ERROR    Failure: http://localhost:4000/ -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 16:51:37 WARNING  redoing process
+2022-05-25 16:53:13 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:53:13 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:53:29 WARNING  redoing process
+2022-05-25 16:53:31 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:53:31 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:53:34 WARNING  redoing process
+2022-05-25 16:53:36 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:53:36 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:54:55 WARNING  redoing process
+2022-05-25 16:55:18 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:55:18 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:55:21 WARNING  redoing process
+2022-05-25 16:56:02 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:56:02 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:56:10 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:56:10 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:56:12 WARNING  redoing process
+2022-05-25 16:56:54 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:56:54 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:57:13 WARNING  redoing process
+2022-05-25 16:57:53 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:57:53 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:57:56 WARNING  redoing process
+2022-05-25 16:58:04 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 16:58:04 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 16:58:46 WARNING  redoing process
+2022-05-25 17:00:08 WARNING  redoing process
+2022-05-25 17:00:09 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:00:09 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:00:16 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:00:16 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:00:20 WARNING  redoing process
+2022-05-25 17:00:22 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:00:22 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:00:27 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:00:27 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:02:02 WARNING  redoing process
+2022-05-25 17:02:36 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:02:36 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:02:39 WARNING  redoing process
+2022-05-25 17:02:41 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:02:41 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:04:16 WARNING  redoing process
+2022-05-25 17:04:20 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:04:20 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:04:20 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:04:20 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:05:48 WARNING  redoing process
+2022-05-25 17:06:47 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:06:47 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:07:07 WARNING  redoing process
+2022-05-25 17:07:56 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:07:56 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:07:59 WARNING  redoing process
+2022-05-25 17:08:07 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:08:07 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:08:07 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:08:07 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:08:54 WARNING  redoing process
+2022-05-25 17:10:04 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:10:04 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:10:13 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:10:13 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:10:17 WARNING  redoing process
+2022-05-25 17:11:38 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:11:38 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:11:45 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:11:45 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:11:49 WARNING  redoing process
+2022-05-25 17:11:51 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:11:51 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:12:56 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:12:56 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:13:10 WARNING  redoing process
+2022-05-25 17:13:11 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:13:11 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:13:40 WARNING  redoing process
+2022-05-25 17:13:50 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:13:50 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:13:50 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:13:50 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:14:37 WARNING  redoing process
+2022-05-25 17:14:41 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:14:41 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:14:47 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:14:47 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:15:29 WARNING  redoing process
+2022-05-25 17:16:50 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:16:50 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:16:56 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:16:56 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:17:06 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:17:06 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:17:09 WARNING  redoing process
+2022-05-25 17:17:47 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:17:47 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:18:00 WARNING  redoing process
+2022-05-25 17:18:42 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:18:42 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:18:45 WARNING  redoing process
+2022-05-25 17:18:47 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:18:47 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:18:54 ERROR    Failure: http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:18:54 ERROR    Failure: http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}
+2022-05-25 17:19:35 WARNING  Finished
+2022-05-25 17:19:36 WARNING  (Failure Count, Coverage Percentage) : (3, 50.96664444053162)
+2022-05-25 17:19:36 ERROR    http://localhost:4000/ -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 17:19:36 ERROR    http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:19:36 ERROR    http://localhost:4000/sign_up -> status code(422) -> {"errors":[{"password_confirmation":"Password does not match"}]}

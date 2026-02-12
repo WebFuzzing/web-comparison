@@ -1,0 +1,45 @@
+{
+  "name": "retrospected",
+  "version": "4.16.0",
+  "description": "An agile retrospective board - Powering www.retrospected.com",
+  "private": true,
+  "scripts": {
+    "lint": "cd frontend && yarn lint && cd ../backend && yarn lint",
+    "clean": "del ./{frontend,backend,common,maintenance}/yarn.lock && del ./yarn.lock && del ./{frontend,backend,common,maintenance}/node_modules && del ./node_modules",
+    "frontend": "cd frontend && yarn start && cd ..",
+    "backend": "cd backend && yarn start && cd ..",
+    "stripe-login": "stripe login",
+    "stripe-listen": "stripe listen --forward-to localhost:3000/api/stripe/webhook",
+    "bump": ". ./scripts/bump.sh",
+    "mig": "cd backend && yarn mig"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoinejaussoin/retro-board.git"
+  },
+  "keywords": [
+    "agile",
+    "retrospective",
+    "board",
+    "react hooks",
+    "react",
+    "universal",
+    "socket.io",
+    "styled-components",
+    "SPA",
+    "single page application",
+    "typescript",
+    "docker",
+    "docker-compose",
+    "postgres"
+  ],
+  "author": "Antoine Jaussoin",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/antoinejaussoin/retro-board/issues"
+  },
+  "homepage": "https://www.retrospected.com",
+  "dependencies": {
+    "del-cli": "4.0.1"
+  }
+}

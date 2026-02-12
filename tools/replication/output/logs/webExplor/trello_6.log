@@ -1,0 +1,76 @@
+2022-05-25 17:13:53 WARNING  Starting
+2022-05-25 17:14:02 ERROR    Failure: 244380854607818280429043870923574460711 : http://localhost:4000/ -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 17:16:23 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:16:23 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_up -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:17:05 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:17:05 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:17:05 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:17:05 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:17:06 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:17:06 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:22:06 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:22:06 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:26:25 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:26:25 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_up -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:33:58 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/ -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:33:58 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/ -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:35:22 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/ -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:35:22 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/ -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:36:42 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:36:42 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_up -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:39:27 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:39:27 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:41:22 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:41:22 ERROR    Task exception was never retrieved
+future: <Task finished name='Task-102761' coro=<Connection._async_send() done, defined at /home/ebat/.local/lib/python3.9/site-packages/pyppeteer/connection.py:69> exception=InvalidStateError('FINISHED: <Future finished result=None>')>
+Traceback (most recent call last):
+  File "/home/ebat/.local/lib/python3.9/site-packages/websockets/legacy/protocol.py", line 750, in transfer_data
+    message = await self.read_message()
+  File "/home/ebat/.local/lib/python3.9/site-packages/websockets/legacy/protocol.py", line 819, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+  File "/home/ebat/.local/lib/python3.9/site-packages/websockets/legacy/protocol.py", line 895, in read_data_frame
+    frame = await self.read_frame(max_size)
+  File "/home/ebat/.local/lib/python3.9/site-packages/websockets/legacy/protocol.py", line 971, in read_frame
+    frame = await Frame.read(
+  File "/home/ebat/.local/lib/python3.9/site-packages/websockets/legacy/framing.py", line 55, in read
+    data = await reader(2)
+  File "/usr/lib/python3.9/asyncio/streams.py", line 721, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ebat/.local/lib/python3.9/site-packages/pyppeteer/connection.py", line 73, in _async_send
+    await self.connection.send(msg)
+  File "/home/ebat/.local/lib/python3.9/site-packages/websockets/legacy/protocol.py", line 471, in send
+    await self.ensure_open()
+  File "/home/ebat/.local/lib/python3.9/site-packages/websockets/legacy/protocol.py", line 726, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: code = 1006 (connection closed abnormally [internal]), no reason
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 256, in __step
+    result = coro.send(None)
+  File "/home/ebat/.local/lib/python3.9/site-packages/pyppeteer/connection.py", line 79, in _async_send
+    await self.dispose()
+  File "/home/ebat/.local/lib/python3.9/site-packages/pyppeteer/connection.py", line 170, in dispose
+    await self._on_close()
+  File "/home/ebat/.local/lib/python3.9/site-packages/pyppeteer/connection.py", line 151, in _on_close
+    cb.set_exception(_rewriteError(
+  File "/usr/lib/python3.9/asyncio/futures.py", line 270, in set_exception
+    raise exceptions.InvalidStateError(f'{self._state}: {self!r}')
+asyncio.exceptions.InvalidStateError: FINISHED: <Future finished result=None>
+2022-05-25 17:41:23 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:41:23 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_up -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:42:25 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/ -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:42:25 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/ -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:43:38 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:43:38 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:44:01 WARNING  Finished
+2022-05-25 17:44:02 WARNING  (Failure Count, Coverage Percentage) : (3, 51.03644989930888)
+2022-05-25 17:44:02 ERROR    244380854607818280429043870923574460711 : http://localhost:4000/ -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 17:44:02 ERROR    296307533421582043662501893466742106926 : http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:44:02 ERROR    221529226714571559452382939241464441363 : http://localhost:4000/sign_up -> status code(422) -> {"error":"Invalid email or password"}

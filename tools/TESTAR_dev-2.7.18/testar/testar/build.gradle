@@ -1,0 +1,222 @@
+plugins {
+    id "de.undercouch.download" version "4.1.1"
+}
+
+apply plugin: 'application'
+
+apply from: 'workflow_utils.gradle'
+apply from: 'workflow_windows_desktop.gradle'
+apply from: 'workflow_windows_webdriver.gradle'
+apply from: 'workflow_ubuntu_webdriver.gradle'
+apply from: 'workflow_ubuntu_android.gradle'
+apply from: 'workflow_macos_webdriver.gradle'
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['resources']
+            excludes = ['settings/']
+        }
+    }
+
+    oracle {
+        java {
+            srcDirs =['resources/settings']
+        }
+
+        compileClasspath += main.output
+        compileClasspath += main.compileClasspath
+    }
+}
+
+/**
+ * Task to run TESTAR using gradle
+ * This task set the working directory to the install folder and runs testar.bat
+ */
+task runTestar(type: Exec) {
+    // Make sure temp dir exists on case-sensitive OSs
+    doFirst{
+        new File("${project.buildDir}/install/testar/bin/output/temp").mkdirs()
+    }
+
+    group = 'custom_testar'
+    description ='runTESTAR'
+    workingDir 'target/install/testar/bin'
+    commandLine 'cmd', '/c', 'testar.bat'
+
+    if (System.getProperty("os.name").toLowerCase().contains("mac")) {
+		environment "JAVA_TOOL_OPTIONS", "-Djava.awt.headless=false"
+		commandLine "./testar"
+	} else if (System.getProperty("os.name").toLowerCase().contains("linux")) {
+		commandLine "./testar"
+	} else {
+		commandLine 'cmd', '/c', 'testar.bat'
+	}
+}
+
+task runTestarDebug(type: JavaExec) {
+    group = 'custom_testar'
+    description = 'Run TESTAR in debug mode'
+
+    main = 'org.testar.monkey.Main'
+
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir = file('target/install/testar/bin')
+
+    def suspendMode = project.hasProperty("debug") && project.debug == 'true' ? 'y' : 'n'
+
+    jvmArgs = [
+          "-agentlib:jdwp=transport=dt_socket,server=y,suspend=${suspendMode},address=*:5005",
+          "-Djava.awt.headless=false"
+    ]
+}
+
+task customZipDistribution(type: Zip) {
+	doFirst{
+		new File("${project.buildDir}/install/testar/bin/settings","desktop_generic.sse").text=""
+	}
+    group = 'custom_testar'
+    description ='customZipDistribution'
+    from 'target/install/testar'
+    include '*'
+   	include '*/**' //include subdirectories
+
+   	archiveFileName.set 'testarDistribution.zip'
+   	getDestinationDirectory().set(file('target/install'))
+}
+
+dependencies {
+    implementation project(':core')
+    implementation project(':statemodel')
+    implementation project(':webdriver')
+    implementation project(':windows')
+    implementation project(':linux')
+    implementation project(':ios')
+    implementation project(':android')
+    implementation files('./lib/jsyntaxpane-1.1.5.jar')
+    implementation files('./lib/eye2.jar')
+    // https://mvnrepository.com/artifact/com.github.kwhat/jnativehook
+    implementation group: 'com.github.kwhat', name: 'jnativehook', version: '2.2.2'
+    implementation 'com.google.guava:guava:26.0-jre'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    implementation group: 'com.sikulix', name: 'sikulixapi', version: '2.0.5'
+    // jacoco and maven dependencies for jacoco coverage
+    implementation group: 'org.apache.maven', name: 'maven-core', version: '3.9.8'
+    implementation group: 'org.apache.maven.reporting', name: 'maven-reporting-api', version: '3.1.1'
+    implementation group: 'org.jacoco', name: 'jacoco-maven-plugin', version: '0.8.12'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-csv
+    implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.11.0'
+    // https://mvnrepository.com/artifact/org.eclipse.angus/jakarta.mail
+    implementation group: 'org.eclipse.angus', name: 'jakarta.mail', version: '2.0.3'
+    // https://mvnrepository.com/artifact/org.checkerframework/checker
+    implementation("org.checkerframework:checker:3.49.1")
+}
+
+task prepareSettings(type: Copy) {
+    from 'resources/settings'
+    into 'target/scripts/settings'
+}
+
+task prepareSUTs(type: Copy) {
+    from 'distributionSUTs'
+    into 'target/scripts/suts'
+}
+
+task prepareOracles(type: Copy) {
+    from 'target/classes/java/oracle'
+    into 'target/scripts/settings'
+}
+
+task prepareOutputFolder(type: Copy) {
+    from 'resources/output'
+    into 'target/scripts/output'
+}
+
+/**
+ * Copy existing testar/resources/windows10/windows.dll as temporally file
+ */
+task prepareCopyOfExistingWindows10dll(type: Copy) {
+    from '../testar/resources/windows10'
+    into 'target/scripts'
+    include 'windows.dll'
+}
+
+/**
+ * Copy windows.dll from the subproject windows into target scripts
+ * so it can be used with the creation of the distribution.
+ */
+task prepareWindowsDLL(type: Copy) {
+    if(new File('../windows/target/resources/main/windows.dll').exists()) {
+        from '../windows/target/resources/main'
+        into 'target/scripts'
+        include 'windows.dll'
+    }
+}
+
+applicationDistribution.from("../statemodel/resources/graphs") {
+    into "bin/output/graphs"
+}
+
+applicationDistribution.from("../webdriver/resources/web-extension") {
+    into "web-extension"
+}
+
+applicationDistribution.from("../webdriver/resources/web-extension.xpi") {
+    into "/"
+}
+
+prepareOracles.dependsOn(oracleClasses)
+
+/**
+ * Set the arguments of the jvm in the start scripts.
+ * To debug build TESTAR with the -DDEBUG=true.
+ */
+startScripts {
+    if(System.getProperty('DEBUG', 'false') ) {
+        applicationDefaultJvmArgs = ['-Dlog4j.configurationFile=log4j2.xml',
+                                     '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005']
+    } else {
+        applicationDefaultJvmArgs = ["-Dlog4j.configurationFile=log4j2.xml"]
+    }
+    
+    doLast {
+        def winScriptFile  = file getWindowsScript()
+        def winFileText = winScriptFile.text
+        winFileText = winFileText.replaceAll('set CLASSPATH=.*', 'rem original CLASSPATH declaration replaced by:\nset CLASSPATH=%APP_HOME%\\\\lib\\\\\\*')
+        winScriptFile.text = winFileText
+    }
+}
+
+startScripts.dependsOn {
+    tasks.findAll { task -> task.name.startsWith('prepare')}
+}
+
+//running testar requires the distribution to be installed.
+runTestar.dependsOn(installDist)
+runTestarDebug.dependsOn(installDist)
+customZipDistribution.dependsOn(installDist)
+
+/**
+ * Build TESTAR using Visual Studio Tools to create a windows.dll
+ */
+task windowsDistribution(dependsOn:['buildWindows','installDist','distZip']){
+	group = 'distribution'
+	description ='Build TESTAR distribution for Windows'
+}
+
+task buildWindows(type: Exec) {
+    if( System.getProperty('os.name').toLowerCase().contains('windows 7')) {
+        workingDir '../windows/native_src'
+        commandLine 'cmd', '/c', 'compile_w7.bat'
+    } else if( System.getProperty('os.name').toLowerCase().contains('windows')) {
+        workingDir '../windows/native_src'
+        commandLine 'cmd', '/c', 'compile_w10.bat'
+    } else  {
+        commandLine './dummy.sh'
+    }
+}
+buildWindows.dependsOn classes
+
+mainClassName='org.testar.monkey.Main'

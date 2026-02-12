@@ -1,0 +1,9 @@
+venv
+__pycache__
+.idea
+models/__pycache__
+res/logs/**
+out.txt
+.DS_Store
+test_systems/FSE19-submission-material-DIG
+test_systems/source_codes

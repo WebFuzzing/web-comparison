@@ -1,0 +1,21 @@
+2022-05-25 17:20:45 WARNING  Starting
+2022-05-25 17:20:52 ERROR    Failure: 244380854607818280429043870923574460711 : http://localhost:4000/ -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 17:28:16 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:28:16 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:30:12 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:30:12 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_up -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:33:10 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:33:10 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:35:01 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:35:01 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_up -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:41:17 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_up -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:41:17 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_up -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:45:03 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:45:03 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:45:03 ERROR    Failure: 296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:45:03 ERROR    Failure: 221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}
+2022-05-25 17:50:47 WARNING  Finished
+2022-05-25 17:50:47 WARNING  (Failure Count, Coverage Percentage) : (3, 50.98285701090235)
+2022-05-25 17:50:47 ERROR    244380854607818280429043870923574460711 : http://localhost:4000/ -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 17:50:47 ERROR    296307533421582043662501893466742106926 : http://localhost:4000/sign_in -> Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)
+2022-05-25 17:50:47 ERROR    221529226714571559452382939241464441363 : http://localhost:4000/sign_in -> status code(422) -> {"error":"Invalid email or password"}

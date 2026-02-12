@@ -1,0 +1,5 @@
+#docker build -t spring-petclinic-angular:latest .
+
+docker run --rm -d -p 8080:8080 spring-petclinic-angular:latest
+docker run -p 9966:9966 springcommunity/spring-petclinic-rest
+

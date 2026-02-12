@@ -1,0 +1,4 @@
+0      [main] INFO  JFCReplayerMain - Testcase: ./TC/t856.tst
+0      [main] ERROR JFCReplayerMain - Test case not found
+0      [main] INFO  JFCReplayerMain - GUI state file: ./Project_sta/t856.tst.Project.STA.xml
+0      [main] INFO  JFCReplayerMain - Time Elapsed: 00 : 00 : 00: 161

@@ -1,0 +1,308 @@
+2022-05-25 15:20:03 WARNING  Starting
+2022-05-25 15:20:03 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:03 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:08 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:08 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:13 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:13 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:19 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:19 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:23 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:23 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:29 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:29 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:33 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:33 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:38 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:38 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:44 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:44 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:49 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:49 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:56 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:20:56 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:02 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:02 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:06 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:06 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:11 ERROR    Failure: http://localhost:3001/wallets -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 15:21:12 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:12 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:18 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:18 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:27 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:27 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:31 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:31 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:34 ERROR    Failure: http://localhost:3001/wallets -> net::ERR_ABORTED
+2022-05-25 15:21:39 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:39 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:45 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:45 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:54 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:54 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:58 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:21:58 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:09 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:09 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:12 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:12 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:19 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:19 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:23 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:23 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:30 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:30 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:37 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:37 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:43 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:43 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:50 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:50 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:56 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:22:56 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:01 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:01 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:05 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:05 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:13 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:13 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:18 ERROR    Failure: http://localhost:3001/wallets -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 15:23:18 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:18 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:22 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:22 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:29 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:29 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:33 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:33 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:37 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:37 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:47 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:47 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:51 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:51 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:55 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:23:55 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:03 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:03 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:07 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:07 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:13 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:13 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:19 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:19 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:28 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:28 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:35 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:24:35 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:25:05 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:25:05 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:25:35 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:25:35 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:26:06 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:26:06 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:26:06 ERROR    Failure: http://localhost:3001/ -> net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:26:06 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:26:36 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:26:36 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:27:06 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:27:06 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:27:36 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:27:36 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:28:07 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:28:07 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:28:37 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:28:37 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:28:37 ERROR    Failure: http://localhost:3001/ -> net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:28:37 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:29:07 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:29:07 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:29:37 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:29:37 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:30:08 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:30:08 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:30:38 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:30:38 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:30:54 ERROR    Failure: http://localhost:3001/ -> net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:30:54 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:31:08 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:31:08 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:31:38 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:31:38 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:32:09 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:32:09 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:32:39 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:32:39 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:33:09 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:33:09 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:33:39 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:33:39 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:34:09 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:34:09 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:34:40 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:34:40 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:35:10 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:35:10 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:35:40 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:35:40 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:35:40 ERROR    Failure: http://localhost:3001/ -> net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:35:40 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:36:10 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:36:10 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:36:41 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:36:41 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:37:11 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:37:11 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:37:41 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:37:41 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:38:11 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:38:11 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:38:41 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:38:41 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:39:12 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:39:12 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:39:42 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:39:42 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:40:12 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:40:12 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:40:12 ERROR    Failure: http://localhost:3001/ -> net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:40:12 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:40:42 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:40:42 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:41:13 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:41:13 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:41:43 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:41:43 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:41:44 ERROR    Failure: http://localhost:3001/ -> net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:41:44 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:42:13 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:42:13 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:42:43 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:42:43 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:43:14 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:43:14 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:43:44 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:43:44 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:44:14 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:44:14 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:44:44 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:44:44 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:44:51 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:44:51 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:44:56 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:44:56 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:02 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:02 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:08 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:08 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:14 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:14 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:21 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:21 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:26 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:26 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:34 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:34 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:43 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:43 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:48 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:48 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:52 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:52 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:56 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:45:56 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:03 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:03 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:07 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:07 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:09 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:09 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:15 ERROR    Failure: http://localhost:3001/wallets -> net::ERR_ABORTED
+2022-05-25 15:46:20 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:20 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:22 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:22 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:27 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:27 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:30 ERROR    Failure: http://localhost:3001/wallets -> net::ERR_ABORTED
+2022-05-25 15:46:31 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:31 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:41 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:41 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:44 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:44 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:50 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:50 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:55 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:55 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:57 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:46:57 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:02 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:02 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:13 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:13 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:15 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:15 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:19 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:19 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:23 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:23 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:33 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:33 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:44 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:44 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:48 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:48 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:55 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:55 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:59 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:47:59 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:04 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:04 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:08 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:08 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:19 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:19 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:21 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:21 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:30 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:30 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:36 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:36 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:43 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:43 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:49 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:49 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:54 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:54 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:58 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:48:58 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:05 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:05 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:12 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:12 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:20 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:20 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:24 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:24 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:31 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:31 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:34 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:34 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:45 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:45 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:49 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:49 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:54 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:54 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:59 ERROR    Failure: http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:49:59 ERROR    Failure: http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:50:06 WARNING  Finished
+2022-05-25 15:50:06 WARNING  (Failure Count, Coverage Percentage) : (6, 0.718522074422782)
+2022-05-25 15:50:06 ERROR    http://localhost:3001/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 15:50:06 ERROR    http://localhost:3001/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 15:50:06 ERROR    http://localhost:3001/wallets -> net::ERR_NAME_NOT_RESOLVED
+2022-05-25 15:50:06 ERROR    http://localhost:3001/wallets -> net::ERR_ABORTED
+2022-05-25 15:50:06 ERROR    http://localhost:3001/ -> net::ERR_ADDRESS_UNREACHABLE
+2022-05-25 15:50:06 ERROR    http://localhost:3001/ -> Failed to load resource: net::ERR_ADDRESS_UNREACHABLE

@@ -1,0 +1,32 @@
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['resources']
+        }
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    implementation 'com.google.guava:guava:16+'
+}
+
+task cleanWindows(type: Exec) {
+	group = 'build'
+	description ='Clean the files created by windowsDistribution task'
+    if( System.getProperty('os.name').toLowerCase().contains('windows 7')) {
+        workingDir '../windows/native_src'
+        commandLine 'cmd', '/c', 'clean_w7.bat'
+    } else if( System.getProperty('os.name').toLowerCase().contains('windows')) {
+        workingDir '../windows/native_src'
+        commandLine 'cmd', '/c', 'clean_w10.bat'
+    } else  {
+        commandLine './dummy.sh'
+    }
+}
+
+//jar.dependsOn buildWindows
+//clean.dependsOn cleanWindows
+

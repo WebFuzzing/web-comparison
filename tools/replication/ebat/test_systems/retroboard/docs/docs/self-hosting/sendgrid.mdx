@@ -1,0 +1,65 @@
+---
+sidebar_position: 6
+---
+
+# 📧 Emails
+
+A Retrospected instance sometimes need to send email to its users, when they register or want to change their password.
+
+You have three mechanism for sending emails (or not) you can choose from:
+
+- [Sendgrid](https://sendgrid.com)
+- SMTP
+- Nothing: no emails are sent
+
+## Nothing (not recommended)
+
+If you don't specify any mechanism (neither Sendgrid nor SMTP), verification emails won't be sent and users will be able to register any email.
+It also means they **won't be able to change their password if they forget it**.
+
+You have two ways of solving this problem:
+- Use the [Admin Panel](admin), if you are the admin, to manually change someone else's password
+- Setup Sendgrid or SMTP so that emails are verified, and recovery emails are sent if a user forgets their password
+
+The latter is what we are going to setup in this guide.
+
+## SendGrid (recommended)
+
+:::info Is it free?
+Sendgrid is completely free up to a certain amount of emails per day. For a self-hosted instance, you are very
+unlikely to have to pay for it.
+:::
+
+### Get an account and API keys
+
+- Go to Sendgrid's [signup page](https://signup.sendgrid.com) and register
+- On your account dashboard, go to `Settings` then `API Keys` and finally `Create API Key`
+- Choose a name, then `Restricted Access` and toggle `Mail Send > Mail Send` (see below)<br />
+<img src="/img/self-hosting/sendgrid-1.png" width="600" />
+- Click create, and then copy the key that you've created somewhere safe (we'll need it later)
+<img src="/img/self-hosting/sendgrid-2.png" width="400" />
+
+### Set the environement variables
+
+We should now have all the information we need.
+In the `backend` section of your `docker-compose.yml` file, add the following variables:
+- `SENDGRID_API_KEY`: this is the API key you got in the first section of this guide
+- `SENDGRID_SENDER`: enter the email you used to create your Sendgrid account
+- `BASE_URL`: this is the URL to your self-hosted Retrospected (for example: `http://retro.mycompany.com`)
+
+### Done!
+
+Now that it is setup, your users should now need to verify their email and will be able to reset their passwords themselves.
+
+## SMTP
+
+### Setting up SMTP
+
+In the `backend` section of your `docker-compose.yml` file, add the following variables:
+ - `MAIL_SMTP_HOST`: SMTP server host (example: `smtp.myemail.com`)
+ - `MAIL_PORT`: SMTP port (usually `465` for secure SMTP)
+ - `MAIL_SECURE`: If SMTP is using encryption, usually via port 465, set this to `true`
+ - `MAIL_USER`: SMTP username (or email)
+ - `MAIL_PASSWORD`: SMTP user password
+ - `MAIL_SENDER`: SMTP sender email (usually matches `MAIL_USER`)
+ - `MAIL_ALLOW_SELF_SIGNED_CERTS`: Only set to true if you want to (unsafely) allow an SMTP server with self-signed certificates

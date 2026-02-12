@@ -1,0 +1,73 @@
+apply plugin: 'checkstyle'
+apply from: 'coverage-report.gradle'
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'jacoco'
+    apply plugin: 'checkstyle'
+
+    sourceSets {
+        main {
+            java {
+                srcDirs = ['src']
+            }
+        }
+        test {
+            java {
+                srcDirs = ['test']
+            }
+        }
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        testImplementation group:'junit', name:'junit', version:'4.12'
+        // https://mvnrepository.com/artifact/org.mockito/mockito-core
+        testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.11.0'
+        testImplementation group: 'org.mockito', name: 'mockito-inline', version: '4.11.0'
+        // https://mvnrepository.com/artifact/com.github.stefanbirkner/system-lambda
+        testImplementation group: 'com.github.stefanbirkner', name: 'system-lambda', version: '1.2.1'
+        implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+        implementation group: 'commons-io', name: 'commons-io', version: '2.7'
+        implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.15.0'
+        implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.15.0'
+        // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+        implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.39.0'
+        // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+        implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '6.3.3'
+        // https://mvnrepository.com/artifact/io.appium/java-client
+        implementation group: 'io.appium', name: 'java-client', version: '10.0.0'
+        // https://mvnrepository.com/artifact/com.orientechnologies/orientdb-graphdb
+        implementation group: 'com.orientechnologies', name: 'orientdb-graphdb', version: '3.2.38'
+        // https://mvnrepository.com/artifact/org.graalvm.sdk/graal-sdk
+        implementation group: 'org.graalvm.sdk', name: 'graal-sdk', version: '22.3.2'
+        // Use jaxb 2.3.1 to fix a Java17 issue with the version 2.3.0 included in the orientdb server dependencies
+        implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+        implementation group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.1'
+    }
+
+    jacoco {
+        toolVersion = '0.8.12'
+    }
+
+    test {
+        useJUnit()
+        finalizedBy jacocoTestReport
+    }
+
+    buildDir = new File('./target')
+
+    jacocoTestReport {
+        dependsOn test
+
+        reports {
+            xml.required.set(true)
+            html.required.set(false)
+            csv.required.set(false)
+            html.outputLocation.set(file("${buildDir}/jacocoHtml"))
+            xml.outputLocation.set(file("${buildDir}/jacoco.xml"))
+        }
+    }
+
+}

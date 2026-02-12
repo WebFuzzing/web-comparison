@@ -1,0 +1,457 @@
+2022-05-26 11:44:05 WARNING  Starting
+2022-05-26 11:44:20 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:44:20 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:44:30 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:44:30 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:44:33 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:44:37 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:44:37 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:44:43 ERROR    Failure: 63661048957111971139043659084403729172 : http://localhost:3000/pagekit/index.php/admin/user# -> Failed to load resource: the server responded with a status of 400 (Bad Request)
+2022-05-26 11:44:43 ERROR    Failure: 108454993266047261493729590968796755788 : http://localhost:3000/pagekit/index.php/admin/user# -> status code(400) -> "Unable to block yourself."
+2022-05-26 11:44:44 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:44:44 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:44:50 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:44:50 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:44:57 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:44:57 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:45:05 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:05 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:45:15 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:15 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:45:21 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:21 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:45:30 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:30 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:45:34 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:34 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:45:35 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:35 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:45:44 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:44 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:45:48 ERROR    Failure: 63661048957111971139043659084403729172 : http://localhost:3000/pagekit/index.php/admin/user# -> Failed to load resource: the server responded with a status of 400 (Bad Request)
+2022-05-26 11:45:48 ERROR    Failure: 108454993266047261493729590968796755788 : http://localhost:3000/pagekit/index.php/admin/user# -> status code(400) -> "Unable to block yourself."
+2022-05-26 11:45:50 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:50 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:45:55 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:45:57 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:45:57 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:05 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:05 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:13 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:13 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:22 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:22 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:25 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:25 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:26 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:26 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:46:26 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:26 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:26 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:26 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:30 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:30 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:46:31 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:31 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:31 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:31 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:38 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:38 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:40 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:40 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:46:41 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:41 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:41 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:41 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:44 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:44 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:44 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:44 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:50 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:50 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:50 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:50 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:54 ERROR    Failure: 63661048957111971139043659084403729172 : http://localhost:3000/pagekit/index.php/admin/user# -> Failed to load resource: the server responded with a status of 400 (Bad Request)
+2022-05-26 11:46:54 ERROR    Failure: 108454993266047261493729590968796755788 : http://localhost:3000/pagekit/index.php/admin/user# -> status code(400) -> "Unable to block yourself."
+2022-05-26 11:46:55 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:55 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:46:55 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:46:55 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:03 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:03 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:03 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:03 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:12 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:12 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:47:13 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:13 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:13 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:13 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:19 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:19 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:19 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:19 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:29 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:29 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:29 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:29 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:31 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:31 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:47:32 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:32 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:32 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:32 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:41 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:41 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:41 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:41 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:47 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:47 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:47 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:47 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:53 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:53 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:53 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:53 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:59 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:59 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:47:59 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:47:59 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:06 ERROR    Failure: 63661048957111971139043659084403729172 : http://localhost:3000/pagekit/index.php/admin/user# -> Failed to load resource: the server responded with a status of 400 (Bad Request)
+2022-05-26 11:48:06 ERROR    Failure: 108454993266047261493729590968796755788 : http://localhost:3000/pagekit/index.php/admin/user# -> status code(400) -> "Unable to block yourself."
+2022-05-26 11:48:08 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:08 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:08 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:08 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:13 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:13 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:13 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:13 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:21 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:21 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:21 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:21 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:27 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:27 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:27 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:27 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:32 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:32 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:48:33 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:33 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:33 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:33 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:38 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:38 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:44 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:44 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:44 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:44 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:49 ERROR    Failure: 63661048957111971139043659084403729172 : http://localhost:3000/pagekit/index.php/admin/user# -> Failed to load resource: the server responded with a status of 400 (Bad Request)
+2022-05-26 11:48:49 ERROR    Failure: 108454993266047261493729590968796755788 : http://localhost:3000/pagekit/index.php/admin/user# -> status code(400) -> "Unable to block yourself."
+2022-05-26 11:48:51 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:51 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:48:51 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:48:51 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:02 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:02 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:02 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:02 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:10 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:10 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:10 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:10 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:20 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:20 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:20 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:20 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:24 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:24 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:24 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:24 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:31 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:31 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:31 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:31 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:33 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:49:37 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:37 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:37 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:37 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:38 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:49:39 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:39 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:39 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:39 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:45 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:45 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:45 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:45 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:52 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:52 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:52 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:52 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:58 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:58 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:49:58 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:49:58 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:02 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:02 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:02 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:02 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:10 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:10 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:10 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:10 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:18 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:18 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:18 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:18 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:20 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:50:20 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:50:23 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:23 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:23 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:23 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:30 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:30 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:30 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:30 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:36 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:36 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:36 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:36 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:47 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:47 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:47 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:47 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:51 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:51 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:51 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:51 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:56 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:56 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:50:56 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:50:56 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:03 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:03 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:03 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:03 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:09 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:09 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:09 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:09 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:14 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:14 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:14 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:14 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:18 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:18 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:51:19 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:19 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:19 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:19 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:26 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:26 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:26 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:26 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:36 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:36 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:36 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:36 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:42 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:42 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:42 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:42 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:44 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:51:49 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:49 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:49 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:49 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:55 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:55 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:51:55 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:51:55 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:01 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:52:01 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:52:03 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:03 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:03 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:03 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:06 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:52:07 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:52:09 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:09 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:09 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:09 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:16 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:16 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:16 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:16 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:23 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:23 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:23 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:23 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:29 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:29 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:29 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:29 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:36 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:36 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:36 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:36 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:39 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:39 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:39 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:39 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:45 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:45 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:45 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:45 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:50 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:50 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:50 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:50 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:54 ERROR    Failure: 63661048957111971139043659084403729172 : http://localhost:3000/pagekit/index.php/admin/user# -> Failed to load resource: the server responded with a status of 400 (Bad Request)
+2022-05-26 11:52:54 ERROR    Failure: 108454993266047261493729590968796755788 : http://localhost:3000/pagekit/index.php/admin/user# -> status code(400) -> "Unable to block yourself."
+2022-05-26 11:52:56 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:56 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:52:56 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:52:56 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:01 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:01 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:01 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:01 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:12 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:12 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:13 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:13 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:19 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:19 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:19 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:19 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:26 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:26 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:26 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:26 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:31 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:31 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:31 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:31 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:38 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:38 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:42 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:53:48 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:48 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:48 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:48 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:55 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:55 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:53:55 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:53:55 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:01 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:01 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:01 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:01 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:08 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:08 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:08 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:08 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:15 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:15 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:15 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:15 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:20 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:20 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:20 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:20 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:28 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:28 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:28 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:28 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:35 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:35 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:35 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:35 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:37 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:37 ERROR    Failure: 80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+2022-05-26 11:54:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:38 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:38 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:38 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:43 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:43 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:43 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:43 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:49 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:49 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:49 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:49 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:51 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:54:54 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:54 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:54:54 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:54:54 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:04 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:04 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:04 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:04 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:12 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:12 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:12 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:12 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:18 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:18 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:19 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:19 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:24 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:24 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:24 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:24 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:30 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 11:55:32 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:32 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:32 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:32 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:37 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:37 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:37 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:37 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:44 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:44 ERROR    Failure: 172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 11:55:44 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:55:44 ERROR    Failure: 105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 11:56:02 ERROR    Future exception was never retrieved
+future: <Future finished exception=NetworkError('Protocol error Target.sendMessageToTarget: Target closed.')>
+pyppeteer.errors.NetworkError: Protocol error Target.sendMessageToTarget: Target closed.
+2022-05-26 12:08:48 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/login -> net::ERR_ABORTED
+2022-05-26 12:09:34 ERROR    Future exception was never retrieved
+future: <Future finished exception=NetworkError('Protocol error Target.sendMessageToTarget: Target closed.')>
+pyppeteer.errors.NetworkError: Protocol error Target.sendMessageToTarget: Target closed.
+2022-05-26 12:14:06 WARNING  Finished
+2022-05-26 12:14:06 WARNING  (Failure Count, Coverage Percentage) : (6, 87.18334381904107)
+2022-05-26 12:14:06 ERROR    172717110701069407241174406021285620737 : http://localhost:3000/pagekit/index.php/admin/dashboard -> Failed to load resource: the server responded with a status of 404 (Not Found)
+2022-05-26 12:14:06 ERROR    105300557729261157098417819715091919465 : http://localhost:3000/pagekit/index.php/admin/dashboard -> status code(404) -> 
+2022-05-26 12:14:06 ERROR    262513326802567628094931167029883077585 : http://localhost:3000/pagekit/index.php/admin/user/edit?id=1 -> net::ERR_ABORTED
+2022-05-26 12:14:06 ERROR    63661048957111971139043659084403729172 : http://localhost:3000/pagekit/index.php/admin/user# -> Failed to load resource: the server responded with a status of 400 (Bad Request)
+2022-05-26 12:14:06 ERROR    108454993266047261493729590968796755788 : http://localhost:3000/pagekit/index.php/admin/user# -> status code(400) -> "Unable to block yourself."
+2022-05-26 12:14:06 ERROR    80165734902288621318310788211409255354 : http://localhost:3000/pagekit/admin/system/update -> status code(404) -> <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">	<html><head>	<title>404 Not Found</title>	</head><body>	<h1>Not Found</h1>	<p>The requested URL /pagekit/admin/system/update was not found on this server.</p>	<hr>	<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 3000</address>	</body></html>	
+~2022-05-26 12:14:06 ERROR    Future exception was never retrieved
+future: <Future finished exception=NetworkError('Protocol error Target.sendMessageToTarget: Target closed.')>
+pyppeteer.errors.NetworkError: Protocol error Target.sendMessageToTarget: Target closed.
+~2022-05-26 12:14:06 ERROR    Future exception was never retrieved
+future: <Future finished exception=NetworkError('Protocol error Target.sendMessageToTarget: Target closed.')>
+pyppeteer.errors.NetworkError: Protocol error Target.sendMessageToTarget: Target closed.
+~2022-05-26 12:14:06 ERROR    Future exception was never retrieved
+future: <Future finished exception=NetworkError('Protocol error Target.sendMessageToTarget: Target closed.')>
+pyppeteer.errors.NetworkError: Protocol error Target.sendMessageToTarget: Target closed.
+~2022-05-26 12:14:06 ERROR    Future exception was never retrieved
+future: <Future finished exception=NetworkError('Protocol error Target.sendMessageToTarget: Target closed.')>
+pyppeteer.errors.NetworkError: Protocol error Target.sendMessageToTarget: Target closed.

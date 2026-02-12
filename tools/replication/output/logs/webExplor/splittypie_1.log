@@ -1,0 +1,1183 @@
+2022-05-25 11:42:58 WARNING  Starting
+2022-05-25 11:42:58 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:42:58 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:02 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:43:02 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:43:02 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:43:02 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:43:07 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:07 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:12 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:43:12 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:43:12 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:43:12 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:43:15 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:15 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:20 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:43:20 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:43:20 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:43:20 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:43:23 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:23 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:27 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:43:27 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:43:27 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:43:27 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:43:30 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:30 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:36 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:43:36 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:43:36 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:43:36 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:43:39 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:39 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:45 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:43:45 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:43:45 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:43:45 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:43:48 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:48 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:52 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:43:52 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:43:52 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:43:52 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:43:56 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:43:56 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:01 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:44:01 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:44:01 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:44:01 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:44:06 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:06 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:11 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:44:11 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:44:11 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:44:11 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:44:13 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:13 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:25 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:25 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:30 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:44:30 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:44:30 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:44:30 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:44:33 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:33 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:41 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:44:42 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:44:42 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:44:42 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:44:44 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:44 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:47 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:44:47 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:44:47 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:44:47 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:44:49 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:49 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:52 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:44:52 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:44:52 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:44:52 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:44:57 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:44:57 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:03 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:45:03 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:45:03 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:45:03 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:45:06 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:06 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:09 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:45:10 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:45:10 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:45:10 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:45:14 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:14 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:20 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:45:20 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:45:20 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:45:20 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:45:25 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:25 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:27 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:45:28 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:45:28 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:45:28 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:45:33 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:33 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:38 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:45:38 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:45:38 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:45:38 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:45:41 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:41 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:52 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:45:52 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:45:52 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:45:52 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:45:53 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:53 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:45:58 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:45:58 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:45:58 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:45:58 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:46:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:08 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:46:08 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:46:08 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:46:08 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:46:12 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:12 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:16 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:46:16 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:46:16 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:46:16 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:46:22 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:22 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:25 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:46:25 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:46:25 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:46:25 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:46:30 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:30 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:34 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:46:35 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:46:35 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:46:35 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:46:39 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:39 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:44 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:46:44 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:46:44 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:46:44 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:46:47 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:47 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:53 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:46:54 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:46:54 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:46:54 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:46:57 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:46:57 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:03 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:47:03 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:47:03 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:47:03 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:47:06 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:06 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:15 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:47:16 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:47:16 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:47:16 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:47:16 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:16 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:22 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:47:22 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:47:22 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:47:22 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:47:26 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:26 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:33 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:47:33 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:47:33 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:47:34 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:47:37 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:37 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:40 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:47:41 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:47:41 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:47:41 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:47:45 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:45 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:47 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:47:47 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:47:48 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:47:48 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:47:53 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:53 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:47:55 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:47:56 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:47:56 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:47:56 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:48:02 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:02 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:04 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:48:05 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:48:05 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:48:05 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:48:09 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:09 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:11 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:48:12 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:48:12 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:48:12 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:48:17 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:17 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:20 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:48:20 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:48:20 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:48:20 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:48:25 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:25 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:30 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:48:30 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:48:30 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:48:30 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:48:35 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:35 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:39 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:48:39 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:48:39 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:48:39 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:48:43 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:43 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:50 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:48:51 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:48:51 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:48:51 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:48:54 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:54 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:48:56 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:48:56 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:48:56 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:48:56 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:49:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:09 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:49:09 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:49:09 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:49:09 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:49:11 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:11 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:23 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:23 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:26 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:49:26 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:49:26 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:49:27 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:49:32 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:32 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:40 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:49:40 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:49:40 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:49:40 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:49:42 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:42 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:46 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:49:46 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:49:46 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:49:46 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:49:51 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:51 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:56 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:49:57 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:49:57 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:49:57 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:49:59 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:49:59 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:08 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:50:08 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:50:08 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:50:08 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:50:09 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:09 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:16 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:50:16 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:50:16 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:50:16 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:50:18 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:18 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:22 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:50:22 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:50:22 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:50:22 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:50:24 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:24 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:28 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:50:28 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:50:28 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:50:28 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:50:34 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:34 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:37 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:50:37 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:50:37 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:50:38 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:50:42 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:42 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:46 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:50:47 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:50:47 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:50:47 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:50:52 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:52 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:50:57 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:50:57 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:50:57 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:50:57 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:51:01 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:01 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:03 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:51:03 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:51:03 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:51:03 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:51:10 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:10 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:13 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:51:13 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:51:13 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:51:14 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:51:18 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:18 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:20 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:51:21 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:51:21 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:51:21 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:51:27 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:27 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:32 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:51:33 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:51:33 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:51:33 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:51:37 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:37 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:39 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:51:40 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:51:40 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:51:40 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:51:47 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:47 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:54 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:51:54 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:51:54 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:51:54 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:51:58 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:51:58 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:04 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:52:04 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:52:04 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:52:04 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:52:07 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:07 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:10 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:52:10 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:52:10 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:52:10 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:52:14 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:14 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:18 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:52:18 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:52:18 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:52:18 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:52:23 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:23 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:26 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:52:27 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:52:27 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:52:27 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:52:31 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:31 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:34 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:52:34 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:52:34 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:52:34 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:52:38 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:38 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:41 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:52:41 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:52:41 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:52:41 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:52:48 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:48 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:52 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:52:53 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:52:53 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:52:53 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:52:57 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:52:57 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:01 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:53:01 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:53:01 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:53:01 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:53:06 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:06 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:08 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:53:08 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:53:08 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:53:08 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:53:12 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:12 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:17 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:53:17 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:53:17 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:53:17 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:53:20 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:20 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:24 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:53:24 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:53:24 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:53:24 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:53:29 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:29 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:31 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:53:32 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:53:32 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:53:32 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:53:36 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:36 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:40 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:53:40 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:53:40 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:53:40 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:53:45 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:45 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:49 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:53:49 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:53:49 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:53:49 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:53:53 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:53 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:53:55 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:53:55 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:53:55 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:53:56 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:54:01 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:01 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:03 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:54:04 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:54:04 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:54:04 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:54:12 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:12 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:14 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:54:15 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:54:15 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:54:15 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:54:19 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:19 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:22 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:54:22 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:54:22 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:54:23 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:54:28 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:28 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:31 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:54:31 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:54:31 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:54:31 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:54:37 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:37 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:43 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:54:43 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:54:43 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:54:43 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:54:44 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:44 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:48 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:54:48 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:54:48 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:54:48 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:54:53 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:53 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:54:59 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:54:59 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:54:59 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:54:59 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:55:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:07 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:55:07 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:55:07 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:55:07 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:55:11 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:11 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:18 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:55:18 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:55:18 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:55:18 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:55:20 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:20 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:31 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:31 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:37 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:55:38 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:55:38 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:55:38 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:55:39 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:39 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:43 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:55:43 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:55:43 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:55:43 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:55:48 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:48 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:51 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:55:51 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:55:51 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:55:51 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:55:54 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:54 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:55:58 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:55:58 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:55:58 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:55:58 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:56:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:06 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:56:06 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:56:06 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:56:06 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:56:11 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:11 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:13 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:56:13 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:56:13 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:56:13 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:56:19 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:19 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:21 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:56:22 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:56:22 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:56:22 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:56:28 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:28 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:33 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:56:33 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:56:33 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:56:33 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:56:36 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:36 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:40 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:56:40 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:56:40 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:56:40 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:56:45 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:45 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:47 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:56:47 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:56:47 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:56:48 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:56:51 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:51 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:56:57 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:56:57 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:56:57 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:56:57 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:57:01 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:01 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:04 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:57:04 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:57:04 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:57:04 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:57:12 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:12 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:16 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:57:16 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:57:16 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:57:16 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:57:21 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:21 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:23 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:57:23 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:57:23 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:57:23 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:57:28 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:28 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:31 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:57:31 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:57:31 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:57:32 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:57:37 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:37 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:41 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:57:42 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:57:42 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:57:42 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:57:45 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:45 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:49 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:57:49 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:57:49 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:57:49 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:57:54 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:54 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:57:57 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:57:57 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:57:57 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:57:57 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:58:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:06 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:58:06 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:58:06 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:58:06 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:58:12 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:12 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:14 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:58:14 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:58:14 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:58:15 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:58:20 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:20 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:25 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:58:25 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:58:25 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:58:25 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:58:29 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:29 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:31 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:58:31 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:58:31 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:58:32 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:58:37 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:37 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:42 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:58:42 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:58:42 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:58:42 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:58:46 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:46 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:51 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:58:51 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:58:51 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:58:51 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:58:56 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:56 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:58:58 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:58:58 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:58:58 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:58:58 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:59:06 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:06 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:09 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:59:09 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:59:09 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:59:09 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:59:15 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:15 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:19 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:59:20 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:59:20 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:59:20 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:59:23 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:23 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:27 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:59:27 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:59:27 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:59:27 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:59:34 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:34 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:38 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:59:38 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:59:38 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:59:38 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:59:44 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:44 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:49 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 11:59:49 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 11:59:49 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 11:59:49 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 11:59:53 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 11:59:53 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:05 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:05 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:10 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:00:10 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:00:10 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:00:11 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:00:16 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:16 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:18 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:00:19 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:00:19 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:00:19 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:00:24 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:24 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:27 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:00:27 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:00:27 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:00:27 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:00:34 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:34 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:38 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:00:39 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:00:39 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:00:39 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:00:44 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:44 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:46 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:00:47 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:00:47 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:00:47 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:00:52 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:00:52 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:00 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:01:01 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:01:01 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:01:01 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:01:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:09 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:01:09 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:01:09 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:01:09 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:01:11 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:11 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:17 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:01:18 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:01:18 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:01:18 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:01:19 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:19 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:28 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:01:28 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:01:28 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:01:28 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:01:29 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:29 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:34 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:01:34 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:01:34 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:01:34 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:01:37 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:37 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:40 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:01:40 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:01:40 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:01:40 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:01:46 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:46 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:53 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:01:53 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:01:53 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:01:53 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:01:55 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:55 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:01:59 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:01:59 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:01:59 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:01:59 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:02:06 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:06 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:18 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:18 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:31 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:31 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:34 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:02:34 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:02:34 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:02:34 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:02:38 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:38 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:43 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:02:43 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:02:43 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:02:43 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:02:47 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:47 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:50 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:02:51 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:02:51 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:02:51 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:02:55 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:02:55 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:00 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:03:00 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:03:00 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:03:00 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:03:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:07 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:03:07 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:03:07 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:03:07 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:03:12 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:12 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:17 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:03:17 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:03:17 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:03:18 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:03:21 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:21 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:25 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:03:25 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:03:25 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:03:25 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:03:29 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:29 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:32 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:03:32 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:03:32 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:03:32 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:03:37 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:37 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:42 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:03:43 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:03:43 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:03:43 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:03:46 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:46 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:51 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:03:51 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:03:51 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:03:51 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:03:55 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:55 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:03:59 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:04:00 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:04:00 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:04:00 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:04:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:06 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:04:07 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:04:07 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:04:07 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:04:12 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:12 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:16 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:04:16 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:04:16 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:04:16 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:04:21 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:21 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:27 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:04:27 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:04:27 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:04:27 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:04:30 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:30 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:34 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:04:34 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:04:34 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:04:34 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:04:38 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:38 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:42 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:04:42 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:04:42 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:04:42 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:04:46 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:46 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:49 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:04:49 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:04:49 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:04:49 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:04:55 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:04:55 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:07 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:07 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:10 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:05:10 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:05:10 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:05:10 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:05:15 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:15 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:18 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:05:19 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:05:19 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:05:19 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:05:22 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:22 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:25 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:05:25 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:05:25 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:05:25 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:05:31 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:31 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:38 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:05:38 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:05:38 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:05:39 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:05:42 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:42 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:46 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:05:46 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:05:46 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:05:46 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:05:49 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:49 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:51 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:05:52 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:05:52 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:05:52 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:05:56 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:56 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:05:59 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:05:59 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:05:59 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:06:00 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:06:05 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:05 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:10 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:06:10 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:06:10 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:06:10 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:06:13 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:13 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:18 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:06:18 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:06:18 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:06:19 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:06:23 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:23 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:26 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:06:27 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:06:27 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:06:27 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:06:34 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:34 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:44 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:06:44 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:06:44 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:06:44 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:06:45 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:45 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:48 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:06:48 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:06:48 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:06:48 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:06:52 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:52 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:06:54 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:06:55 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:06:55 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:06:55 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:07:01 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:01 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:07 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:07:07 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:07:07 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:07:07 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:07:10 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:10 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:20 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:07:20 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:07:20 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:07:20 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:07:22 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:22 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:30 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:07:31 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:07:31 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:07:31 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:07:33 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:33 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:35 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:07:36 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:07:36 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:07:36 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:07:41 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:41 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:49 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:07:49 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:07:49 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:07:49 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:07:54 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:54 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:07:56 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:07:56 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:07:56 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:07:56 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:08:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:08 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:08:09 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:08:09 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:08:09 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:08:12 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:12 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:15 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:08:15 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:08:15 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:08:15 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:08:23 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:23 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:25 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:08:26 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:08:26 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:08:26 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:08:30 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:30 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:33 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:08:33 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:08:33 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:08:33 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:08:41 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:41 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:45 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:08:46 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:08:46 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:08:46 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:08:51 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:51 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:08:55 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:08:55 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:08:55 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:08:55 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:09:00 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:00 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:02 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:09:03 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:09:03 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:09:03 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:09:09 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:09 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:13 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:09:13 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:09:13 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:09:13 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:09:18 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:18 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:23 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:09:23 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:09:23 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:09:23 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:09:28 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:28 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:29 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:09:30 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:09:30 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:09:30 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:09:36 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:36 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:39 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:09:40 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:09:40 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:09:40 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:09:44 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:44 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:47 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:09:47 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:09:47 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:09:47 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:09:51 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:51 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:09:56 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:09:56 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:09:56 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:09:56 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:10:01 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:01 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:07 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:10:07 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:10:07 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:10:07 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:10:11 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:11 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:23 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:23 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:27 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:10:27 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:10:27 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:10:27 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:10:32 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:32 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:35 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:10:35 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:10:35 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:10:35 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:10:43 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:43 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:51 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:10:51 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:10:51 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:10:51 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:10:54 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:10:54 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:00 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:11:00 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:11:00 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:11:00 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:11:03 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:03 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:06 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:11:06 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:11:06 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:11:06 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:11:11 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:11 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:17 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:11:18 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:11:18 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:11:18 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:11:21 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:21 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:24 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:11:24 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:11:24 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:11:24 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:11:27 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:27 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:32 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:11:32 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:11:32 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:11:32 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:11:35 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:35 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:38 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:11:39 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:11:39 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:11:39 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:11:43 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:43 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:45 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:11:46 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:11:46 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:11:46 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:11:49 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:49 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:53 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:11:53 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:11:53 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:11:53 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:11:59 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:11:59 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:01 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:12:02 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:12:02 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:12:02 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:12:07 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:07 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:11 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:12:11 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:12:11 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:12:11 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:12:16 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:16 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:21 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:12:21 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:12:21 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:12:21 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:12:26 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:26 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:29 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:12:30 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:12:30 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:12:30 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:12:35 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:35 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:38 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:12:38 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:12:38 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:12:38 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:12:43 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:43 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:47 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:12:47 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:12:47 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:12:47 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:12:52 ERROR    Failure: 223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:52 ERROR    Failure: 46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:12:57 ERROR    Failure: 204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:12:57 ERROR    Failure: 209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:12:57 ERROR    Failure: 116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:12:57 ERROR    Failure: 262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
+2022-05-25 12:13:00 WARNING  Finished
+2022-05-25 12:13:01 WARNING  (Failure Count, Coverage Percentage) : (6, 57.05481797886315)
+2022-05-25 12:13:01 ERROR    223684313413012242652925975724179693671 : http://localhost:4200/ -> net::ERR_CONNECTION_REFUSED
+2022-05-25 12:13:01 ERROR    46822577063395887337747847899479931724 : http://localhost:4200/ -> Failed to load resource: net::ERR_CONNECTION_REFUSED
+2022-05-25 12:13:01 ERROR    204148924151735858044210481229518018319 : http://localhost:4200/ -> status code(400) -> 
+2022-05-25 12:13:01 ERROR    209036318680772634052885377060412114839 : http://localhost:4200/ -> Access to XMLHttpRequest at 'https://geoip.nekudo.com/api' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+2022-05-25 12:13:01 ERROR    116883329609946864055106810307069809545 : http://localhost:4200/ -> JSHandle@object
+2022-05-25 12:13:01 ERROR    262513326802567628094931167029883077585 : http://localhost:4200/new -> net::ERR_ABORTED
