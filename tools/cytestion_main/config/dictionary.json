@@ -1,0 +1,15 @@
+{
+  "power-search": "input-power-search",
+  "power-select": "input-power-select",
+  "big-decimal": "input-big-decimal",
+  "input-monetary": "input-monetary",
+  "month-picker": "input-month-picker",
+  "ant-input-number": "input-number",
+  "ant-input": "input",
+  "ant-select-multiple": "input-select-multiple",
+  "ant-select": "input-select",
+  "ant-picker-range": "input-range-picker",
+  "ant-picker": "input-picker",
+  "ant-checkbox": "input-checkbox",
+  "ant-radio": "input-radio"
+}

@@ -1,0 +1,5 @@
+{
+  "tag": ["<a ", "<button ", "<input ", "<select ", "<textarea ", "<datalist ", "<details ", "<summary ", "<menu ", "<menuitem "],
+  "attributes": ["onclick=", "href=", "type=\"button\"", "type=\"submit\"", "type=\"reset\"", "rel="],
+  "class": []
+}

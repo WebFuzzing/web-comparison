@@ -1,0 +1,58 @@
+{
+  "name": "cytestion",
+  "version": "2.0",
+  "description": "Cypress Code Test Generation",
+  "main": "main.js",
+  "scripts": {
+    "generate-test:dev": "NODE_ENV=generation EXECUTION_MODE=development node entrypoint.js",
+    "generate-test:prod": "NODE_ENV=generation EXECUTION_MODE=production node entrypoint.js",
+    "regression-test:dev": "NODE_ENV=regression EXECUTION_MODE=development node entrypoint.js",
+    "regression-test:prod": "NODE_ENV=regression EXECUTION_MODE=production node entrypoint.js",
+    "setup-cypress": "NODE_ENV=setup node entrypoint.js",
+    "start-generate": "node ./src/main.js",
+    "cypress": "./node_modules/.bin/cypress open",
+    "cypress-run": "cross-env CYPRESS_NO_COMMAND_LOG=1 ./node_modules/.bin/cypress run",
+    "test-file": "cross-env CYPRESS_NO_COMMAND_LOG=1 ./node_modules/.bin/cypress run -s",
+    "test-file-parallel": "./node_modules/.bin/cypress-parallel -s cypress-run",
+    "format-file": "prettier-eslint --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/lsi-ufcg/cytestion/cytestion.git"
+  },
+  "keywords": [
+    "cypress",
+    "test",
+    "generation"
+  ],
+  "author": "mourats",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/lsi-ufcg/cytestion/cytestion/issues"
+  },
+  "homepage": "https://gitlab.com/lsi-ufcg/cytestion/cytestion#readme",
+  "dependencies": {
+    "@cypress/code-coverage": "^3.12.19",
+    "@testing-library/cypress": "^10.0.1",
+    "ahocorasick": "^1.0.2",
+    "cross-env": "^7.0.3",
+    "cross-spawn": "^7.0.2",
+    "cypress": "^13.14.2",
+    "cypress-failed-log": "^2.10.0",
+    "cypress-multi-reporters": "^1.6.4",
+    "cypress-parallel": "^0.14.0",
+    "cypress-wait-for-stable-dom": "^0.1.0",
+    "cypress-wait-until": "^1.7.2",
+    "dayjs": "^1.11.3",
+    "dotenv": "^16.3.1",
+    "faker-br": "^0.4.1",
+    "fs": "0.0.1-security",
+    "jsdom": "^22.1.0",
+    "npm": "^8.5.3",
+    "ora": "^4.0.4",
+    "prettier": "^2.2.1",
+    "prettier-eslint": "^12.0.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "typescript": "^4.3.4"
+  }
+}

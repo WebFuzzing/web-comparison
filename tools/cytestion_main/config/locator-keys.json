@@ -1,0 +1,3 @@
+{
+  "locator-keys": ["data-cy", "data-test", "data-testid", "id", "name", "title", "description", "placeholder", "tooltip", "alt", "aria-label", "value", "class"]
+}
