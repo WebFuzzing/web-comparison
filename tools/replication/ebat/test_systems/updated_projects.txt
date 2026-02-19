@@ -1,5 +1,0 @@
-petclinic-
-	angular: commit-07eb8255c2e2ee1575a5ad6d337c3660ad40ce26
-	rest- commit-07eb8255c2e2ee1575a5ad6d337c3660ad40ce26
-retroboard: v4.16.0
-

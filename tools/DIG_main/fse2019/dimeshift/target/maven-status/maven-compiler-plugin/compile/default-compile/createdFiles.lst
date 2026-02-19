@@ -1,0 +1,14 @@
+po\shared\components\NavbarComponent.class
+custom_classes\WalletNames.class
+po\goals\pages\CreateGoalSecondStepPage.class
+po\wallets\pages\WalletsManagerPage.class
+po_utils\TestData.class
+po_utils\PageComponent.class
+po_utils\PageObject.class
+po\goals\components\GoalBasicSettingsComponent.class
+custom_classes\Goals.class
+po\goals\pages\CreateGoalFirstStepPage.class
+po\goals\pages\GoalsManagerPage.class
+po\shared\components\BreadcrumbComponent.class
+po_utils\BasePageObject.class
+po_utils\ParametricPageComponent.class
