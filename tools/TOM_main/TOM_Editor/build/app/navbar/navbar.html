@@ -1,0 +1,13 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">{{brand}}</a>
+      <ul class="right hide-on-small-only">
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']">HOME</a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['editor']" routerLinkActive="active">EDITOR</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+

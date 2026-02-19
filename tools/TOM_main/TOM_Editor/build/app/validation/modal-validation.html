@@ -1,0 +1,75 @@
+<div id="modalVal" class="modal modal-fixed-footer" materialize="modal" [materializeParams]="[{dismissible: true}]">
+  <form #f="ngForm">
+    <div class="modal-content">
+      <h4>Create a new validation</h4>
+        <!-- VALIDATION DATA -->
+        <div class="row">
+          <div class="input-field col s12 m6">
+            <select class="validate" materialize="material_select" [materializeSelectOptions]="types" id="valType" name="type"  [(ngModel)]="validation.type" required>
+              <option *ngFor="let key of types; let i = index" [value]="i">{{key}}</option>
+            </select>
+            <label for="valType">Select the type of test you want</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input type="text" id="valLabel" class="validate" placeholder="Label" name="label" [(ngModel)]="validation.label">
+            <label for="valLabel">Type label name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m6">
+            <select [(ngModel)]="validation.test" name="test" materialize="material_select" [materializeSelectOptions]="tests" (ngModelChange)="checkExpectedInput($event)" id="valTest" required>
+              <option *ngFor="let key of tests; let i = index" [value]="i">{{key}}</option>
+            </select>
+            <label for="valTest">Select the type of validation you want</label>
+          </div>
+          <div class="input-field col s12 m6" *ngIf="expectedInput">
+            <input type="text" class="validate" id="valExpected" placeholder="Expected Final Value" [(ngModel)]="validation.expectedValue" name="expectedValue" required>
+            <label for="valExpected">Type the expected final value</label>
+          </div>
+        </div>
+
+        <!-- MAPPING DATA -->
+        <div class="row">
+          <div class="col s12">
+            <strong>Mapping definition</strong>
+            <h6>Select the method to mapping this validation</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <a class="waves-effect waves-light btn" (click)="getElement()" *ngIf="!selectElement"><i class="material-icons left">select_all</i>SELECT AN ELEMENT<i class="material-icons right">select_all</i></a>
+          <a class="waves-effect waves-light btn orange lighten-1" (click)="cancelElementSelection()" *ngIf="selectElement"><i class="material-icons left">select_all</i>cancel element selection<i class="material-icons right">select_all</i></a>
+          </div>
+        </div>
+        <div class="row" *ngIf="!selectElement">
+          <div class="input-field col s12 m6">
+            <select [(ngModel)]="validation.map.howToFind" name="howToFind" materialize="material_select" [materializeSelectOptions]="locators" id="mapHowFind" >
+              <option *ngFor="let key of locators; let i = index" [value]="i">{{key}}</option>
+            </select>
+            <label for="mapHowFind">How to find</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input class="validate" type="text" id="mapWhatFind" placeholder="What to find" [(ngModel)]="validation.map.whatToFind" name="whatToFind" required>
+            <label for="mapWhatFind">What to find</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <select [(ngModel)]="validation.map.whatToDo" name="whatToDo" materialize="material_select" [materializeSelectOptions]="actions" id="mapWhatDo">
+
+              <option *ngFor="let key of actions; let i = index" [value]="i">{{key}}</option>
+            </select>
+            <label for="mapWhatDo">What to do</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input class="validate" type="text" id="mapTypeAction" placeholder="Type of action" [(ngModel)]="validation.map.typeOfAction" name="typeOfAction">
+            <label for="mapTypeAction">Type of action</label>
+          </div>
+        </div>
+      </div>
+
+    <div class="modal-footer">
+      <button type="submit" class="btn modal-action modal-close waves-effect waves-green btn-modal" [disabled]="!f.valid" [class.disabled]="!f.valid" (click)="onSubmit(f.valid)">Submit</button>
+
+      <button type="button" class="btn-modal modal-close waves-effect waves-green btn-flat" (click)="resetModal()">Close</button>
+    </div>
+  </form>
+</div>

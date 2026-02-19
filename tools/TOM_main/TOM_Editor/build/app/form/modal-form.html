@@ -1,0 +1,122 @@
+<div id="modalForm" class="modal modal-fixed-footer" materialize="modal" [materializeParams]="[{dismissible: true}]">
+  <form #f="ngForm">
+    <div class="modal-content">
+      <h4>Create a new form</h4>
+
+      <div class="row">
+        <span>The input values on the form and validation are added later!</span>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <select class="validate" materialize="material_select" [materializeSelectOptions]="types" id="formType" name="type"  [(ngModel)]="form.type" required>
+              <option *ngFor="let key of types; let i = index" [value]="i">{{key}}</option>
+          </select>
+          <label for="formType">Select the form type</label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <input type="text" id="formLabel" placeholder="Label" name="label" [(ngModel)]="form.label">
+          <label for="formLabel">Type label name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12" *ngIf="form.type != 1">
+          <span>Select the transition state</span>
+
+          <div class="radio">
+            <input class="with-gap" name="stategroup" type="radio" id="formExistentState" [(ngModel)]="selectedState" value="0"/>
+            <label class="radio-form" for="formExistentState" (click)="onRadioExistentState()">Existent State</label>
+
+            <input class="with-gap" name="stategroup" type="radio" id="formNewState" [(ngModel)]="selectedState" value="1"/>
+            <label class="radio-form" for="formNewState">New State</label>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="selectedState == 0 && (form.type == 0 || form.type == 2)">
+        <div class="col s12">
+          <label for="transState">Select the state you want to go</label>
+          <select [(ngModel)]="form.transition.target" name="state" materialize="material_select" [materializeSelectOptions]="allStates" id="transState">
+            <option *ngFor="let key of allStates; let i = index" [value]="key.id">{{key.id}} {{key.label}}</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- MUTATION DATA, ONLY FOR NORMAL FORMS -->
+      <div class="row" *ngIf="form.type != 2">
+        <div class="col s12">
+          <strong>Mutation definition</strong><br/>
+
+          <input type="checkbox" id="mutationForm" value="true" [(ngModel)]="form.mutationRequired" name="mutationRequired"/>
+          <label for="mutationForm">I want to add a mutation transition error to this form</label>
+        </div>
+      </div>
+
+<!--       <div class="row" *ngIf="mutationRequired">
+        <div class="col s12">
+          <span>Create a transition to a state error</span>
+
+          <div class="radio">
+            <input *ngIf="allMutatedStates.length > 0" class="with-gap" name="mutationGroup" type="radio" id="existingStateMutation" [(ngModel)]="selectedTransition" value="0"/>
+            <label *ngIf="allMutatedStates.length > 0" class="radio-form" for="existingStateMutation" (click)="onRadioExistentMutationState()">Existent State</label>
+
+            <input class="with-gap" name="mutationGroup" type="radio" id="newStateMutation" [(ngModel)]="selectedTransition" value="1"/>
+            <label class="radio-form" for="newStateMutation">New State</label>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="mutationRequired && allMutatedStates.length > 0">
+        <div class="col s12">
+          <label for="transState">Select the state you want to go</label>
+          <select [(ngModel)]="form.transition.target" name="state" materialize="material_select" [materializeSelectOptions]="allStates" id="transState">
+            <option *ngFor="let key of allStates; let i = index" [value]="key.id">{{key.id}} {{key.label}}</option>
+          </select>
+        </div>
+      </div>
+ -->
+      <!-- MAPPING DATA -->
+      <div class="mapping-data" *ngIf="form.type != 2">
+        <div class="row">
+          <div class="col s12">
+            <strong>Mapping submission definitions</strong>
+            <h6>Select the method to map the button submission of this form</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <a class="waves-effect waves-light btn" (click)="getElement()" *ngIf="!selectElement"><i class="material-icons left">select_all</i>SELECT AN ELEMENT<i class="material-icons right">select_all</i></a>
+            <a class="waves-effect waves-light btn orange lighten-1" (click)="cancelElementSelection()" *ngIf="selectElement"><i class="material-icons left">select_all</i>cancel element selection<i class="material-icons right">select_all</i></a>
+          </div>
+        </div>
+        <div class="row" *ngIf="!selectElement">
+          <div class="input-field col s12 m6">
+            <select [(ngModel)]="form.transition.map.howToFind" name="howToFind" materialize="material_select" [materializeSelectOptions]="locators" id="mapHowFind" >
+              <option *ngFor="let key of locators; let i = index" [value]="i">{{key}}</option>
+            </select>
+            <label for="mapHowFind">How to find</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input class="validate" type="text" id="mapWhatFind" placeholder="What to find" [(ngModel)]="form.transition.map.whatToFind" name="whatToFind" required>
+            <label for="mapWhatFind">What to find</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <select [(ngModel)]="form.transition.map.whatToDo" name="whatToDo" materialize="material_select" [materializeSelectOptions]="actions" id="mapWhatDo">
+
+              <option *ngFor="let key of actions; let i = index" [value]="i">{{key}}</option>
+            </select>
+            <label for="mapWhatDo">What to do</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input class="validate" type="text" id="mapTypeAction" placeholder="Type of action" [(ngModel)]="form.transition.map.typeOfAction" name="typeOfAction">
+            <label for="mapTypeAction">Type of action</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="submit" class="btn modal-action modal-close waves-effect waves-green btn-modal" [disabled]="!f.valid || (selectedState < 0 && form.type != 1)" [class.disabled]="!f.valid || (selectedState < 0 && form.type != 1)" (click)="onSubmit(f.valid)">Submit</button>
+      <button type="button" class="btn-modal modal-close waves-effect waves-green btn-flat" (click)="resetModal()">Close</button>
+    </div>
+  </form>
+</div>

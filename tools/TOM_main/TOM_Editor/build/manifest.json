@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "TOM Editor",
+  "short_name": "TOM Editor",
+  "description": "Creates systems models to use on TOM Generator",
+  "version": "1.0.11",
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "TOM Editor"
+  },
+  "background": {
+    "scripts": [ "chrome/background.js" ],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": [
+      "chrome/content-script.js"
+    ],
+    "run_at": "document_start"
+  }],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources" : ["app/*", "chrome/*"],
+  "devtools_page": "chrome/devtools.html",
+  "options_page": "index.html",
+  "minimum_chrome_version": "10.0"
+}

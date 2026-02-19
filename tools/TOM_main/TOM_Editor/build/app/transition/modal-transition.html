@@ -1,0 +1,73 @@
+<div id="modalTransition" class="modal modal-fixed-footer" materialize="modal" [materializeParams]="[{dismissible: true}]">
+  <form #f="ngForm">
+    <div class="modal-content">
+      <h4>Create a new transition</h4>
+
+      <div class="row">
+        <div class="col s12">
+          <span>Select the transition state</span>
+
+          <div class="radio">
+            <input class="with-gap" name="stategroup" type="radio" id="existentState" [(ngModel)]="selectedState" value="0"/>
+            <label class="radio-form" for="existentState" (click)="onRadioExistentState()">Existent State</label>
+
+            <input class="with-gap" name="stategroup" type="radio" id="newState" [(ngModel)]="selectedState" value="1"/>
+            <label class="radio-form" for="newState">New State</label>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="selectedState == 0">
+        <div class="col s12">
+          <label for="transState">Select the state you want to go</label>
+          <select [(ngModel)]="transition.target" name="target" materialize="material_select" [materializeSelectOptions]="allStates" id="transState">
+            <option *ngFor="let key of allStates; let i = index" [value]="key.id">{{key.id}} {{key.label}}</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- MAPPING DATA -->
+      <div class="row">
+        <div class="col s12">
+          <strong>Mapping definition</strong>
+          <h6>Select the method to mapping this transition</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center-align">
+          <a class="waves-effect waves-light btn" (click)="getElement()" *ngIf="!selectElement"><i class="material-icons left">select_all</i>SELECT AN ELEMENT<i class="material-icons right">select_all</i></a>
+          <a class="waves-effect waves-light btn orange lighten-1" (click)="cancelElementSelection()" *ngIf="selectElement"><i class="material-icons left">select_all</i>cancel element selection<i class="material-icons right">select_all</i></a>
+        </div>
+      </div>
+      <div class="row" *ngIf="!selectElement">
+        <div class="input-field col s12 m6">
+          <select [(ngModel)]="transition.map.howToFind" name="howToFind" materialize="material_select" [materializeSelectOptions]="locators" id="mapHowFind" >
+            <option *ngFor="let key of locators; let i = index" [value]="i">{{key}}</option>
+          </select>
+          <label for="mapHowFind">How to find</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input class="validate" type="text" id="mapWhatFind" placeholder="What to find" [(ngModel)]="transition.map.whatToFind" name="whatToFind" required>
+          <label for="mapWhatFind">What to find</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <select [(ngModel)]="transition.map.whatToDo" name="whatToDo" materialize="material_select" [materializeSelectOptions]="actions" id="mapWhatDo">
+
+            <option *ngFor="let key of actions; let i = index" [value]="i">{{key}}</option>
+          </select>
+          <label for="mapWhatDo">What to do</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input class="validate" type="text" id="mapTypeAction" placeholder="Type of action" [(ngModel)]="transition.map.typeOfAction" name="typeOfAction">
+          <label for="mapTypeAction">Type of action</label>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <!-- <a class=" modal-action modal-close waves-effect waves-green btn-flat" (click)="submitTransition()">Submit</a>
+      <a class="modal-action modal-close waves-effect waves-red btn-flat" (click)="resetModal()">Close</a> -->
+      <button type="submit" class="btn modal-action modal-close waves-effect waves-green btn-modal" [disabled]="!f.valid || existentState<0" [class.disabled]="!f.valid || existentState<0" (click)="onSubmit(f.valid)">Submit</button>
+
+      <button type="button" class="btn-modal modal-close waves-effect waves-green btn-flat" (click)="resetModal()">Close</button>
+    </div>
+  </form>
+</div>

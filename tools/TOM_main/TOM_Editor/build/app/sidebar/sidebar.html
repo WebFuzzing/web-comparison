@@ -1,0 +1,112 @@
+<div  class="side-nav fixed right-aligned side-properties ">
+  <div class="side-header">
+    <h6>PROPERTIES</h6>
+  </div>
+  <div *ngIf="state" class="side-data">
+    <div class="card-props">
+      <span>id</span>
+      <input type="text" name="name" class="card-text" [(ngModel)]="state.id" disabled="true">
+    </div>
+    <div class="card-props">
+      <span>label</span>
+      <input type="text" name="name" class="card-text" [(ngModel)]="state.label">
+    </div>
+
+    <!-- VALIDATION DATA -->
+    <div>
+      <div class="card-prop-header">
+        <span>Validations</span>
+      </div>
+      <div class="card-prop-data">
+        <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+          <li *ngFor="let val of state.validations">
+            <div class="collapsible-header">
+              <i class="material-icons tiny">assignment_turned_in</i> {{ValidationType[val.type]}} {{val.label}}
+            </div>
+            <div class="collapsible-body">
+              <dl class="dl-horizontal">
+                <dt>Test</dt>
+                <dd>{{ ValidationTest[val.test] }}</dd>
+
+                <dt *ngIf="val.expectedValue">Expected</dt>
+                <dd *ngIf="val.expectedValue">{{ val.expectedValue }}</dd>
+
+                <dt>Mapping</dt>
+                <dd>{{ MapLocator[val.map.howToFind] }}: {{ val.map.whatToFind }} {{ MapAction[val.map.whatToDo] }}</dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- TRANSITION DATA -->
+    <div>
+      <div class="card-prop-header">
+        <span>Transitions</span>
+      </div>
+      <div class="card-prop-data">
+        <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+          <li *ngFor="let trans of state.transitions">
+            <div class="collapsible-header">
+              <i class="material-icons tiny">compare_arrows</i> transition to {{ getStateLabel(trans.target) }}
+            </div>
+            <div class="collapsible-body">
+              <dl class="dl-horizontal">
+                <dt>Mapping</dt>
+                <dd>{{ MapLocator[trans.map.howToFind] }}: {{ trans.map.whatToFind }} {{ MapAction[trans.map.whatToDo] }}</dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- FORM DATA -->
+    <div>
+      <div class="card-prop-header">
+        <span>Forms</span>
+      </div>
+      <div class="card-prop-data">
+        <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+          <li *ngFor="let form of state.forms">
+            <div class="collapsible-header">
+              <i class="material-icons tiny">format_list_bulleted</i> Form
+            </div>
+            <div class="collapsible-body">
+              <span class="form-data-title">Values</span>
+              <ul class="form-data-list">
+                <li *ngFor="let val of form.values">
+                  <span *ngIf="val.required">√ </span>
+                  <span *ngIf="!val.required">x </span>
+                  Sending {{ SendElement[val.element] }} {{ val.value }}
+                  <span *ngIf="val.mutation"> {{ val.mutation | json }}</span>
+                  (MAP: {{ MapLocator[val.map.howToFind] }}: {{ val.map.whatToFind }} {{ MapAction[val.map.whatToDo] }} {{ val.map.typeOfAction }})
+                </li>
+              </ul>
+              <span class="form-data-title">Validations</span>
+                <ul class="form-data-list">
+                  <li *ngFor="let vld of form.validations">
+                    -
+                    <span *ngIf="vld.label"> {{ vld.label }}</span>
+                    {{ ValidationType[vld.type] }}
+                    {{ ValidationTest[vld.test] }}
+                    <span *ngIf="vld.expectedValue">{{ vld.expectedValue }}</span>
+                    (MAP: {{ MapLocator[vld.map.howToFind] }}: {{ vld.map.whatToFind }} {{ MapAction[vld.map.whatToDo] }} {{ vld.map.typeOfAction}})
+                  </li>
+                </ul>
+
+              <span class="form-data-title">Transition</span>
+              <ul class="form-data-list">
+                <li>{{ MapLocator[form.transition.map.howToFind] }}: {{ form.transition.map.whatToFind }} {{ MapAction[form.transition.map.whatToDo] }} {{ form.transition.map.typeOfAction }}</li>
+                <li *ngIf="form.mutation">{{ MapLocator[form.transition.map.howToFind] }}: {{ form.transition.map.whatToFind }} {{ MapAction[form.transition.map.whatToDo] }}</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!state" class="side-title">
+    <div class="card-props"><span>Select or create a State!</span></div>
+  </div>
+</div>

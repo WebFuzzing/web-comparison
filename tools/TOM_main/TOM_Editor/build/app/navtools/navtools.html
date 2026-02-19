@@ -1,0 +1,28 @@
+<div class="navbar-fixed">
+  <nav class="blue-grey darken-1 nav-tools">
+    <div class="nav-wrapper">
+      <ul class="right">
+        <li>
+          <div class="switch">
+            <label>
+              Record
+              <input type="checkbox" (click)="recordMode($event)">
+              <span class="lever"></span>
+            </label>
+          </div>
+        </li>
+        <li><a class="waves-effect waves-light" (click)="addState()" materialize="tooltip" data-position="bottom" data-delay="10" data-tooltip="Add new state"><i class="material-icons">note_add</i></a></li>
+        <li><a class="waves-effect waves-light" (click)="deleteAllStates()" materialize="tooltip" data-position="bottom" data-delay="10" data-tooltip="Remove all states"><i class="material-icons">clear_all</i></a></li>
+        <li><i class="material-icons nav-divider">more_vert</i></li>
+        <li><a class="waves-effect waves-light modal-trigger" data-target="modalUpload"><i class="material-icons" materialize="tooltip" data-position="bottom" data-delay="10" data-tooltip="Open Module">open_in_browser</i></a></li>
+        <li><a class="waves-effect waves-light" (click)="saveModule()"><i class="material-icons" materialize="tooltip" data-position="bottom" data-delay="10" data-tooltip="Save Module">save</i></a></li>
+        <li><i class="material-icons nav-divider">more_vert</i></li>
+        <li><a class="waves-effect waves-light modal-trigger" data-target="modalExport"><i class="material-icons" materialize="tooltip" data-position="bottom" data-delay="10" data-tooltip="File export">system_update_alt</i></a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!-- <a materialize="dropdown" class=' btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+ -->     <!-- Dropdown Structure -->
+
