@@ -1,0 +1,112 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class TextBoxes_ViewTest {
+  
+  private sut : TextBoxes_ViewModel  ;
+  
+  private testEnvironment : TextBoxes_ViewModelTestEnvironment  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testEnvironment = new TextBoxes_ViewModelTestEnvironmentImpl (  );
+
+    this.testEnvironment.Init (  );
+
+  }
+  
+  
+  public SingleLine_TextBox_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  );
+
+  }
+  
+  public SingleLine_TextBox_disabled_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible (  ) {
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible (  );
+
+  }
+  
+  public SingleLine_TextBox_invisible_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible (  ) {
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible (  );
+
+  }
+  
+  public MultiLine_TextBox_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sut = this.testEnvironment.BuildSut (  );
+
+  }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {    
+  }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
+    AssertEqualWithMessage ( "Some entered Input", this.sut.getMyValueTextBoxText (  ), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText (  ) + ">" );
+
+    AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ), "Expected textbox MyValue is enabled, but it was disabled" );
+
+    AssertTrue ( this.sut.getIsMyValueTextBoxVisible (  ), "Expected textbox MyValue is visible, but it was hidden" );
+
+  }
+  
+  public then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible (  ) {
+    AssertEqualWithMessage ( "Some entered Input", this.sut.getMyValueTextBoxText (  ), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText (  ) + ">" );
+
+    AssertFalse ( this.sut.getIsMyValueTextBoxEnabled (  ), "Expected textbox MyValue is disabled, but it was enabled" );
+
+    AssertTrue ( this.sut.getIsMyValueTextBoxVisible (  ), "Expected textbox MyValue is visible, but it was hidden" );
+
+  }
+  
+  public then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible (  ) {
+    AssertEqualWithMessage ( "Some entered Input", this.sut.getMyValueTextBoxText (  ), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText (  ) + ">" );
+
+    AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ), "Expected textbox MyValue is enabled, but it was disabled" );
+
+    AssertFalse ( this.sut.getIsMyValueTextBoxVisible (  ), "Expected textbox MyValue is hidden, but it was visible" );
+
+  }
+  
+  public then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {
+    let actualMultiLineTextBoxValueLines: String [] = this.sut.getMultiLineTextBoxValueTextBoxText (  );
+
+    AssertEqualWithMessage ( 2, actualMultiLineTextBoxValueLines->size (  ), "Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has " + actualMultiLineTextBoxValueLines->size (  ) );
+
+    AssertEqualWithMessage ( "Expected1", actualMultiLineTextBoxValueLines[ 1 ] ?? "", "Expected that textbox MultiLineTextBoxValue has text line at index 0 matching <" + "Expected1" + ">, but was <" + actualMultiLineTextBoxValueLines[ 1 ] ?? "" + ">" );
+
+    AssertEqualWithMessage ( "Expected2", actualMultiLineTextBoxValueLines[ 2 ] ?? "", "Expected that textbox MultiLineTextBoxValue has text line at index 1 matching <" + "Expected2" + ">, but was <" + actualMultiLineTextBoxValueLines[ 2 ] ?? "" + ">" );
+
+  }
+}

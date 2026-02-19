@@ -1,0 +1,13 @@
+namespace commands ;
+
+
+
+
+public class LoadCommand_ViewModel {
+  
+  public loadViewModel (  ) {    
+  }
+  
+  public loadViewWithName (   in Name: String  ) {    
+  }
+}

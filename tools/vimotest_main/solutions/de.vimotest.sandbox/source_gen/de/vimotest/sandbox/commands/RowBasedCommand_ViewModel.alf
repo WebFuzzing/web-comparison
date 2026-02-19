@@ -1,0 +1,46 @@
+namespace commands ;
+
+
+
+
+public class RowBasedCommand_ViewModel {
+  
+  private MyFlagsListRows : RowBasedCommand_ViewModelMyFlagsRow [ * ]  ;
+  
+  public getMyFlagsListRows (  ) : RowBasedCommand_ViewModelMyFlagsRow [ * ]  {
+    return this.MyFlagsListRows;
+
+  }
+  
+  private MyComboBoxesTableRows : RowBasedCommand_ViewModelMyComboBoxesRow [ * ]  ;
+  
+  public getMyComboBoxesTableRows (  ) : RowBasedCommand_ViewModelMyComboBoxesRow [ * ]  {
+    return this.MyComboBoxesTableRows;
+
+  }
+  
+  private MyStandardControlsTreeRows : RowBasedCommand_ViewModelMyStandardControlsRow [ * ]  ;
+  
+  public getMyStandardControlsTreeRows (  ) : RowBasedCommand_ViewModelMyStandardControlsRow [ * ]  {
+    return this.MyStandardControlsTreeRows;
+
+  }
+  
+  public loadViewModel (  ) {    
+  }
+  
+  public checkboxesCheckBoxChecked (   in rowIndex: Integer ,   in isChecked: Boolean  ) {    
+  }
+  
+  public freeTextComboBoxesComboBoxEntrySelected (   in rowIndex: Integer ,   in entryName: String  ) {    
+  }
+  
+  public entryComboBoxesComboBoxEntrySelected (   in rowIndex: Integer ,   in entryName: String  ) {    
+  }
+  
+  public textBoxesTextBoxTextFilled (   in rowIndex: Integer ,   in text: String  ) {    
+  }
+  
+  public buttonsButtonClicked (   in rowIndex: Integer  ) {    
+  }
+}

@@ -1,0 +1,17 @@
+namespace bindings ;
+
+
+
+
+public class ViMoTestFileNameBinding {
+  
+  private MyElementsTableRows : ViMoTestFileNameBindingMyElementsRow [ * ]  ;
+  
+  public getMyElementsTableRows (  ) : ViMoTestFileNameBindingMyElementsRow [ * ]  {
+    return this.MyElementsTableRows;
+
+  }
+  
+  public loadViewModel (  ) {    
+  }
+}
