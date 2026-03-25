@@ -2,10 +2,13 @@ version: '3.8'
 
 services:
     wildfly:
-        build: .
+        build: 
+            context: ..
+            dockerfile: petstore/Dockerfile
         ports:
             - "8080:8080"
             - "9990:9990"
+            - "6300:6300"
         environment:
             - WILDFLY_USER=admin
             - WILDFLY_PASSWORD=admin
