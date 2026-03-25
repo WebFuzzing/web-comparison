@@ -1,12 +1,20 @@
 version: '3.8'
 services:
   app:
-    build: .
+    build:
+      context: ..
+      dockerfile: petclinic/Dockerfile
     ports:
       - "8080:8080"
+      - "6300:6300"
+    environment:
+      - JAVA_TOOL_OPTIONS=-javaagent:/app/jacocoagent.jar=output=tcpserver,address=*,port=6300
     depends_on:
       - mysql
       - postgres
+    networks:
+      - petclinic-network
+
   mysql:
     image: mysql:9.5
     ports:
@@ -19,6 +27,9 @@ services:
       MYSQL_DATABASE: petclinic
     volumes:
       - "./conf.d:/etc/mysql/conf.d:ro"
+    networks:
+      - petclinic-network
+
   postgres:
     image: postgres:18.1
     ports:
@@ -27,3 +38,9 @@ services:
       POSTGRES_PASSWORD: petclinic
       POSTGRES_USER: petclinic
       POSTGRES_DB: petclinic
+    networks:
+      - petclinic-network
+#extra line to ensure all services can communicate with each other inside Docker.
+networks:
+  petclinic-network:
+    driver: bridge
