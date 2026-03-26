@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:51:22
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:45
   from "/var/www/html/templates/standard/userProfileProjects.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_6965349a7be2c0_52315971',
+  'unifunc' => 'content_69c5b539c24562_62269356',
   'file_dependency' => 
   array (
     'e5c34112308f91b12d507d4224b7742dcb84c234' => 
     array (
       0 => '/var/www/html/templates/standard/userProfileProjects.tpl',
-      1 => 1495596949,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_6965349a7be2c0_52315971 ($_smarty_tpl) {
+function content_69c5b539c24562_62269356 ($_smarty_tpl) {
 ?>
     <div class="projects" id="userProjects">
         <div class="headline">

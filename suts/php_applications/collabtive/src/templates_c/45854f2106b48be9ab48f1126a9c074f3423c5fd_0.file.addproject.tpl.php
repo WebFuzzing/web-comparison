@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:49:52
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:49
   from "/var/www/html/templates/standard/forms/addproject.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_69653440d432a9_32795725',
+  'unifunc' => 'content_69c5b53d5584a2_90272867',
   'file_dependency' => 
   array (
     '45854f2106b48be9ab48f1126a9c074f3423c5fd' => 
     array (
       0 => '/var/www/html/templates/standard/forms/addproject.tpl',
-      1 => 1490339474,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_69653440d432a9_32795725 ($_smarty_tpl) {
+function content_69c5b53d5584a2_90272867 ($_smarty_tpl) {
 ?>
 <div class="block_in_wrapper">
 	<h2><?php echo $_smarty_tpl->smarty->ext->configLoad->_getConfigVariable($_smarty_tpl, 'addproject');?>

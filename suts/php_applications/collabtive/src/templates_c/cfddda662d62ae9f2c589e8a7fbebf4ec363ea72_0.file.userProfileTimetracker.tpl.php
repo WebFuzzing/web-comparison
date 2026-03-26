@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:51:22
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:45
   from "/var/www/html/templates/standard/userProfileTimetracker.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_6965349a682bb7_70937915',
+  'unifunc' => 'content_69c5b539638978_43842420',
   'file_dependency' => 
   array (
     'cfddda662d62ae9f2c589e8a7fbebf4ec363ea72' => 
     array (
       0 => '/var/www/html/templates/standard/userProfileTimetracker.tpl',
-      1 => 1474932698,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:filterreport.tpl' => 1,
   ),
 ),false)) {
-function content_6965349a682bb7_70937915 ($_smarty_tpl) {
+function content_69c5b539638978_43842420 ($_smarty_tpl) {
 ?>
 <!-- container for the userTimetrackerAccordeon accordeon -->
 <div class="timetrack" id="userTimetracker">

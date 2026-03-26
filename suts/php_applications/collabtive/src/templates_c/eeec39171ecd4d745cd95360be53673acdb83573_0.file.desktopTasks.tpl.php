@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:49:52
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:39
   from "/var/www/html/templates/standard/desktopTasks.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_69653440dbbb82_79034138',
+  'unifunc' => 'content_69c5b533a18251_73246122',
   'file_dependency' => 
   array (
     'eeec39171ecd4d745cd95360be53673acdb83573' => 
     array (
       0 => '/var/www/html/templates/standard/desktopTasks.tpl',
-      1 => 1495584561,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:forms/addmytask_index.tpl' => 1,
   ),
 ),false)) {
-function content_69653440dbbb82_79034138 ($_smarty_tpl) {
+function content_69c5b533a18251_73246122 ($_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['tasknum']->value > 0) {?>
     <div class="tasks padding-bottom-two-px" id="desktoptasks">
         <div class="headline">

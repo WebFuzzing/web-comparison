@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:51:22
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:45
   from "/var/www/html/templates/standard/tabsmenue-user.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_6965349a618550_65880205',
+  'unifunc' => 'content_69c5b5392b49b1_22704315',
   'file_dependency' => 
   array (
     '27e28790498008e625e948bd237b1ff46b24f137' => 
     array (
       0 => '/var/www/html/templates/standard/tabsmenue-user.tpl',
-      1 => 1414568312,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_6965349a618550_65880205 ($_smarty_tpl) {
+function content_69c5b5392b49b1_22704315 ($_smarty_tpl) {
 ?>
 <div class="tabswrapper">
 	<ul class="tabs">

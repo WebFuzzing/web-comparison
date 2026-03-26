@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:51:22
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:55
   from "/var/www/html/templates/standard/header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_6965349a3aee46_77863689',
+  'unifunc' => 'content_69c5b5438836c9_19665957',
   'file_dependency' => 
   array (
     'c4c3b639ac81dacae4519f2a38b467e4d8713291' => 
     array (
       0 => '/var/www/html/templates/standard/header.tpl',
-      1 => 1504043104,
+      1 => 1774485333,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:header_main.tpl' => 1,
   ),
 ),false)) {
-function content_6965349a3aee46_77863689 ($_smarty_tpl) {
+function content_69c5b5438836c9_19665957 ($_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, 'lng.conf', "strings", 96);
 ?>
 

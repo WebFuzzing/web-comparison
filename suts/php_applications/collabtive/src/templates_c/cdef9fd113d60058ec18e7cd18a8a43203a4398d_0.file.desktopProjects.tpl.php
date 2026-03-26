@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:49:52
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:39
   from "/var/www/html/templates/standard/desktopProjects.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_69653440c6a675_26266740',
+  'unifunc' => 'content_69c5b5331f3f02_08510934',
   'file_dependency' => 
   array (
     'cdef9fd113d60058ec18e7cd18a8a43203a4398d' => 
     array (
       0 => '/var/www/html/templates/standard/desktopProjects.tpl',
-      1 => 1495584515,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:forms/addproject.tpl' => 1,
   ),
 ),false)) {
-function content_69653440c6a675_26266740 ($_smarty_tpl) {
+function content_69c5b5331f3f02_08510934 ($_smarty_tpl) {
 ?>
 <div id="desktopprojects" class="projects padding-bottom-two-px">
     <div class="headline">

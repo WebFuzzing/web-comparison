@@ -1,19 +1,19 @@
-<?php /* Smarty version 3.1.29, created on 2026-01-12 18:51:22
+<?php /* Smarty version 3.1.29, created on 2026-03-26 23:37:56
          compiled from "/var/www/html/language/en/lng.conf" */ ?>
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:51:22
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:56
   from "/var/www/html/language/en/lng.conf" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_6965349a523e86_17749109',
+  'unifunc' => 'content_69c5b544861e52_38698448',
   'file_dependency' => 
   array (
     '2fdefdd5c0aa5dddfdbb2597b29bb7bea52ba952' => 
     array (
       0 => '/var/www/html/language/en/lng.conf',
-      1 => 1475624063,
+      1 => 1774485333,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_6965349a523e86_17749109 ($_smarty_tpl) {
+function content_69c5b544861e52_38698448 ($_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigVars($_smarty_tpl, array (
   'sections' => 
   array (

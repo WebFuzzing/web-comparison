@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:51:22
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:53
   from "/var/www/html/templates/standard/sidebar-a.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_6965349a85f803_13403012',
+  'unifunc' => 'content_69c5b541276b65_18182295',
   'file_dependency' => 
   array (
     '90124d4aa59646540cdf5914777dd831468befe7' => 
     array (
       0 => '/var/www/html/templates/standard/sidebar-a.tpl',
-      1 => 1476274357,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_6965349a85f803_13403012 ($_smarty_tpl) {
+function content_69c5b541276b65_18182295 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_truncate')) require_once '/var/www/html/vendor/smarty/smarty/libs/plugins/modifier.truncate.php';
 ?>
 <div id="content-right" class="overflow-hidden" data-opened="false">

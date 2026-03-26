@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:51:22
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:43
   from "/var/www/html/templates/standard/userprofile.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_6965349a24a454_45949370',
+  'unifunc' => 'content_69c5b5376ba3f0_67678258',
   'file_dependency' => 
   array (
     'a64c861c0b8b52ce1ff4feca49d15c6a331c2cd5' => 
     array (
       0 => '/var/www/html/templates/standard/userprofile.tpl',
-      1 => 1480071612,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6965349a24a454_45949370 ($_smarty_tpl) {
+function content_69c5b5376ba3f0_67678258 ($_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('jsload'=>"ajax"), 0, false);
 ?>
 

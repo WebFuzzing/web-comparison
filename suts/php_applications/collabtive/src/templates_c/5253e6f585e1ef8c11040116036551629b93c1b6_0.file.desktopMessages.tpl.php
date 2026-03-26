@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2026-01-12 18:49:52
+/* Smarty version 3.1.29, created on 2026-03-26 23:37:39
   from "/var/www/html/templates/standard/desktopMessages.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_69653440e19311_33685494',
+  'unifunc' => 'content_69c5b533c37783_00024064',
   'file_dependency' => 
   array (
     '5253e6f585e1ef8c11040116036551629b93c1b6' => 
     array (
       0 => '/var/www/html/templates/standard/desktopMessages.tpl',
-      1 => 1504067269,
+      1 => 1774485390,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_69653440e19311_33685494 ($_smarty_tpl) {
+function content_69c5b533c37783_00024064 ($_smarty_tpl) {
 ?>
 
 <?php if ($_smarty_tpl->tpl_vars['msgnum']->value > 0) {?>
