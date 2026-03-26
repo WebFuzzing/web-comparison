@@ -8,6 +8,10 @@ services:
       - "8080:80"
     volumes:
       - ./src:/var/www/html
+      # mount the shared scripts (read-only)
+      - ./coverage-scripts:/coverage-scripts:ro
+      # bind-mount output folder so coverage files appear on the host
+      - ./coverage:/var/www/coverage
     depends_on:
       - db
 
