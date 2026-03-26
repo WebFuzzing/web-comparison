@@ -1,4 +1,0 @@
-Version = 4.2-SNAPSHOT
-Git commit id = ${git.commit.id}
-Git describe = ${git.commit.id.describe}
-Build at ${git.build.time}
