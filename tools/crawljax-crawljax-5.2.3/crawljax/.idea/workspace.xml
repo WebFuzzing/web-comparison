@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="43ef96c2-dc20-4a61-8072-979d3ec28cbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../suts/addressbook/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../../suts/addressbook/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DANTE/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DANTE/crawljax/plugins/crawloverview-plugin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DIG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FSE19-submission-material-DIG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUITAR.v1.2/GUITAR.tool/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUITAR.v1.2/GUITAR.tool/aut/petclinic/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PIRLTest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QExplore/QExplore-main/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TESTAR_dev-2.7.18/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TESTAR_dev-2.7.18/testar/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TESTAR_dev-2.7.18/testar/suts/Simple-Java-Calculator-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TOM" beforeDir="false" afterPath="$PROJECT_DIR$/../../TOM" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apogen-master/apogen-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apogen-master/apogen-master/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/crawloverview-plugin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cytestion_main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cytestion_main/tmp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/test_systems/petclinic/spring-petclinic-angular" beforeDir="false" afterPath="$PROJECT_DIR$/../../replication/ebat/test_systems/petclinic/spring-petclinic-angular" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/test_systems/petclinic/spring-petclinic-rest" beforeDir="false" afterPath="$PROJECT_DIR$/../../replication/ebat/test_systems/petclinic/spring-petclinic-rest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/test_systems/retroboard/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/test_systems/retroboard/backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/test_systems/retroboard/docs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/test_systems/retroboard/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/test_systems/retroboard/integration/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/ebat/test_systems/retroboard/retro-board-dev/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/webExplor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/webExplor/test_systems/petclinic/spring-petclinic-angular" beforeDir="false" afterPath="$PROJECT_DIR$/../../replication/webExplor/test_systems/petclinic/spring-petclinic-angular" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/webExplor/test_systems/petclinic/spring-petclinic-rest" beforeDir="false" afterPath="$PROJECT_DIR$/../../replication/webExplor/test_systems/petclinic/spring-petclinic-rest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../replication/webExplor/test_systems/retroboard" beforeDir="false" afterPath="$PROJECT_DIR$/../../replication/webExplor/test_systems/retroboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vimotest" beforeDir="false" afterPath="$PROJECT_DIR$/../../vimotest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../web-guitar-v1.0/web-guitar-v1.0/.idea/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "IvaDr"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/WebFuzzing/web-comparison.git",
+    "accountId": "1e2bd130-5523-4618-8a09-d124eb555fd2"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="39qB6dXy7zbxL5YoFSu442bLEtj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/aise/Documents/web-comparison/tools/crawljax-crawljax-5.2.3/crawljax",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="crawljax" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="crawljax" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43ef96c2-dc20-4a61-8072-979d3ec28cbf" name="Changes" comment="" />
+      <created>1771413546539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771413546539</updated>
+    </task>
+    <servers />
+  </component>
+</project>
