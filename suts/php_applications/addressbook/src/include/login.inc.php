@@ -397,7 +397,7 @@ class AuthLoginDb extends AuthLoginUserPass {
 
   // return md5($username.$md5_pass.$this->ip_date);
 
-	function __construct($db_conn, $table) {
+	function __construct($db, $table) {
 		
 		parent::__construct();
 
