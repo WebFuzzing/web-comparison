@@ -1,3 +1,14 @@
 /.idea/
-*/target/ 
+*/target/
  
+ 
+/tools/apogen-master/apogen-master/.idea/
+/tools/apogen-master/apogen-master/.settings/
+/tools/crawljax-crawljax-5.2.3/.idea/
+/tools/crawljax-crawljax-5.2.3/crawljax/.idea/
+/tools/cytestion_main/node_modules/
+/tools/QExplore/
+/tools/TESTAR_dev-2.7.18/.idea/
+/tools/TESTAR_dev-2.7.18/testar/.gradle/
+/tools/TESTAR_dev-2.7.18/testar/.idea/
+/suts/php_apps_sikt/
