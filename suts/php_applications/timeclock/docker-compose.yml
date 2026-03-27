@@ -5,13 +5,18 @@ services:
     build: .
     container_name: timeclock-web
     ports:
-      - "8080:80"
+      - "8088:80"
     volumes:
       - ./src:/var/www/html
+      # mount the shared scripts (read-only)
+      - ./coverage-scripts:/coverage-scripts:ro
+      # bind-mount output folder so coverage files appear on the host
+      - ./coverage:/var/www/coverage
     depends_on:
       - db
     networks:
       - timeclock-net
+
 
   db:
     image: mysql:5.5
@@ -28,9 +33,21 @@ services:
       - dbdata:/var/lib/mysql
     networks:
       - timeclock-net
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8089:80"          # Access via http://localhost:8089
+    environment:
+      PMA_HOST: db         # Name of your MySQL service
+      PMA_PORT: 3306
+    depends_on:
+      - db
+    networks:
+      - timeclock-net
 
 volumes:
   dbdata:
 
 networks:
   timeclock-net:
+    driver: bridge
