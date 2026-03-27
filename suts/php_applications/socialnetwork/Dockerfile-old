@@ -1,0 +1,25 @@
+# Use a legacy image with older PHP (5.6) and Apache
+FROM plutonianbe/php54-apache:latest
+
+# Copy timeclock code into the web root
+COPY src/ /var/www/html/
+
+# Make sure Apache can write where necessary
+RUN chown -R www-data:www-data /var/www/html
+
+# Install Xdebug (compatible with PHP 5.4)
+RUN pecl install xdebug-2.4.1
+RUN mkdir -p /usr/local/etc/php/conf.d
+
+#RUN echo "zend_extension=$(find / -name xdebug.so)" >> /etc/php5/apache2/php.ini
+RUN echo "zend_extension=$(find / -name xdebug.so)" >> /usr/local/etc/php/conf.d/xdebug.ini
+RUN echo "xdebug.coverage_enable=1" >> /usr/local/etc/php/conf.d/xdebug.ini
+RUN echo "xdebug.remote_host=host.docker.internal" >> /usr/local/etc/php/conf.d/xdebug.ini
+
+COPY coverage-scripts/coverage.ini /etc/php5/apache2/conf.d/coverage.ini
+
+# Expose port
+EXPOSE 80
+
+# Default command = run Apache in foreground
+CMD ["apache2-foreground"]
