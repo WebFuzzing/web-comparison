@@ -5,9 +5,13 @@ services:
     build: .
     container_name: claroline-web
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
       - ./src:/var/www/html
+      # mount the shared scripts (read-only)
+      - ./coverage-scripts:/coverage-scripts:ro
+      # bind-mount output folder so coverage files appear on the host
+      - ./coverage:/var/www/coverage
     depends_on:
       - db
     networks:
@@ -22,6 +26,8 @@ services:
       MYSQL_USER: username
       MYSQL_PASSWORD: password
     command: --sql-mode=""
+    ports:
+      - "3307:3306"
 
     volumes:
       - dbdata:/var/lib/mysql
