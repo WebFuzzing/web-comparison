@@ -1,0 +1,49 @@
+services:
+  web:
+    build: .
+    container_name: mantisbt-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+      # mount the shared scripts (read-only)
+      - ./coverage-scripts:/coverage-scripts:ro
+      # bind-mount output folder so coverage files appear on the host
+      - ./coverage:/var/www/coverage
+    depends_on:
+      - db
+    networks:
+      - mantisbt-net
+
+  db:
+    image: mysql:5.5
+    container_name: mantisbt-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mantisbt
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    command: --sql-mode=""
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - mantisbt-net
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8090:80"          # Access via http://localhost:8090
+    environment:
+      PMA_HOST: db         # Name of your MySQL service
+      PMA_PORT: 3306
+    depends_on:
+      - db
+    networks:
+      - mantisbt-net
+volumes:
+  dbdata:
+
+networks:
+  mantisbt-net:
+    driver: bridge
