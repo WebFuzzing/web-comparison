@@ -1,6 +1,6 @@
 FROM plutonianbe/php54-apache:latest
 
-COPY src/ /var/www/html/
+COPY src /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 
 # Install Xdebug 2.4.1

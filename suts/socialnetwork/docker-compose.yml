@@ -3,7 +3,7 @@ services:
     build: .
     container_name: brotherhood-web
     ports:
-      - "8086:80"
+      - "8080:80"
     volumes:
       - ./src:/var/www/html
       # mount the shared scripts (read-only)
@@ -25,7 +25,7 @@ services:
       MYSQL_PASSWORD: password
     #command: --sql-mode=""
     ports:
-      - "3312:3306"
+      - "3306:3306"
     volumes:
       - dbdata:/var/lib/mysql
     networks:
