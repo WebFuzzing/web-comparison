@@ -5,7 +5,7 @@ FROM php:5.6-apache
 WORKDIR /var/www/html
 
 # Copy your PHP project files into the container
-COPY src/ /var/www/html/
+COPY src /var/www/html/
 
 # Enable common PHP extensions (adjust as needed)
 RUN docker-php-ext-install mysqli pdo pdo_mysql
@@ -19,6 +19,7 @@ RUN echo "xdebug.coverage_enable=1" >> /usr/local/etc/php/conf.d/xdebug.ini \
 COPY coverage.ini /usr/local/etc/php/conf.d/coverage.ini
 RUN mkdir -p /var/www/coverage
 RUN chmod 777 /var/www/coverage
+
 
 # Expose port 80 (HTTP)
 EXPOSE 80
