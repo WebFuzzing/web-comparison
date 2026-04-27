@@ -1,0 +1,13 @@
+{
+   "require": {
+     "smarty/smarty": "3.1.29" ,
+     "phpoffice/phpexcel" : "1.8.*",
+     "ensepar/tcpdf" : "~5.0",
+     "ezyang/htmlpurifier" : "4.7.*",
+     "phpmailer/phpmailer": "~5.2",
+     "pclzip/pclzip": "~2.8"
+
+   },
+  "minimum-stability": "stable"
+}
+

@@ -1,0 +1,423 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.4.4
+-- Dumped by pg_dump version 9.4.4
+-- Started on 2017-03-09 03:49:09
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 192 (class 3079 OID 11855)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2168 (class 0 OID 0)
+-- Dependencies: 192
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 172 (class 1259 OID 17188)
+-- Name: company; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE company (
+    "ID" integer NOT NULL,
+    company character varying(255) NOT NULL,
+    contact character varying(255) NOT NULL,
+    email character varying(255) NOT NULL,
+    phone character varying(64) NOT NULL,
+    mobile character varying(64) NOT NULL,
+    url character varying(255) NOT NULL,
+    address character varying(255) NOT NULL,
+    zip character varying(16) NOT NULL,
+    city character varying(255) NOT NULL,
+    country character varying(255) NOT NULL,
+    state character varying(255) NOT NULL,
+    "desc" text NOT NULL,
+    CONSTRAINT company_id_check CHECK (("ID" > 0))
+);
+
+
+ALTER TABLE company OWNER TO postgres;
+
+--
+-- TOC entry 173 (class 1259 OID 17195)
+-- Name: customers_assigned; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE customers_assigned (
+    "ID" integer NOT NULL,
+    customer integer NOT NULL,
+    project integer NOT NULL
+);
+
+
+ALTER TABLE customers_assigned OWNER TO postgres;
+
+--
+-- TOC entry 174 (class 1259 OID 17198)
+-- Name: files; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE files (
+    "ID" integer NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    "desc" character varying(255) DEFAULT ''::character varying NOT NULL,
+    project integer DEFAULT 0 NOT NULL,
+    milestone integer DEFAULT 0 NOT NULL,
+    "user" integer DEFAULT 0 NOT NULL,
+    added character varying(255) DEFAULT ''::character varying NOT NULL,
+    datei character varying(255) DEFAULT ''::character varying NOT NULL,
+    type character varying(255) DEFAULT ''::character varying NOT NULL,
+    title character varying(255) DEFAULT ''::character varying NOT NULL,
+    folder integer NOT NULL,
+    visible text NOT NULL
+);
+
+
+ALTER TABLE files OWNER TO postgres;
+
+--
+-- TOC entry 175 (class 1259 OID 17213)
+-- Name: files_attached; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE files_attached (
+    "ID" integer NOT NULL,
+    file integer DEFAULT 0 NOT NULL,
+    message integer DEFAULT 0 NOT NULL,
+    CONSTRAINT files_attached_file_check CHECK ((file > 0)),
+    CONSTRAINT files_attached_id_check CHECK (("ID" > 0)),
+    CONSTRAINT files_attached_message_check CHECK ((message > 0))
+);
+
+
+ALTER TABLE files_attached OWNER TO postgres;
+
+--
+-- TOC entry 176 (class 1259 OID 17221)
+-- Name: log; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE log (
+    "ID" integer NOT NULL,
+    "user" integer DEFAULT 0 NOT NULL,
+    username character varying(255) DEFAULT ''::character varying NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    type character varying(255) DEFAULT ''::character varying NOT NULL,
+    action integer DEFAULT 0 NOT NULL,
+    project integer DEFAULT 0 NOT NULL,
+    datum character varying(255) DEFAULT ''::character varying NOT NULL
+);
+
+
+ALTER TABLE log OWNER TO postgres;
+
+--
+-- TOC entry 177 (class 1259 OID 17234)
+-- Name: messages; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE messages (
+    "ID" integer NOT NULL,
+    project integer DEFAULT 0 NOT NULL,
+    title character varying(255) DEFAULT ''::character varying NOT NULL,
+    text text NOT NULL,
+    tags character varying(255) NOT NULL,
+    posted character varying(255) DEFAULT ''::character varying NOT NULL,
+    "user" integer DEFAULT 0 NOT NULL,
+    username character varying(255) DEFAULT ''::character varying NOT NULL,
+    replyto integer DEFAULT 0 NOT NULL,
+    milestone integer NOT NULL
+);
+
+
+ALTER TABLE messages OWNER TO postgres;
+
+--
+-- TOC entry 178 (class 1259 OID 17246)
+-- Name: messages_assigned; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE messages_assigned (
+    "ID" integer NOT NULL,
+    "user" integer NOT NULL,
+    message integer NOT NULL
+);
+
+
+ALTER TABLE messages_assigned OWNER TO postgres;
+
+--
+-- TOC entry 179 (class 1259 OID 17249)
+-- Name: milestones; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE milestones (
+    "ID" integer NOT NULL,
+    project integer DEFAULT 0 NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    "desc" text NOT NULL,
+    start character varying(255) DEFAULT ''::character varying NOT NULL,
+    "end" character varying(255) DEFAULT ''::character varying NOT NULL,
+    status smallint DEFAULT 0::smallint NOT NULL
+);
+
+
+ALTER TABLE milestones OWNER TO postgres;
+
+--
+-- TOC entry 180 (class 1259 OID 17260)
+-- Name: milestones_assigned; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE milestones_assigned (
+    "ID" integer NOT NULL,
+    "user" integer DEFAULT 0 NOT NULL,
+    milestone integer DEFAULT 0 NOT NULL
+);
+
+
+ALTER TABLE milestones_assigned OWNER TO postgres;
+
+--
+-- TOC entry 181 (class 1259 OID 17265)
+-- Name: projectfolders; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE projectfolders (
+    "ID" integer NOT NULL,
+    parent integer DEFAULT 0 NOT NULL,
+    project integer DEFAULT 0 NOT NULL,
+    name text NOT NULL,
+    description character varying(255) NOT NULL,
+    visible text NOT NULL,
+    CONSTRAINT projectfolders_id_check CHECK (("ID" > 0)),
+    CONSTRAINT projectfolders_parent_check CHECK ((parent > 0))
+);
+
+
+ALTER TABLE projectfolders OWNER TO postgres;
+
+--
+-- TOC entry 182 (class 1259 OID 17275)
+-- Name: projekte; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE projekte (
+    "ID" integer NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    "desc" text NOT NULL,
+    start character varying(255) DEFAULT ''::character varying NOT NULL,
+    "end" character varying(255) DEFAULT ''::character varying NOT NULL,
+    status smallint DEFAULT 0::smallint NOT NULL,
+    budget double precision DEFAULT 0::double precision NOT NULL
+);
+
+
+ALTER TABLE projekte OWNER TO postgres;
+
+--
+-- TOC entry 183 (class 1259 OID 17286)
+-- Name: projekte_assigned; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE projekte_assigned (
+    "ID" integer NOT NULL,
+    "user" integer DEFAULT 0 NOT NULL,
+    projekt integer DEFAULT 0 NOT NULL
+);
+
+
+ALTER TABLE projekte_assigned OWNER TO postgres;
+
+--
+-- TOC entry 184 (class 1259 OID 17291)
+-- Name: roles; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE roles (
+    "ID" integer NOT NULL,
+    name character varying(255) NOT NULL,
+    projects text NOT NULL,
+    tasks text NOT NULL,
+    milestones text NOT NULL,
+    messages text NOT NULL,
+    files text NOT NULL,
+    chat text NOT NULL,
+    timetracker text NOT NULL,
+    admin text NOT NULL
+);
+
+
+ALTER TABLE roles OWNER TO postgres;
+
+--
+-- TOC entry 185 (class 1259 OID 17297)
+-- Name: roles_assigned; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE roles_assigned (
+    "ID" integer NOT NULL,
+    "user" integer NOT NULL,
+    role integer NOT NULL
+);
+
+
+ALTER TABLE roles_assigned OWNER TO postgres;
+
+--
+-- TOC entry 186 (class 1259 OID 17300)
+-- Name: settings; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE settings (
+    "ID" integer NOT NULL,
+    settingskey character varying(50) NOT NULL,
+    settingsvalue character varying(50) NOT NULL
+);
+
+
+ALTER TABLE settings OWNER TO postgres;
+
+--
+-- TOC entry 187 (class 1259 OID 17303)
+-- Name: tasklist; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tasklist (
+    "ID" integer NOT NULL,
+    project integer DEFAULT 0 NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    "desc" text NOT NULL,
+    start character varying(255) DEFAULT ''::character varying NOT NULL,
+    status smallint DEFAULT 0::smallint NOT NULL,
+    access smallint DEFAULT 0::smallint NOT NULL,
+    milestone integer DEFAULT 0 NOT NULL
+);
+
+
+ALTER TABLE tasklist OWNER TO postgres;
+
+--
+-- TOC entry 188 (class 1259 OID 17315)
+-- Name: tasks; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tasks (
+    "ID" integer NOT NULL,
+    start character varying(255) DEFAULT ''::character varying NOT NULL,
+    "end" character varying(255) DEFAULT ''::character varying NOT NULL,
+    title character varying(255) DEFAULT ''::character varying NOT NULL,
+    text text NOT NULL,
+    liste integer DEFAULT 0 NOT NULL,
+    status smallint DEFAULT 0::smallint NOT NULL,
+    project integer DEFAULT 0 NOT NULL
+);
+
+
+ALTER TABLE tasks OWNER TO postgres;
+
+--
+-- TOC entry 189 (class 1259 OID 17327)
+-- Name: tasks_assigned; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tasks_assigned (
+    "ID" integer NOT NULL,
+    "user" integer DEFAULT 0 NOT NULL,
+    task integer DEFAULT 0 NOT NULL
+);
+
+
+ALTER TABLE tasks_assigned OWNER TO postgres;
+
+--
+-- TOC entry 190 (class 1259 OID 17332)
+-- Name: timetracker; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE timetracker (
+    "ID" integer NOT NULL,
+    "user" integer DEFAULT 0 NOT NULL,
+    project integer DEFAULT 0 NOT NULL,
+    task integer DEFAULT 0 NOT NULL,
+    comment text NOT NULL,
+    started character varying(255) DEFAULT ''::character varying NOT NULL,
+    ended character varying(255) DEFAULT ''::character varying NOT NULL,
+    hours double precision DEFAULT 0::double precision NOT NULL,
+    pstatus smallint DEFAULT 0::smallint NOT NULL
+);
+
+
+ALTER TABLE timetracker OWNER TO postgres;
+
+--
+-- TOC entry 191 (class 1259 OID 17345)
+-- Name: user; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE "user" (
+    "ID" integer NOT NULL,
+    name character varying(255) DEFAULT ''::character varying,
+    email character varying(255) DEFAULT ''::character varying,
+    tel1 character varying(255) DEFAULT NULL::character varying,
+    tel2 character varying(255) DEFAULT NULL::character varying,
+    pass character varying(255) DEFAULT ''::character varying,
+    company character varying(255) DEFAULT ''::character varying,
+    lastlogin character varying(255) DEFAULT ''::character varying,
+    zip character varying(10) DEFAULT NULL::character varying,
+    gender character(1) DEFAULT ''::bpchar,
+    url character varying(255) DEFAULT ''::character varying,
+    adress character varying(255) DEFAULT ''::character varying,
+    adress2 character varying(255) DEFAULT ''::character varying,
+    state character varying(255) DEFAULT ''::character varying,
+    country character varying(255) DEFAULT ''::character varying,
+    tags character varying(255) DEFAULT ''::character varying,
+    locale character varying(6) DEFAULT ''::character varying,
+    avatar character varying(255) DEFAULT ''::character varying,
+    rate character varying(10) DEFAULT NULL::character varying
+);
+
+
+ALTER TABLE "user" OWNER TO postgres;
+
+--
+-- TOC entry 2167 (class 0 OID 0)
+-- Dependencies: 5
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2017-03-09 03:49:09
+
+--
+-- PostgreSQL database dump complete
+--
+
