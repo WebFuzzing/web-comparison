@@ -1,7 +1,7 @@
 /.idea/
 */target/
 
- .directory
+ **/.directory
  
 /tools/apogen-master/apogen-master/.idea/
 /tools/apogen-master/apogen-master/.settings/
