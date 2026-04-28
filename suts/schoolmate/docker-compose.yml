@@ -1,10 +1,8 @@
-version: "3.9"
-
 services:
   web:
     build: .
     ports:
-      - "8085:80"
+      - "8080:80"
     volumes:
       - ./src:/var/www/html
       # mount the shared scripts (read-only)
@@ -23,7 +21,7 @@ services:
       MYSQL_PASSWORD: password
     command: --sql-mode=""
     ports:
-      - "3311:3306"
+      - "3306:3306"
     volumes:
       - dbdata:/var/lib/mysql
 
