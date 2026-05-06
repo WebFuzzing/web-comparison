@@ -24,63 +24,69 @@ SUTS = [
 # project structure:
 #
 #   <project_root>/
-#       run_apogen.py
+#       run_cytestion.py
 #       suts/
 #           addressbook/
 #               docker-compose.yml
 #           claroline/
 #           ...
 #       tools/
-#           apogen/
-#               target/
-#                   apogen-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+#           cytestion/       ← Node.js project with package.json
 
-BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
-SUTS_DIR   = os.path.join(BASE_DIR, "suts")
-APOGEN_JAR = os.path.join(
-    BASE_DIR, "tools", "apogen", "target",
-    "apogen-0.0.1-SNAPSHOT-jar-with-dependencies.jar",
-)
+BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
+SUTS_DIR      = os.path.join(BASE_DIR, "suts")
+CYTESTION_DIR = os.path.join(BASE_DIR, "tools", "cytestion")
 
-# Seconds to wait after `docker compose up -d` before running apogen.
+# Seconds to wait after `docker compose up -d` before running cytestion.
 # Increase if your containers need more startup time.
 DOCKER_STARTUP_WAIT = 15
 
 # ─────────────────────────────────────────────
-#  Java / JDK Configuration (Windows)
+#  Node.js / Yarn Configuration
 # ─────────────────────────────────────────────
 
-JAVA_HOME = r"C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot"
+# Set this if yarn/node is not on the system PATH, e.g.:
+# NODE_HOME = r"C:\Program Files\nodejs"
+# Otherwise leave as None to use the system PATH.
+NODE_HOME = None
 
 
-def setup_java_env():
+def setup_node_env():
     """
-    Equivalent to running in PowerShell:
-        $env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\"
-        $env:Path      = "$env:JAVA_HOME\bin;$env:Path"
+    Prepends NODE_HOME/bin to PATH if NODE_HOME is set,
+    then verifies node and yarn are accessible.
     """
-    java_bin = os.path.join(JAVA_HOME, "bin")
+    if NODE_HOME:
+        node_bin = os.path.join(NODE_HOME, "bin") if os.name != "nt" else NODE_HOME
+        os.environ["PATH"] = node_bin + os.pathsep + os.environ.get("PATH", "")
+        log(f"NODE_HOME : {NODE_HOME}")
+        log(f"Node bin  : {node_bin}")
 
-    os.environ["JAVA_HOME"] = JAVA_HOME
-    os.environ["PATH"]      = java_bin + os.pathsep + os.environ.get("PATH", "")
-
-    log(f"JAVA_HOME : {os.environ['JAVA_HOME']}")
-    log(f"Java bin  : {java_bin}")
-    log(f"java -version check ...")
-
-    # Quick sanity-check — prints the JDK version to confirm it works
+    log("node --version check ...")
     result = subprocess.run(
-        ["java", "-version"],
-        shell=True,
+        ["node", "--version"],
+        shell=(os.name == "nt"),
         capture_output=True,
         text=True,
     )
-    # java -version prints to stderr by convention
-    version_output = result.stderr.strip() or result.stdout.strip()
+    version_output = result.stdout.strip() or result.stderr.strip()
     if version_output:
-        log(f"  {version_output}")
+        log(f"  node {version_output}")
     if result.returncode != 0:
-        log("[WARNING] 'java -version' failed — check JAVA_HOME path.")
+        log("[WARNING] 'node --version' failed — check NODE_HOME path.")
+
+    log("yarn --version check ...")
+    result = subprocess.run(
+        ["yarn", "--version"],
+        shell=(os.name == "nt"),
+        capture_output=True,
+        text=True,
+    )
+    version_output = result.stdout.strip() or result.stderr.strip()
+    if version_output:
+        log(f"  yarn {version_output}")
+    if result.returncode != 0:
+        log("[WARNING] 'yarn --version' failed — is Yarn installed?")
 
 
 # ─────────────────────────────────────────────
@@ -99,7 +105,7 @@ def separator(title: str = ""):
         print(line)
 
 
-def run_command(cmd: list, cwd: str) -> int:
+def run_command(cmd: list, cwd: str, env: dict = None) -> int:
     """
     Run a command in the given working directory, streaming
     stdout + stderr live to the console. Returns the exit code.
@@ -110,7 +116,8 @@ def run_command(cmd: list, cwd: str) -> int:
     process = subprocess.Popen(
         cmd,
         cwd=cwd,
-        shell=True,                # Required on Windows to resolve PATH
+        shell=(os.name == "nt"),   # Required on Windows to resolve PATH
+        env=env or os.environ.copy(),
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,  # Merge stderr into stdout
         text=True,
@@ -119,7 +126,6 @@ def run_command(cmd: list, cwd: str) -> int:
 
     for line in process.stdout:
         log(line.rstrip(), indent=2)
-
     process.wait()
     return process.returncode
 
@@ -147,24 +153,43 @@ def docker_compose_down(sut_dir: str, sut: str):
         log(f"[WARNING] docker compose down had issues (exit code {code})", indent=1)
 
 
-def run_apogen(sut: str) -> bool:
+def run_cytestion(sut: str) -> bool:
     """
-    Run apogen against the SUT. BLOCKS until the process exits.
+    Run Cytestion against the SUT via:
+        yarn generate-test:prod
+
+    The target URL is passed as an environment variable SUT_URL,
+    which Cytestion should read from process.env.SUT_URL in its config.
+    Adjust the variable name below if your Cytestion config uses a different key.
     """
-    log(f"Running Apogen for: {sut}", indent=1)
+    log(f"Running Cytestion for: {sut}", indent=1)
 
-    if not os.path.exists(APOGEN_JAR):
-        log(f"[WARNING] JAR not found at: {APOGEN_JAR}", indent=1)
+    if not os.path.isdir(CYTESTION_DIR):
+        log(f"[ERROR] Cytestion directory not found at: {CYTESTION_DIR}", indent=1)
+        return False
 
-    #   ["java", "-jar", APOGEN_JAR, "--sut", sut]
-    # ─────────────────────────────────────────────────────────────
-    code = run_command(["java", "-jar", APOGEN_JAR, sut], cwd=BASE_DIR)
+    url = "http://127.0.0.1:8080/parabank" if sut == "parabank" else "http://127.0.0.1:8080/"
+    log(f"Target URL : {url}", indent=1)
+
+    # Build the child environment: inherit everything, then add/override SUT vars.
+    env = os.environ.copy()
+    env["SUT_URL"]  = url          # Primary URL variable consumed by Cytestion
+    env["SUT_NAME"] = sut          # Optional: lets Cytestion name output files per SUT
+    env["SUT_OUTPUT"] = os.path.join(BASE_DIR, f"outputfolder{sut.upper()}")
+
+    log(f"Output folder: {env['SUT_OUTPUT']}", indent=1)
+
+    code = run_command(
+        ["yarn", "generate-test:prod"],
+        cwd=CYTESTION_DIR,
+        env=env,
+    )
 
     if code == 0:
-        log(f"[SUCCESS] Apogen finished for: {sut}", indent=1)
+        log(f"[SUCCESS] Cytestion finished for: {sut}", indent=1)
         return True
 
-    log(f"[FAILED] Apogen failed for: {sut} (exit code {code})", indent=1)
+    log(f"[FAILED] Cytestion failed for: {sut} (exit code {code})", indent=1)
     return False
 
 
@@ -173,17 +198,17 @@ def run_apogen(sut: str) -> bool:
 # ─────────────────────────────────────────────
 
 def main():
-    separator("APOGEN BATCH RUNNER")
+    separator("Cytestion BATCH RUNNER")
 
-    # ── Set JAVA_HOME + PATH before anything else ─────────────────
-    separator("JAVA ENVIRONMENT SETUP")
-    setup_java_env()
+    # ── Set up Node / Yarn environment ────────────────────────────
+    separator("NODE / YARN ENVIRONMENT SETUP")
+    setup_node_env()
     separator()
 
-    log(f"Base dir   : {BASE_DIR}")
-    log(f"SUTs dir   : {SUTS_DIR}")
-    log(f"Apogen JAR : {APOGEN_JAR}")
-    log(f"Total SUTs : {len(SUTS)}")
+    log(f"Base dir       : {BASE_DIR}")
+    log(f"SUTs dir       : {SUTS_DIR}")
+    log(f"Cytestion dir  : {CYTESTION_DIR}")
+    log(f"Total SUTs     : {len(SUTS)}")
     separator()
 
     # ── Sanity checks ─────────────────────────────────────────────
@@ -192,9 +217,9 @@ def main():
         log("Place this script at the project root, next to suts/ and tools/.")
         sys.exit(1)
 
-    if not os.path.exists(APOGEN_JAR):
-        log(f"[WARNING] Apogen JAR not found at: {APOGEN_JAR}")
-        log("Continuing — make sure the JAR is built before this script runs.")
+    if not os.path.isdir(CYTESTION_DIR):
+        log(f"[WARNING] Cytestion directory not found at: {CYTESTION_DIR}")
+        log("Continuing — make sure the tool is present before this script runs.")
 
     results = {}
 
@@ -214,14 +239,14 @@ def main():
             results[sut] = "FAILED   (docker compose up)"
             continue
 
-        # 3. Run Apogen — blocks until done
-        apogen_ok = run_apogen(sut)
+        # 3. Run Cytestion — blocks until done
+        cytestion_ok = run_cytestion(sut)
 
         # 4. Stop Docker
         docker_compose_down(sut_dir, sut)
 
         # 5. Record result
-        results[sut] = "SUCCESS" if apogen_ok else "FAILED   (apogen)"
+        results[sut] = "SUCCESS" if cytestion_ok else "FAILED   (cytestion)"
 
     # ── Final summary ─────────────────────────────────────────────
     separator("SUMMARY")
