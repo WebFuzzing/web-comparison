@@ -1,7 +1,10 @@
+#!/usr/bin/env python3
+#script for cytestion has to be Linux-compatible since the tool can run only on linux-based systems.
 import subprocess
 import os
 import sys
 import time
+import shutil
 
 # ─────────────────────────────────────────────
 #  Configuration
@@ -42,12 +45,12 @@ CYTESTION_DIR = os.path.join(BASE_DIR, "tools", "cytestion")
 DOCKER_STARTUP_WAIT = 15
 
 # ─────────────────────────────────────────────
-#  Node.js / Yarn Configuration
+#  Node.js / Yarn Configuration (Linux)
 # ─────────────────────────────────────────────
 
-# Set this if yarn/node is not on the system PATH, e.g.:
-# NODE_HOME = r"C:\Program Files\nodejs"
-# Otherwise leave as None to use the system PATH.
+# Set this only if node/yarn lives outside your PATH, e.g. a manual install:
+#   NODE_HOME = "/home/user/.nvm/versions/node/v20.0.0"
+# For nvm, volta, or system installs that set PATH correctly, leave as None.
 NODE_HOME = None
 
 
@@ -57,36 +60,23 @@ def setup_node_env():
     then verifies node and yarn are accessible.
     """
     if NODE_HOME:
-        node_bin = os.path.join(NODE_HOME, "bin") if os.name != "nt" else NODE_HOME
+        node_bin = os.path.join(NODE_HOME, "bin")
         os.environ["PATH"] = node_bin + os.pathsep + os.environ.get("PATH", "")
         log(f"NODE_HOME : {NODE_HOME}")
         log(f"Node bin  : {node_bin}")
 
-    log("node --version check ...")
-    result = subprocess.run(
-        ["node", "--version"],
-        shell=(os.name == "nt"),
-        capture_output=True,
-        text=True,
-    )
-    version_output = result.stdout.strip() or result.stderr.strip()
-    if version_output:
-        log(f"  node {version_output}")
-    if result.returncode != 0:
-        log("[WARNING] 'node --version' failed — check NODE_HOME path.")
-
-    log("yarn --version check ...")
-    result = subprocess.run(
-        ["yarn", "--version"],
-        shell=(os.name == "nt"),
-        capture_output=True,
-        text=True,
-    )
-    version_output = result.stdout.strip() or result.stderr.strip()
-    if version_output:
-        log(f"  yarn {version_output}")
-    if result.returncode != 0:
-        log("[WARNING] 'yarn --version' failed — is Yarn installed?")
+    for tool in ("node", "yarn"):
+        log(f"{tool} --version check ...")
+        result = subprocess.run(
+            [tool, "--version"],
+            capture_output=True,
+            text=True,
+        )
+        version_output = result.stdout.strip() or result.stderr.strip()
+        if version_output:
+            log(f"  {tool} {version_output}")
+        if result.returncode != 0:
+            log(f"[WARNING] '{tool} --version' failed — is {tool} installed and on PATH?")
 
 
 # ─────────────────────────────────────────────
@@ -116,7 +106,7 @@ def run_command(cmd: list, cwd: str, env: dict = None) -> int:
     process = subprocess.Popen(
         cmd,
         cwd=cwd,
-        shell=(os.name == "nt"),   # Required on Windows to resolve PATH
+        shell=False,               # Never needed on Linux
         env=env or os.environ.copy(),
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,  # Merge stderr into stdout
@@ -158,9 +148,9 @@ def run_cytestion(sut: str) -> bool:
     Run Cytestion against the SUT via:
         yarn generate-test:prod
 
-    The target URL is passed as an environment variable SUT_URL,
-    which Cytestion should read from process.env.SUT_URL in its config.
-    Adjust the variable name below if your Cytestion config uses a different key.
+    The target URL is passed as environment variable SUT_URL,
+    which Cytestion reads from process.env.SUT_URL in its config.
+    Adjust the variable name if your Cytestion config uses a different key.
     """
     log(f"Running Cytestion for: {sut}", indent=1)
 
@@ -168,19 +158,24 @@ def run_cytestion(sut: str) -> bool:
         log(f"[ERROR] Cytestion directory not found at: {CYTESTION_DIR}", indent=1)
         return False
 
+    yarn_bin = shutil.which("yarn")
+    if not yarn_bin:
+        log("[ERROR] 'yarn' executable not found on PATH.", indent=1)
+        return False
+
     url = "http://127.0.0.1:8080/parabank" if sut == "parabank" else "http://127.0.0.1:8080/"
     log(f"Target URL : {url}", indent=1)
 
     # Build the child environment: inherit everything, then add/override SUT vars.
     env = os.environ.copy()
-    env["SUT_URL"]  = url          # Primary URL variable consumed by Cytestion
-    env["SUT_NAME"] = sut          # Optional: lets Cytestion name output files per SUT
+    env["SUT_URL"]    = url
+    env["SUT_NAME"]   = sut
     env["SUT_OUTPUT"] = os.path.join(BASE_DIR, f"outputfolder{sut.upper()}")
 
     log(f"Output folder: {env['SUT_OUTPUT']}", indent=1)
 
     code = run_command(
-        ["yarn", "generate-test:prod"],
+        [yarn_bin, "generate-test:prod"],
         cwd=CYTESTION_DIR,
         env=env,
     )
