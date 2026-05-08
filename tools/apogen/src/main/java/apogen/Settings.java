@@ -22,7 +22,7 @@ public class Settings {
 
 	// Apogen Settings
 	public static boolean CRAWLING = true;
-	public static boolean CLUSTERING = true;
+	public static boolean CLUSTERING = false;
 	public static boolean REPEAT_STATIC_ANALYSIS = true;
 	public static boolean GENERATE_CODE = true;
 	public static boolean USE_INPUT_SPECIFICATION = false;

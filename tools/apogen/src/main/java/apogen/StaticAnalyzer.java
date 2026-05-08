@@ -66,15 +66,15 @@ public class StaticAnalyzer {
 		statesList = new LinkedList<State>();
 
 		// default icon, custom title
-		int n = JOptionPane.showConfirmDialog(null, "Would you like to run clustering over the model?\n", "Clustering",
-				JOptionPane.YES_NO_OPTION);
+//		int n = JOptionPane.showConfirmDialog(null, "Would you like to run clustering over the model?\n", "Clustering",
+//				JOptionPane.YES_NO_OPTION);
 
-		if (n == JOptionPane.YES_OPTION) {
-			Settings.CLUSTERING = true;
-			calculateClusters();
-		} else {
-			Settings.CLUSTERING = false;
-		}
+//		if (n == JOptionPane.YES_OPTION) {
+//			Settings.CLUSTERING = true;
+//			calculateClusters();
+//		} else {
+//			Settings.CLUSTERING = false;
+//		}
 	}
 
 	/**
