@@ -1,80 +1,89 @@
+#!/usr/bin/env python3
 import subprocess
 import os
 import sys
 import time
+import shutil
 
 # ─────────────────────────────────────────────
 #  Configuration
 # ─────────────────────────────────────────────
 
-SUTS = [
+PHP_SUTS = [
     "addressbook",
     "claroline",
     "collabtive",
     "mantisbt",
     "mrbs",
-    "parabank",
-    "petclinic",
-    "petstore",
     "schoolmate",
     "socialnetwork",
     "timeclock",
 ]
 
+JAVA_SUTS = [
+    "parabank",
+    "petclinic",
+    "petstore",
+]
+
+SUTS = PHP_SUTS + JAVA_SUTS
+TOOL = "CRAWLJAX"
+
 # project structure:
 #
-#   <project_root>/
-#       run_apogen.py
+#   <project_root>/                        ← BASE_DIR
+#       run_crawljax.py
 #       suts/
 #           addressbook/
 #               docker-compose.yml
-#           claroline/
-#           ...
+#               coverage/                  ← PHP: report.csv lives here
+#           parabank/
+#               docker-compose.yml
+#               target/classes/            ← Java: compiled .class files
+#               src/main/java/             ← Java: source files
+#           jacococli.jar                  ← JaCoCo CLI jar
 #       tools/
 #           crawljax/
 #               cli/
 #                   target/
-#                        crawljax-cli-5.2.3.jar 
+#                       crawljax-cli-5.2.3.jar
 
-BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
-SUTS_DIR   = os.path.join(BASE_DIR, "suts")
+BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
+SUTS_DIR     = os.path.join(BASE_DIR, "suts")
 CRAWLJAX_JAR = os.path.join(
-    BASE_DIR, "tools", "crawljax", "cli", "target","crawljax-cli-5.2.3.jar",)
+    BASE_DIR, "tools", "crawljax", "cli", "target", "crawljax-cli-5.2.3.jar",
+)
+JACOCO_CLI  = os.path.join(SUTS_DIR, "jacococli.jar")  # BASE_DIR/suts/jacococli.jar
+JACOCO_PORT = 6300
 
-# Seconds to wait after `docker compose up -d` before running apogen.
+# Seconds to wait after `docker compose up -d` before running crawljax.
 # Increase if your containers need more startup time.
 DOCKER_STARTUP_WAIT = 15
 
 # ─────────────────────────────────────────────
-#  Java / JDK Configuration (Windows)
+#  Java / JDK Configuration (Linux)
 # ─────────────────────────────────────────────
 
-JAVA_HOME = r"C:\Program Files\Eclipse Adoptium\jdk-11.0.28.6-hotspot"
+# Set only if java is not already on your PATH, e.g.:
+# JAVA_HOME = "/usr/lib/jvm/java-11-openjdk-amd64"
+# Otherwise leave as None.
+JAVA_HOME = None
 
 
 def setup_java_env():
-    """
-    Equivalent to running in PowerShell:
-        $env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-11.0.28.6-hotspot"
-        $env:Path      = "$env:JAVA_HOME\bin;$env:Path"
-    """
-    java_bin = os.path.join(JAVA_HOME, "bin")
+    if JAVA_HOME:
+        java_bin = os.path.join(JAVA_HOME, "bin")
+        os.environ["JAVA_HOME"] = JAVA_HOME
+        os.environ["PATH"]      = java_bin + os.pathsep + os.environ.get("PATH", "")
+        log(f"JAVA_HOME : {JAVA_HOME}")
+        log(f"Java bin  : {java_bin}")
 
-    os.environ["JAVA_HOME"] = JAVA_HOME
-    os.environ["PATH"]      = java_bin + os.pathsep + os.environ.get("PATH", "")
-
-    log(f"JAVA_HOME : {os.environ['JAVA_HOME']}")
-    log(f"Java bin  : {java_bin}")
-    log(f"java -version check ...")
-
-    # Quick sanity-check — prints the JDK version to confirm it works
+    log("java -version check ...")
     result = subprocess.run(
         ["java", "-version"],
-        shell=True,
         capture_output=True,
         text=True,
     )
-    # java -version prints to stderr by convention
     version_output = result.stderr.strip() or result.stdout.strip()
     if version_output:
         log(f"  {version_output}")
@@ -98,7 +107,7 @@ def separator(title: str = ""):
         print(line)
 
 
-def run_command(cmd: list, cwd: str) -> int:
+def run_command(cmd: list, cwd: str, env: dict = None) -> int:
     """
     Run a command in the given working directory, streaming
     stdout + stderr live to the console. Returns the exit code.
@@ -109,9 +118,10 @@ def run_command(cmd: list, cwd: str) -> int:
     process = subprocess.Popen(
         cmd,
         cwd=cwd,
-        shell=True,                # Required on Windows to resolve PATH
+        shell=False,
+        env=env or os.environ.copy(),
         stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,  # Merge stderr into stdout
+        stderr=subprocess.STDOUT,
         text=True,
         bufsize=1,
     )
@@ -123,22 +133,17 @@ def run_command(cmd: list, cwd: str) -> int:
 
 
 def docker_compose_up(sut_dir: str, sut: str) -> bool:
-    """docker compose up --build -d  then wait for services."""
     log(f"Starting Docker container for: {sut}", indent=1)
-
     code = run_command(["docker", "compose", "up", "--build", "-d"], cwd=sut_dir)
-
     if code != 0:
         log(f"[FAILED] docker compose up failed (exit code {code})", indent=1)
         return False
-
     log(f"Containers started. Waiting {DOCKER_STARTUP_WAIT}s for services to be ready...", indent=1)
     time.sleep(DOCKER_STARTUP_WAIT)
     return True
 
 
 def docker_compose_down(sut_dir: str, sut: str):
-    """docker compose down --remove-orphans"""
     log(f"Stopping Docker container for: {sut}", indent=1)
     code = run_command(["docker", "compose", "down", "--remove-orphans"], cwd=sut_dir)
     if code != 0:
@@ -147,19 +152,24 @@ def docker_compose_down(sut_dir: str, sut: str):
 
 def run_crawljax(sut: str) -> bool:
     """
-    Run crawljax against the SUT. BLOCKS until the process exits.
+    Run Crawljax against the SUT. BLOCKS until the process exits.
+        java -jar crawljax-cli-5.2.3.jar <url> <output_folder>
     """
     log(f"Running Crawljax for: {sut}", indent=1)
 
     if not os.path.exists(CRAWLJAX_JAR):
         log(f"[WARNING] JAR not found at: {CRAWLJAX_JAR}", indent=1)
 
-    url = "http://127.0.0.1:8080/parabank" if sut == "parabank" else "http://127.0.0.1:8080/"
-    
-    output_folder = f"./outputfolder{sut.upper()}"  # e.g. ./outputfolderPARABANK
-    log(f"Output folder: {output_folder}", indent=1)
+    url           = "http://127.0.0.1:8080/parabank" if sut == "parabank" else "http://127.0.0.1:8080/"
+    output_folder = os.path.join(BASE_DIR, f"outputfolder{sut.upper()}")
 
-    code = run_command(["java", "-jar", CRAWLJAX_JAR, url, output_folder], cwd=BASE_DIR)
+    log(f"URL           : {url}", indent=1)
+    log(f"Output folder : {output_folder}", indent=1)
+
+    code = run_command(
+        ["java", "-jar", CRAWLJAX_JAR, url, output_folder],
+        cwd=BASE_DIR,
+    )
 
     if code == 0:
         log(f"[SUCCESS] Crawljax finished for: {sut}", indent=1)
@@ -170,24 +180,144 @@ def run_crawljax(sut: str) -> bool:
 
 
 # ─────────────────────────────────────────────
+#  Coverage helpers
+# ─────────────────────────────────────────────
+
+def empty_directory(path: str):
+    """Remove all contents of a directory without deleting the directory itself."""
+    if not os.path.isdir(path):
+        log(f"[WARNING] Dir not found, skipping cleanup: {path}", indent=2)
+        return
+    for entry in os.listdir(path):
+        entry_path = os.path.join(path, entry)
+        if os.path.isfile(entry_path) or os.path.islink(entry_path):
+            os.remove(entry_path)
+        elif os.path.isdir(entry_path):
+            shutil.rmtree(entry_path)
+    log(f"Emptied directory: {path}", indent=2)
+
+
+def collect_php_report(sut: str) -> bool:
+    """
+    Copy  suts/<sut>/coverage/report.csv  →  <BASE_DIR>/report<SUT>CRAWLJAX.csv
+    then empty the coverage directory.
+    """
+    coverage_dir = os.path.join(SUTS_DIR, sut, "coverage")
+    src          = os.path.join(coverage_dir, "report.csv")
+    dest_name    = f"report_{sut.upper()}_{TOOL}.csv"
+    dest         = os.path.join(BASE_DIR, dest_name)
+
+    log(f"Collecting PHP coverage report for: {sut}", indent=1)
+
+    if not os.path.isfile(src):
+        log(f"[WARNING] report.csv not found at: {src}", indent=2)
+        return False
+
+    shutil.copy2(src, dest)
+    log(f"Copied  : {src}", indent=2)
+    log(f"      → : {dest}", indent=2)
+
+    empty_directory(coverage_dir)
+    return True
+
+
+def collect_java_report(sut: str) -> bool:
+    """
+    1. Dump coverage from the running JaCoCo agent:
+           java -jar jacococli.jar dump --address localhost --port 6300
+                --destfile suts/<sut>/jacoco.exec
+
+    2. Generate CSV report:
+           java -jar jacococli.jar report suts/<sut>/jacoco.exec
+                --classfiles  suts/<sut>/target/classes
+                --sourcefiles suts/<sut>/src/main/java
+                --csv         <BASE_DIR>/report<SUT>CRAWLJAX.csv
+
+    3. Delete the jacoco.exec file.
+    """
+    sut_dir     = os.path.join(SUTS_DIR, sut)
+    exec_file   = os.path.join(sut_dir, "jacoco.exec")
+    classes_dir = os.path.join(sut_dir, "target", "classes")
+    sources_dir = os.path.join(sut_dir, "src", "main", "java")
+    dest_name   = f"report_{sut.upper()}_{TOOL}.csv"
+    dest        = os.path.join(BASE_DIR, dest_name)
+
+    log(f"Collecting JaCoCo coverage for: {sut}", indent=1)
+
+    if not os.path.isfile(JACOCO_CLI):
+        log(f"[ERROR] jacococli.jar not found at: {JACOCO_CLI}", indent=2)
+        return False
+
+    # ── Step 1: dump ──────────────────────────────────────────────
+    log(f"Dumping coverage from localhost:{JACOCO_PORT} ...", indent=2)
+    code = run_command(
+        [
+            "java", "-jar", JACOCO_CLI,
+            "dump",
+            "--address",  "localhost",
+            "--port",     str(JACOCO_PORT),
+            "--destfile", exec_file,
+        ],
+        cwd=SUTS_DIR,
+    )
+    if code != 0:
+        log(f"[FAILED] JaCoCo dump failed (exit code {code})", indent=2)
+        return False
+    log(f"Exec file written to: {exec_file}", indent=2)
+
+    # ── Step 2: report ────────────────────────────────────────────
+    log(f"Generating CSV report → {dest}", indent=2)
+
+    if not os.path.isdir(classes_dir):
+        log(f"[WARNING] classes dir not found at: {classes_dir}", indent=2)
+
+    if not os.path.isdir(sources_dir):
+        log(f"[WARNING] sources dir not found at: {sources_dir}", indent=2)
+
+    code = run_command(
+        [
+            "java", "-jar", JACOCO_CLI,
+            "report", exec_file,
+            "--classfiles",  classes_dir,
+            "--sourcefiles", sources_dir,
+            "--csv",         dest,
+        ],
+        cwd=SUTS_DIR,
+    )
+    if code != 0:
+        log(f"[FAILED] JaCoCo report generation failed (exit code {code})", indent=2)
+        return False
+
+    log(f"Report saved to: {dest}", indent=2)
+
+    # ── Step 3: clean up exec file ────────────────────────────────
+    if os.path.isfile(exec_file):
+        os.remove(exec_file)
+        log(f"Removed exec file: {exec_file}", indent=2)
+
+    return True
+
+
+# ─────────────────────────────────────────────
 #  Main
 # ─────────────────────────────────────────────
 
 def main():
-    separator("Crawljax BATCH RUNNER")
+    separator("CRAWLJAX BATCH RUNNER")
 
-    # ── Set JAVA_HOME + PATH before anything else ─────────────────
     separator("JAVA ENVIRONMENT SETUP")
     setup_java_env()
     separator()
 
-    log(f"Base dir     : {BASE_DIR}")
-    log(f"SUTs dir     : {SUTS_DIR}")
-    log(f"Crawljax JAR : {CRAWLJAX_JAR}")
-    log(f"Total SUTs   : {len(SUTS)}")
+    log(f"Base dir      : {BASE_DIR}")
+    log(f"SUTs dir      : {SUTS_DIR}")
+    log(f"Crawljax JAR  : {CRAWLJAX_JAR}")
+    log(f"JaCoCo CLI    : {JACOCO_CLI}")
+    log(f"PHP SUTs      : {len(PHP_SUTS)}")
+    log(f"Java SUTs     : {len(JAVA_SUTS)}")
+    log(f"Total SUTs    : {len(SUTS)}")
     separator()
 
-    # ── Sanity checks ─────────────────────────────────────────────
     if not os.path.isdir(SUTS_DIR):
         log(f"[ERROR] 'suts/' folder not found at: {SUTS_DIR}")
         log("Place this script at the project root, next to suts/ and tools/.")
@@ -197,10 +327,16 @@ def main():
         log(f"[WARNING] Crawljax JAR not found at: {CRAWLJAX_JAR}")
         log("Continuing — make sure the JAR is built before this script runs.")
 
+    if not os.path.isfile(JACOCO_CLI):
+        log(f"[WARNING] jacococli.jar not found at: {JACOCO_CLI}")
+        log("Java SUT report collection will fail without it.")
+
     results = {}
 
     for index, sut in enumerate(SUTS, start=1):
-        separator(f"[{index}/{len(SUTS)}]  SUT: {sut.upper()}")
+        is_java  = sut in JAVA_SUTS
+        sut_type = "JAVA" if is_java else "PHP"
+        separator(f"[{index}/{len(SUTS)}]  SUT: {sut.upper()}  ({sut_type})")
 
         sut_dir = os.path.join(SUTS_DIR, sut)
 
@@ -215,20 +351,33 @@ def main():
             results[sut] = "FAILED   (docker compose up)"
             continue
 
-        # 3. Run Ceawljax — blocks until done
+        # 3. Run Crawljax — blocks until done
         crawljax_ok = run_crawljax(sut)
 
-        # 4. Stop Docker
-        docker_compose_down(sut_dir, sut)
+        # 4. Collect coverage report
+        if crawljax_ok:
+            if is_java:
+                report_ok = collect_java_report(sut)
+            else:
+                report_ok = collect_php_report(sut)
 
-        # 5. Record result
-        results[sut] = "SUCCESS" if crawljax_ok else "FAILED   (crawljax)"
+            if not report_ok:
+                log(f"[WARNING] Crawljax succeeded but report collection failed for: {sut}", indent=1)
+                results[sut] = "SUCCESS  (report collection failed)"
+            else:
+                results[sut] = "SUCCESS"
+        else:
+            results[sut] = "FAILED   (crawljax)"
+
+        # 5. Stop Docker
+        docker_compose_down(sut_dir, sut)
 
     # ── Final summary ─────────────────────────────────────────────
     separator("SUMMARY")
     for sut, status in results.items():
         icon = "v" if status == "SUCCESS" else "x"
-        print(f"  [{icon}]  {sut:<20}  {status}")
+        sut_type = "JAVA" if sut in JAVA_SUTS else "PHP "
+        print(f"  [{icon}]  [{sut_type}]  {sut:<20}  {status}")
 
     total   = len(results)
     success = sum(1 for s in results.values() if s == "SUCCESS")
