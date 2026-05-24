@@ -1,16 +1,35 @@
-version: "3.9"
-
 services:
+  mitmproxy:
+    image: mitmproxy/mitmproxy:10.2.4
+    user: "0:0"
+    environment:
+      MITM_LOG_DIR: /custom-logs
+      MITM_LOG_FILE: ${MITM_LOG_FILE:-mitm.csv}
+    command: >
+      mitmdump
+        --mode reverse:http://web:80
+        --listen-host 0.0.0.0
+        --listen-port 8080
+        --set keep_host_header=true
+        -s /addons/minlog.py
+    volumes:
+      - ${HOST_LOG_DIR:-./mitm-logs}:/custom-logs
+      - ../minlog.py:/addons/minlog.py:ro    # ← up one level, mount file directly
+    ports:
+      - "${HOST_PORT:-8080}:8080"
+    depends_on:
+      - web
+    networks:
+      - addressbook-net
+
   web:
     build: .
     container_name: addressbook-web
-    ports:
-      - "8080:80"
+    expose:
+      - "80"
     volumes:
       - ./src:/var/www/html
-      # mount the shared scripts (read-only)
       - ./coverage-scripts:/coverage-scripts:ro
-      # bind-mount output folder so coverage files appear on the host
       - ./coverage:/var/www/coverage
     depends_on:
       - db
