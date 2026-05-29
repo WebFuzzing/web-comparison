@@ -12,18 +12,18 @@ import shutil
 PHP_SUTS = [
     "addressbook",
     "claroline",
-    "collabtive",
-    "mantisbt",
-    "mrbs",
-    "schoolmate",
-    "socialnetwork",
-    "timeclock",
+    #"collabtive",
+    #"mantisbt",
+    #"mrbs",
+    #"schoolmate",
+    #"socialnetwork",
+    #"timeclock",
 ]
 
 JAVA_SUTS = [
-    "parabank",
-    "petclinic",
-    "petstore",
+    #"parabank",
+    #"petclinic",
+    #"petstore",
 ]
 
 SUTS = PHP_SUTS + JAVA_SUTS
@@ -134,20 +134,43 @@ def run_command(cmd: list, cwd: str, env: dict = None) -> int:
 
 def docker_compose_up(sut_dir: str, sut: str) -> bool:
     log(f"Starting Docker container for: {sut}", indent=1)
-    code = run_command(["docker", "compose", "up", "--build", "-d"], cwd=sut_dir)
+    code = run_command(["docker", "compose", "up", "--build", "-d","--force-recreate"], cwd=sut_dir)
     if code != 0:
         log(f"[FAILED] docker compose up failed (exit code {code})", indent=1)
-        return False
+        
+    time.sleep(15)
+    "start proxy explicitly"
+    code = run_command(["docker", "start", f"{sut}-mitmproxy-1"], cwd=sut_dir)
+    if code != 0:
+        log(f"[FAILED] docker proxy start (exit code {code})", indent=1)
+       
     log(f"Containers started. Waiting {DOCKER_STARTUP_WAIT}s for services to be ready...", indent=1)
     time.sleep(DOCKER_STARTUP_WAIT)
     return True
 
 
 def docker_compose_down(sut_dir: str, sut: str):
+    "format: sut-web; sut-db;, sut-mitmproxy-1-> use this to remove dangling images etc"
+
+    run_command(["docker","stop",f"{sut}-web"], cwd=sut_dir)
+    run_command(["docker","rm",f"{sut}-web"], cwd=sut_dir)
+    
+    run_command(["docker","stop",f"{sut}-db"], cwd=sut_dir)
+    run_command(["docker","rm",f"{sut}-db"], cwd=sut_dir)
+    
+    run_command(["docker","stop",f"{sut}-mitmproxy-1"], cwd=sut_dir)
+    run_command(["docker","rm",f"{sut}-mitmproxy-1"], cwd=sut_dir)
+
+    time.sleep(30)
+
     log(f"Stopping Docker container for: {sut}", indent=1)
+
+    project_id = os.path.basename(sut_dir).lower()
+
     code = run_command(["docker", "compose", "down", "--remove-orphans"], cwd=sut_dir)
     if code != 0:
-        log(f"[WARNING] docker compose down had issues (exit code {code})", indent=1)
+      time.sleep(30)
+
 
 
 def run_crawljax(sut: str) -> bool:
@@ -167,7 +190,7 @@ def run_crawljax(sut: str) -> bool:
     log(f"Output folder : {output_folder}", indent=1)
 
     code = run_command(
-        ["java", "-jar", CRAWLJAX_JAR, url, output_folder],
+        ["java", "-jar", CRAWLJAX_JAR, url, output_folder,'--timeout','1'],
         cwd=BASE_DIR,
     )
 
