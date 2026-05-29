@@ -14,7 +14,7 @@ services:
         -s /addons/minlog.py
     volumes:
       - ${HOST_LOG_DIR:-./mitm-logs}:/custom-logs
-      - ../minlog.py:/addons/minlog.py:ro    # ← up one level, mount file directly
+      - ../minlog.py:/addons/minlog.py:ro
     ports:
       - "${HOST_PORT:-8080}:8080"
     depends_on:
