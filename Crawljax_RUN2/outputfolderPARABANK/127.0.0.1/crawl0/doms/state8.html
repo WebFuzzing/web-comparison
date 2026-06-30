@@ -1,0 +1,280 @@
+<html><head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>ParaBank | Administration</title>
+		<link href="template.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="webjars/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body onload="document.login.username.focus();">
+		<div id="mainPanel">
+			
+				
+					
+
+
+
+<div id="topPanel">
+  <a href="admin.htm"><img src="images/clear.gif" width="56" height="42" border="0" class="admin"></a>
+  <a href="index.htm"><img src="images/logo.gif" alt="ParaBank" width="136" height="31" border="0" class="logo" title="ParaBank"></a>
+  <p class="caption">Experience the difference</p>
+</div>
+<div id="headerPanel" style="background: url(images/header-main.jpg) 0 0 no-repeat;">
+  
+
+
+<ul class="leftmenu">
+  <li class="Solutions">Solutions</li>
+  <li><a href="about.htm">About Us</a></li>
+  <li><a href="services.htm">Services</a></li>
+  <li><a href="http://www.parasoft.com/jsp/products.jsp">Products</a></li>
+  <li><a href="http://www.parasoft.com/jsp/pr/contacts.jsp">Locations</a></li>
+  <li><a href="admin.htm">Admin Page</a></li>
+  
+</ul>
+  
+
+
+<ul class="button">
+  <li class="home"><a href="index.htm">home</a></li>
+  <li class="aboutus"><a href="about.htm">about</a></li>
+  <li class="contact"><a href="contact.htm">contact</a></li>
+</ul>
+</div>
+				
+				
+			
+			<div id="bodyPanel">
+				<div id="leftPanel">
+					
+						
+							
+
+
+<h2>Customer Login</h2>
+<div id="loginPanel">
+  <form name="login" action="login.htm" method="POST">
+    
+    <p><b>Username</b></p>
+    <div class="login"><input type="text" class="input" name="username"></div>
+    <p><b>Password</b></p>
+    <div class="login"><input type="password" class="input" name="password"></div>
+    <div class="login"><input type="submit" class="button" value="Log In"></div>
+  </form>
+  <p><a href="lookup.htm">Forgot login info?</a></p>
+  <p><a href="register.htm">Register</a></p>
+</div>
+						
+						
+					
+				</div>
+				<div id="rightPanel">
+					
+
+
+
+<h1 class="title">
+	Administration
+</h1>
+
+	
+	
+
+
+<table class="table_hidden" style="width: 100%">
+  <tbody><tr>
+    <td width="50%">
+    	<h3>
+			Database
+		</h3>
+		<form name="initializeDB" action="db.htm" method="POST">
+			<table class="form2" style="width: 100%;">
+				<tbody><tr>
+					<td align="center">
+						<button type="submit" class="button" name="action" value="INIT">
+							Initialize
+						</button>
+					</td>
+					<td align="center">
+						<button type="submit" class="button" name="action" value="CLEAN">
+							Clean
+						</button>
+				</td></tr>
+			</tbody></table>
+		</form>
+	</td>
+    <td width="50%">
+		<h3>
+			JMS Service
+		</h3>
+		<form name="toggleJms" action="jms.htm" method="POST">
+			<input type="hidden" name="shutdown" value="true">
+			<table class="form2" style="width: 100%;">
+				<tbody><tr>
+					<td align="right" width="30%"><b>Status:</b></td>
+					<td width="20%">Running</td>
+					<td width="50%"><input type="submit" class="button" value="Shutdown"></td>
+				</tr>
+			</tbody></table>
+		</form>
+    </td>
+  </tr>
+</tbody></table>
+<br>
+
+<form id="adminForm" action="admin.htm" method="post">
+
+	<h3>
+		Data Access Mode
+	</h3>
+			
+	<table class="form" style="width: 100%">
+		<tbody><tr>
+			<td colspan="1" align="center" width="50%">
+			  <input id="accessMode1" name="accessMode" class="input" type="radio" value="soap"><br>SOAP<br>&nbsp;
+			</td>
+			<td colspan="1" align="center" width="50%">
+			  <input id="accessMode2" name="accessMode" class="input" type="radio" value="restxml"><br>REST&nbsp;(XML)<br>&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" align="center" width="50%">
+			  <input id="accessMode3" name="accessMode" class="input" type="radio" value="restjson"><br>REST&nbsp;(JSON)</td>
+			<td colspan="1" align="center" width="50%">
+			  <input id="accessMode4" name="accessMode" class="input" type="radio" value="jdbc" checked="checked"><br>JDBC*</td>
+		</tr>
+		<tr> <td colspan="2" align="left" width="100%"><hr>* - Default Data Access Mode.</td> 
+		</tr>
+	</tbody></table>
+	<br>
+
+	<h3>
+		Web Service
+	</h3>
+
+	<table class="form2">
+		<tbody><tr>
+			<td colspan="2"><b>ParaBank Service</b>[&nbsp;
+				<a href="services/ParaBank?wsdl">WSDL</a>&nbsp;|&nbsp;<a href="services/bank?_wadl&amp;_type=xml">WADL</a>&nbsp;|&nbsp;<a href="api-docs/index.html">OpenAPI</a>&nbsp;]</td>
+		</tr>
+		<tr>
+			<td align="right" width="30%"><b>SOAP Endpoint:</b></td>
+			<td width="70%"><input id="soapEndpoint" name="soapEndpoint" class="inputLarge" type="text" value=""></td>
+		</tr>
+		<tr>
+			<td align="right" width="30%"><b>REST Endpoint:</b></td>
+			<td width="70%"><input id="restEndpoint" name="restEndpoint" class="inputLarge" type="text" value=""></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2">(leave blank to use default endpoint)</td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td colspan="2"><b>LoanProcessor Service</b>
+				[ <a href="services/LoanProcessor?wsdl">WSDL</a> ]</td>
+		</tr>
+		<tr>
+			<td align="right" width="30%"><b>Endpoint:</b></td>
+			<td width="70%"><input id="endpoint" name="endpoint" class="inputLarge" type="text" value=""></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2">(leave blank to use default endpoint)</td>
+		</tr>
+	</tbody></table>
+	<br>
+
+	<h3>
+		Application Settings
+	</h3>
+	<table class="form2">
+		<tbody><tr>
+			<td align="right" width="30%"><b>Init. Balance:</b> $</td>
+			<td width="20%"><input id="initialBalance" name="initialBalance" class="input" type="text" value="515.50"></td>
+			<td width="50%"></td>
+		</tr>
+		<tr>
+			<td align="right" width="30%"><b>Min. Balance:</b> $</td>
+			<td width="20%"><input id="minimumBalance" name="minimumBalance" class="input" type="text" value="100.00"></td>
+			<td width="50%"></td>
+		</tr>
+		<tr>
+			<td colspan="3"><hr></td>
+		</tr>
+		<tr>
+			<td align="right" width="30%"><b>Loan Provider:</b></td>
+			<td width="20%"><select id="loanProvider" name="loanProvider" class="input">
+					
+						
+						<option value="jms">JMS</option>
+					
+						
+						<option value="ws" selected="selected">Web Service</option>
+					
+						
+						<option value="local">Local</option>
+					
+				</select></td>
+			<td width="50%"></td>
+		</tr>
+		<tr>
+			<td align="right" width="30%"><b>Loan Processor:</b></td>
+			<td width="20%"><select id="loanProcessor" name="loanProcessor" class="input">
+					
+						
+						<option value="funds" selected="selected">Available Funds</option>
+					
+						
+						<option value="down">Down Payment</option>
+					
+						
+						<option value="combined">Combined</option>
+					
+				</select></td>
+			<td width="50%"></td>
+		</tr>
+		<tr>
+			<td align="right" width="30%"><b>Threshold:</b></td>
+			<td width="20%"><input id="loanProcessorThreshold" name="loanProcessorThreshold" class="inputSmall" type="text" value="20">%</td>
+			<td width="50%"></td>
+		</tr>
+	</tbody></table>
+
+	<br>
+
+	<input type="submit" class="button" value="Submit">
+
+</form>
+				</div>
+			</div>
+		</div>
+		
+
+
+<div id="footermainPanel">
+  <div id="footerPanel">
+    <ul>
+      <li><a href="index.htm">Home</a>| </li>
+      <li><a href="about.htm">About Us</a>| </li>
+      <li><a href="services.htm">Services</a>| </li>
+      <li><a href="http://www.parasoft.com/jsp/products.jsp">Products</a>| </li>
+      <li><a href="http://www.parasoft.com/jsp/pr/contacts.jsp">Locations</a>| </li>
+      <li><a href="http://forums.parasoft.com/">Forum</a>| </li>
+      <li><a href="sitemap.htm">Site Map</a>| </li>
+      <li><a href="contact.htm">Contact Us</a></li>
+    </ul>
+    <p class="copyright">© Parasoft. All rights reserved.</p>
+    <ul class="visit">
+      <li>Visit us at:</li>
+      <li><a href="http://www.parasoft.com/" target="_blank">www.parasoft.com</a></li>
+    </ul>
+  </div>
+</div>
+	
+
+</body></html>

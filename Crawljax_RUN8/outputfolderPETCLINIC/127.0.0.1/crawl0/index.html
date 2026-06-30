@@ -1,0 +1,1492 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<style>
+	html,body {
+		height: 100%;
+	}
+
+	#wrap {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -40px;
+	}
+
+	#push, footer {
+		height: 40px;
+	}
+
+	footer {
+		background-color: #f5f5f5;
+	}
+
+	footer small {
+		display: inline;
+		margin-top: 10px;
+	}
+
+	.url-table td {
+		word-wrap: break-word;
+		max-width: 700px;
+	}
+
+	@media (max-width: 979px) and (min-width: 768px) {
+		.url-table td {
+			max-width: 500px;
+		}
+	}
+
+	@media ( max-width : 767px) {
+		#footer {
+			margin-left: -20px;
+			margin-right: -20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.url-table td {
+			max-width: 450px;
+		}
+	}
+
+
+	#wrap>.container {
+		padding-top: 60px;
+	}
+
+
+	.panel-right {
+		position: absolute;
+		right: 10px;
+		top: 70px;
+		left: auto;
+		display: block;
+		background-color: rgb(255, 255, 255);
+		background-color: rgba(255, 255, 255, .9);
+		max-width: 300px;
+	}
+
+	.panel-right dd {
+		text-transform: capitalize;
+		word-wrap: break-word;
+	}
+
+
+</style>
+<script src="lib/vivagraph-0.12.0.min.js"></script>
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+				<a class="brand" href="#">Crawl overview</a>
+			<ul class="nav">
+					<li class="active"><a href="#graph" class="nav-link">State graph</a></li>
+					<li><a href="#statistics" class="nav-link">Statistics</a></li>
+					<li><a href="#urls" class="nav-link">URL's</a></li>
+					<li><a href="#config" class="nav-link">Configuration</a></li>
+			</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+					<p>Hover over a state highlights the connected edges</p>
+					<p>Single click over a state highlights all its near-duplicates</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>		<div class="container page" id="container-graph" style="width: 100%; padding-top: 40px;">
+
+			<div class="popover fade panel-right">
+				<div class="popover-inner">
+					<h3 class="popover-title">Edge info</h3>
+					<div class="popover-content">
+						<dl>
+							<dt>Element name</dt>
+							<dd name='elemName'></dd>
+						</dl>
+						<dl>
+							<dt>From</dt>
+							<dd name='from'></dd>
+						</dl>
+						<dl>
+							<dt>To</dt>
+							<dd name='to'></dd>
+						</dl>
+						<dl>
+							<dt>Identified by</dt>
+							<dd name='id'></dd>
+						</dl>
+						<dl>
+							<dt>Element</dt>
+							<dd name='element' style="text-transform: none;"></dd>
+						</dl>
+						<dl>
+							<dt>Event type</dt>
+							<dd name='eventType'></dd>
+						</dl>
+						<button class="btn btn-small" id='hideButton'>Hide</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container page" id="container-statistics" style="display: none;">
+
+<section id='crawlResults'>
+	<div class="page-header">
+		<h1>Crawl results</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<th>Crawl time</th>
+				<td>32 seconds</td>
+			</tr>
+			<tr>
+				<th>Exit status</th>
+				<td>Exhausted</td>
+			<tr>
+				<th>Number of states</th>
+				<td>19</td>
+			</tr>
+			<tr>
+				<th><a href="#urls" class="nav-link">URL's visited</a></th>
+				<td>19</td>
+			</tr>
+			<tr>
+				<th>Number of edges</th>
+				<td>36</td>
+			</tr>
+			<tr>
+				<th>Number of crawl paths</th>
+				<td>18</td>
+			</tr>
+			<tr>
+				<th>Failed events</th>
+				<td>9</td>
+			<tr>
+				<th>Average DOM length</th>
+				<td>4.247 kB</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section id='highs-and-low'>
+	<div class="page-header">
+		<h1>Highs and lows</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<th>Highest fan-out</th> 
+				<td><a href="states/index.html">index</a></td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>Lowest fan-out</th> 
+				<td><a href="states/state30.html">state30</a></td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>Highest fan-in</th> 
+				<td><a href="states/index.html">index</a></td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<th>Lowest fan-in</th> 
+				<td><a href="states/state20.html">state20</a></td>
+				<td>1</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+		</div>
+		<div class="container page" id="container-urls" style="display: none;">
+ 
+<div class="page-header">
+	<h1>URL's visited</h1>
+</div>
+<table class="table table-bordered table-striped url-table">
+	<tbody>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/1">http://127.0.0.1:8080/owners/1</a></td>
+			<td> <a
+				href="states/state20.html">state20</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/2/pets/new">http://127.0.0.1:8080/owners/2/pets/new</a></td>
+			<td> <a
+				href="states/state30.html">state30</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/4/edit">http://127.0.0.1:8080/owners/4/edit</a></td>
+			<td> <a
+				href="states/state41.html">state41</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/4">http://127.0.0.1:8080/owners/4</a></td>
+			<td> <a
+				href="states/state40.html">state40</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a></td>
+			<td> <a
+				href="states/index.html">index</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/vets.html">http://127.0.0.1:8080/vets.html</a></td>
+			<td> <a
+				href="states/state5.html">state5</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/vets.html?page=2">http://127.0.0.1:8080/vets.html?page=2</a></td>
+			<td> <a
+				href="states/state7.html">state7</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/find">http://127.0.0.1:8080/owners/find</a></td>
+			<td> <a
+				href="states/state3.html">state3</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners?lastName=">http://127.0.0.1:8080/owners?lastName=</a></td>
+			<td> <a
+				href="states/state19.html">state19</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/1/pets/1/edit">http://127.0.0.1:8080/owners/1/pets/1/edit</a></td>
+			<td> <a
+				href="states/state35.html">state35</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/3/edit">http://127.0.0.1:8080/owners/3/edit</a></td>
+			<td> <a
+				href="states/state33.html">state33</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/oups">http://127.0.0.1:8080/oups</a></td>
+			<td> <a
+				href="states/state10.html">state10</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/1/edit">http://127.0.0.1:8080/owners/1/edit</a></td>
+			<td> <a
+				href="states/state21.html">state21</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/3">http://127.0.0.1:8080/owners/3</a></td>
+			<td> <a
+				href="states/state32.html">state32</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/1/pets/new">http://127.0.0.1:8080/owners/1/pets/new</a></td>
+			<td> <a
+				href="states/state28.html">state28</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/3/pets/new">http://127.0.0.1:8080/owners/3/pets/new</a></td>
+			<td> <a
+				href="states/state38.html">state38</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/2/edit">http://127.0.0.1:8080/owners/2/edit</a></td>
+			<td> <a
+				href="states/state26.html">state26</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/new">http://127.0.0.1:8080/owners/new</a></td>
+			<td> <a
+				href="states/state14.html">state14</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/owners/2">http://127.0.0.1:8080/owners/2</a></td>
+			<td> <a
+				href="states/state25.html">state25</a>, 
+			</td>
+		</tr>
+	</tbody>
+</table>
+		</div>
+		<div class="container page" id="container-config" style="display: none;">
+ 
+<section id='crawlConfig'>
+	<div class="page-header">
+		<h1>Crawl configuration</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<td>Url</td> 
+				<td>http://127.0.0.1:8080/</td> 
+			</tr>
+			<tr>
+				<td>Maximum Runtime</td> 
+				<td>1 hour</td> 
+			</tr>
+			<tr>
+				<td>Basic Auth Url</td> 
+				<td>null</td> 
+			</tr>
+			<tr>
+				<td>Browser Config</td> 
+				<td>1 browsers of type CHROME using builder Default web driver factory</td> 
+			</tr>
+			<tr>
+				<td>Crawl Rules</td> 
+				<td><pre><code>{
+  &quot;crawlEvents&quot; : [ &quot;click&quot; ],
+  &quot;invariants&quot; : [ ],
+  &quot;oracleComparators&quot; : [ {
+    &quot;preConditions&quot; : [ ],
+    &quot;id&quot; : &quot;SimpleComparator&quot;,
+    &quot;oracle&quot; : { }
+  } ],
+  &quot;ignoredFrameIdentifiers&quot; : [ ],
+  &quot;preCrawlConfig&quot; : {
+    &quot;waitConditions&quot; : [ ],
+    &quot;crawlConditions&quot; : [ ],
+    &quot;includedElements&quot; : [ {
+      &quot;tagName&quot; : &quot;A&quot;,
+      &quot;id&quot; : &quot;id2036127838&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : null,
+      &quot;withXpathExpression&quot; : null
+    }, {
+      &quot;tagName&quot; : &quot;BUTTON&quot;,
+      &quot;id&quot; : &quot;id71399214&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : null,
+      &quot;withXpathExpression&quot; : null
+    }, {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id1932831450&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id1932831450&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@type='submit']&quot;,
+        &quot;linkedInputFields&quot; : [ ]
+      },
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@type='submit']&quot;
+    }, {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id1577592551&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id1577592551&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@type='button']&quot;,
+        &quot;linkedInputFields&quot; : [ ]
+      },
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@type='button']&quot;
+    } ],
+    &quot;excludedElements&quot; : [ ],
+    &quot;filterAttributeNames&quot; : [ &quot;closure_hashcode_(\\w)*&quot;, &quot;jquery[0-9]+&quot; ]
+  },
+  &quot;formFillMode&quot; : &quot;NORMAL&quot;,
+  &quot;formFillOrder&quot; : &quot;NORMAL&quot;,
+  &quot;inputSpecification&quot; : {
+    &quot;formInputs&quot; : { },
+    &quot;forms&quot; : [ ],
+    &quot;crawlElements&quot; : [ ]
+  },
+  &quot;testInvariantsWhileCrawling&quot; : true,
+  &quot;clickOnce&quot; : true,
+  &quot;randomizeCandidateElements&quot; : false,
+  &quot;crawlFrames&quot; : true,
+  &quot;crawlHiddenAnchors&quot; : false,
+  &quot;waitAfterReloadUrl&quot; : 200,
+  &quot;waitAfterEvent&quot; : 200,
+  &quot;followExternalLinks&quot; : false,
+  &quot;crawlPriorityMode&quot; : &quot;NORMAL&quot;,
+  &quot;crawlNearDuplicates&quot; : true,
+  &quot;delayNearDuplicateCrawling&quot; : true,
+  &quot;applyNonSelAdvantage&quot; : false,
+  &quot;avoidUnrelatedBacktracking&quot; : false,
+  &quot;useEquivalentReset&quot; : false,
+  &quot;avoidDifferentBacktracking&quot; : false,
+  &quot;skipExploredActions&quot; : true,
+  &quot;maxRepeatExploredActions&quot; : 2,
+  &quot;usefulFragmentRules&quot; : {
+    &quot;thresholdWidth&quot; : 50.0,
+    &quot;thresholdHeight&quot; : 50.0,
+    &quot;subtreeWidth_and&quot; : 1,
+    &quot;subtreeWidth_or&quot; : 4
+  },
+  &quot;restoreConnectedEdges&quot; : false,
+  &quot;allCrawlElements&quot; : [ {
+    &quot;tagName&quot; : &quot;A&quot;,
+    &quot;id&quot; : &quot;id2036127838&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : null,
+    &quot;withXpathExpression&quot; : null
+  }, {
+    &quot;tagName&quot; : &quot;BUTTON&quot;,
+    &quot;id&quot; : &quot;id71399214&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : null,
+    &quot;withXpathExpression&quot; : null
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id1932831450&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id1932831450&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@type='submit']&quot;,
+      &quot;linkedInputFields&quot; : [ ]
+    },
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@type='submit']&quot;
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id1577592551&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id1577592551&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@type='button']&quot;,
+      &quot;linkedInputFields&quot; : [ ]
+    },
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@type='button']&quot;
+  } ]
+}</code></pre></td> 
+			</tr>
+			<tr>
+				<td>Maximum States</td> 
+				<td>&infin;</td> 
+			</tr>
+			<tr>
+				<td>Crawl Scope</td> 
+				<td>DefaultCrawlScope{url=http://127.0.0.1:8080/}</td> 
+			</tr>
+			<tr>
+				<td>Maximum Depth</td> 
+				<td>&infin;</td> 
+			</tr>
+			<tr>
+				<td>Output Dir</td> 
+				<td>C:\Users\aise\Documents\web-comparison\outputfolderPETCLINIC\127.0.0.1\crawl0</td> 
+			</tr>
+			<tr>
+				<td>Proxy Configuration</td> 
+				<td>NOTHING</td> 
+			</tr>
+			<tr>
+				<td>State Vertex Factory</td> 
+				<td>com.crawljax.core.state.DefaultStateVertexFactory@66d25ba9</td> 
+			</tr>
+			<tr>
+				<td>Site Dir</td> 
+				<td>C:\Users\aise\Documents\web-comparison\outputfolderPETCLINIC\127.0.0.1</td> 
+			</tr>
+			<tr>
+				<td>Plugins</td> 
+				<td><ul><li>CrawlOverview</li></ul></td> 
+			</tr>
+		</tbody>
+	</table>
+</section>
+<section id='versionInfo'>
+	<div class="page-header">
+		<h1>Version info</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<td>Crawljax version</td>
+				<td>5.2.3</td>
+			</tr>
+		</tbody>
+	</table>
+</section>		</div>
+		<div class="container page" id="container-clusters" style="display: none;">
+			
+		</div>
+		<div id="push"></div>
+	</div>
+	<footer>
+		<div class="container">
+			<small class="pull-left muted">Crawl of <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a> at Wed Jun 24 14:29:56 CEST 2026</small>
+			<small class="pull-right muted">Crawled by <a href="http://crawljax.com">Crawljax</a> 5.2.3</small>
+		</div>
+	</footer>
+	<script src="js/graphbuilder.js"></script>
+
+	<script>
+		var edges = [ {
+  "from" : "index",
+  "to" : "state3",
+  "text" : "Find Owners",
+  "id" : "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Find Owners, attributes={class=nav-link, href=/owners/find, title=find owners}}",
+  "eventType" : "click"
+}, {
+  "from" : "state3",
+  "to" : "index",
+  "text" : "Home",
+  "id" : "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Home, attributes={class=nav-link, href=/, title=home page}}",
+  "eventType" : "click"
+}, {
+  "from" : "index",
+  "to" : "state5",
+  "text" : "Veterinarians",
+  "id" : "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Veterinarians, attributes={class=nav-link, href=/vets.html, title=veterinarians}}",
+  "eventType" : "click"
+}, {
+  "from" : "state5",
+  "to" : "state7",
+  "text" : "2",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[4]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=2, attributes={href=/vets.html?page=2}}",
+  "eventType" : "click"
+}, {
+  "from" : "state7",
+  "to" : "state5",
+  "text" : "1",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[3]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=1, attributes={href=/vets.html?page=1}}",
+  "eventType" : "click"
+}, {
+  "from" : "state5",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "index",
+  "to" : "state10",
+  "text" : "Error",
+  "id" : "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Error, attributes={class=nav-link, href=/oups, title=trigger a RuntimeException to see how it is handled}}",
+  "eventType" : "click"
+}, {
+  "from" : "state10",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state3",
+  "to" : "state14",
+  "text" : "Add Owner",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Add Owner, attributes={class=btn btn-primary, href=/owners/new}}",
+  "eventType" : "click"
+}, {
+  "from" : "state14",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state7",
+  "to" : "state5",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[6]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={class=fa fa-fast-backward, href=/vets.html?page=1, title=First}}",
+  "eventType" : "click"
+}, {
+  "from" : "index",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state3",
+  "to" : "state19",
+  "text" : "Find Owner",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+  "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Find Owner, attributes={class=btn btn-primary, type=submit}}",
+  "eventType" : "click"
+}, {
+  "from" : "state19",
+  "to" : "state20",
+  "text" : "George Franklin",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=George Franklin, attributes={href=/owners/1}}",
+  "eventType" : "click"
+}, {
+  "from" : "state20",
+  "to" : "state21",
+  "text" : "Edit Owner",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Edit Owner, attributes={class=btn btn-primary, href=1/edit}}",
+  "eventType" : "click"
+}, {
+  "from" : "state21",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state7",
+  "to" : "state5",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[7]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={class=fa fa-step-backward, href=/vets.html?page=1, title=Previous}}",
+  "eventType" : "click"
+}, {
+  "from" : "state19",
+  "to" : "state25",
+  "text" : "Betty Davis",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Betty Davis, attributes={href=/owners/2}}",
+  "eventType" : "click"
+}, {
+  "from" : "state25",
+  "to" : "state26",
+  "text" : "Edit Owner",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Edit Owner, attributes={class=btn btn-primary, href=2/edit}}",
+  "eventType" : "click"
+}, {
+  "from" : "state26",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state20",
+  "to" : "state28",
+  "text" : "Add New Pet",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+  "element" : "Element{node=[A: null], tag=A, text=Add New Pet, attributes={class=btn btn-primary, href=1/pets/new}}",
+  "eventType" : "click"
+}, {
+  "from" : "state28",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state25",
+  "to" : "state30",
+  "text" : "Add New Pet",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+  "element" : "Element{node=[A: null], tag=A, text=Add New Pet, attributes={class=btn btn-primary, href=2/pets/new}}",
+  "eventType" : "click"
+}, {
+  "from" : "state30",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state19",
+  "to" : "state32",
+  "text" : "Eduardo Rodriquez",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Eduardo Rodriquez, attributes={href=/owners/3}}",
+  "eventType" : "click"
+}, {
+  "from" : "state32",
+  "to" : "state33",
+  "text" : "Edit Owner",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Edit Owner, attributes={class=btn btn-primary, href=3/edit}}",
+  "eventType" : "click"
+}, {
+  "from" : "state33",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state20",
+  "to" : "state35",
+  "text" : "Edit Pet",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Edit Pet, attributes={href=1/pets/1/edit}}",
+  "eventType" : "click"
+}, {
+  "from" : "state35",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state25",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state32",
+  "to" : "state38",
+  "text" : "Add New Pet",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+  "element" : "Element{node=[A: null], tag=A, text=Add New Pet, attributes={class=btn btn-primary, href=3/pets/new}}",
+  "eventType" : "click"
+}, {
+  "from" : "state38",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state19",
+  "to" : "state40",
+  "text" : "Harold Davis",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Harold Davis, attributes={href=/owners/4}}",
+  "eventType" : "click"
+}, {
+  "from" : "state40",
+  "to" : "state41",
+  "text" : "Edit Owner",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Edit Owner, attributes={class=btn btn-primary, href=4/edit}}",
+  "eventType" : "click"
+}, {
+  "from" : "state41",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "state3",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+} ];
+		var states = {
+  "state20" : {
+    "name" : "state20",
+    "url" : "http://127.0.0.1:8080/owners/1",
+    "candidateElements" : [ {
+      "top" : 363,
+      "left" : 72,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 113,
+      "height" : 40
+    }, {
+      "top" : 363,
+      "left" : 189,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+      "width" : 128,
+      "height" : 40
+    }, {
+      "top" : 584,
+      "left" : 439,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 19
+    }, {
+      "top" : 584,
+      "left" : 514,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 69,
+      "height" : 19
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 3,
+    "id" : 20,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 20,
+    "timeAdded" : 1782304232838,
+    "onURL" : false,
+    "nearestState" : "state19"
+  },
+  "state30" : {
+    "name" : "state30",
+    "url" : "http://127.0.0.1:8080/owners/2/pets/new",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 30,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 30,
+    "timeAdded" : 1782304239979,
+    "onURL" : false,
+    "nearestState" : "state28"
+  },
+  "state41" : {
+    "name" : "state41",
+    "url" : "http://127.0.0.1:8080/owners/4/edit",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 41,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 41,
+    "timeAdded" : 1782304250590,
+    "onURL" : false,
+    "nearestState" : "state40"
+  },
+  "state40" : {
+    "name" : "state40",
+    "url" : "http://127.0.0.1:8080/owners/4",
+    "candidateElements" : [ {
+      "top" : 363,
+      "left" : 19,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 113,
+      "height" : 40
+    }, {
+      "top" : 363,
+      "left" : 136,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+      "width" : 128,
+      "height" : 40
+    }, {
+      "top" : 584,
+      "left" : 387,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 19
+    }, {
+      "top" : 584,
+      "left" : 462,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 69,
+      "height" : 19
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 40,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 40,
+    "timeAdded" : 1782304250039,
+    "onURL" : false,
+    "nearestState" : "state38"
+  },
+  "index" : {
+    "name" : "index",
+    "url" : "http://127.0.0.1:8080/",
+    "candidateElements" : [ {
+      "top" : 30,
+      "left" : 12,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/A[1]",
+      "width" : 229,
+      "height" : 46
+    }, {
+      "top" : 12,
+      "left" : 241,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 78,
+      "height" : 77
+    }, {
+      "top" : 12,
+      "left" : 319,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 138,
+      "height" : 77
+    }, {
+      "top" : 12,
+      "left" : 457,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 152,
+      "height" : 77
+    }, {
+      "top" : 12,
+      "left" : 610,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+      "width" : 85,
+      "height" : 77
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/BUTTON[1]",
+      "width" : 56,
+      "height" : 40
+    } ],
+    "fanIn" : 15,
+    "fanOut" : 4,
+    "id" : 0,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/BUTTON[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 0,
+    "timeAdded" : 1782304220065,
+    "onURL" : true,
+    "nearestState" : "null"
+  },
+  "state5" : {
+    "name" : "state5",
+    "url" : "http://127.0.0.1:8080/vets.html",
+    "candidateElements" : [ {
+      "top" : 12,
+      "left" : 457,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 152,
+      "height" : 77
+    }, {
+      "top" : 435,
+      "left" : 168,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[4]/A[1]",
+      "width" : 10,
+      "height" : 19
+    }, {
+      "top" : 435,
+      "left" : 229,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[8]/A[1]",
+      "width" : 9,
+      "height" : 16
+    }, {
+      "top" : 435,
+      "left" : 242,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[9]/A[1]",
+      "width" : 16,
+      "height" : 16
+    } ],
+    "fanIn" : 4,
+    "fanOut" : 2,
+    "id" : 5,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[8]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[9]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 5,
+    "timeAdded" : 1782304223016,
+    "onURL" : false,
+    "nearestState" : "state3"
+  },
+  "state7" : {
+    "name" : "state7",
+    "url" : "http://127.0.0.1:8080/vets.html?page=2",
+    "candidateElements" : [ {
+      "top" : 271,
+      "left" : 153,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[3]/A[1]",
+      "width" : 10,
+      "height" : 19
+    }, {
+      "top" : 271,
+      "left" : 195,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[6]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 271,
+      "left" : 215,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[7]/A[1]",
+      "width" : 9,
+      "height" : 16
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 3,
+    "id" : 7,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 7,
+    "timeAdded" : 1782304224007,
+    "onURL" : false,
+    "nearestState" : "state5"
+  },
+  "state3" : {
+    "name" : "state3",
+    "url" : "http://127.0.0.1:8080/owners/find",
+    "candidateElements" : [ {
+      "top" : 12,
+      "left" : 241,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 78,
+      "height" : 77
+    }, {
+      "top" : 12,
+      "left" : 319,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 138,
+      "height" : 77
+    }, {
+      "top" : 297,
+      "left" : 102,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/A[1]",
+      "width" : 114,
+      "height" : 40
+    }, {
+      "top" : 245,
+      "left" : 102,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "width" : 116,
+      "height" : 40
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 4,
+    "id" : 3,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]", "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]", "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]", "xpath /HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 3,
+    "timeAdded" : 1782304221732,
+    "onURL" : false,
+    "nearestState" : "index"
+  },
+  "state19" : {
+    "name" : "state19",
+    "url" : "http://127.0.0.1:8080/owners?lastName=",
+    "candidateElements" : [ {
+      "top" : 222,
+      "left" : 87,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 121,
+      "height" : 19
+    }, {
+      "top" : 263,
+      "left" : 87,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 86,
+      "height" : 19
+    }, {
+      "top" : 304,
+      "left" : 87,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 78,
+      "height" : 43
+    }, {
+      "top" : 369,
+      "left" : 87,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+      "width" : 96,
+      "height" : 19
+    }, {
+      "top" : 410,
+      "left" : 87,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+      "width" : 115,
+      "height" : 19
+    }, {
+      "top" : 459,
+      "left" : 153,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[4]/A[1]",
+      "width" : 10,
+      "height" : 19
+    }, {
+      "top" : 459,
+      "left" : 214,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[8]/A[1]",
+      "width" : 9,
+      "height" : 16
+    }, {
+      "top" : 459,
+      "left" : 227,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/SPAN[9]/A[1]",
+      "width" : 16,
+      "height" : 16
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 4,
+    "id" : 19,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 19,
+    "timeAdded" : 1782304232149,
+    "onURL" : false,
+    "nearestState" : "state14"
+  },
+  "state35" : {
+    "name" : "state35",
+    "url" : "http://127.0.0.1:8080/owners/1/pets/1/edit",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 35,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 35,
+    "timeAdded" : 1782304243629,
+    "onURL" : false,
+    "nearestState" : "state33"
+  },
+  "state33" : {
+    "name" : "state33",
+    "url" : "http://127.0.0.1:8080/owners/3/edit",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 33,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 33,
+    "timeAdded" : 1782304241930,
+    "onURL" : false,
+    "nearestState" : "state32"
+  },
+  "state10" : {
+    "name" : "state10",
+    "url" : "http://127.0.0.1:8080/oups",
+    "candidateElements" : [ {
+      "top" : 12,
+      "left" : 610,
+      "xpath" : "/HTML[1]/BODY[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+      "width" : 85,
+      "height" : 77
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 10,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 10,
+    "timeAdded" : 1782304227437,
+    "onURL" : false,
+    "nearestState" : "state7"
+  },
+  "state21" : {
+    "name" : "state21",
+    "url" : "http://127.0.0.1:8080/owners/1/edit",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 21,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 21,
+    "timeAdded" : 1782304233420,
+    "onURL" : false,
+    "nearestState" : "state20"
+  },
+  "state32" : {
+    "name" : "state32",
+    "url" : "http://127.0.0.1:8080/owners/3",
+    "candidateElements" : [ {
+      "top" : 363,
+      "left" : 34,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 113,
+      "height" : 40
+    }, {
+      "top" : 363,
+      "left" : 151,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+      "width" : 128,
+      "height" : 40
+    }, {
+      "top" : 584,
+      "left" : 402,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 19
+    }, {
+      "top" : 584,
+      "left" : 477,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 69,
+      "height" : 19
+    }, {
+      "top" : 777,
+      "left" : 402,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 19
+    }, {
+      "top" : 777,
+      "left" : 477,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 69,
+      "height" : 19
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 32,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 32,
+    "timeAdded" : 1782304241330,
+    "onURL" : false,
+    "nearestState" : "state30"
+  },
+  "state28" : {
+    "name" : "state28",
+    "url" : "http://127.0.0.1:8080/owners/1/pets/new",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 28,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 28,
+    "timeAdded" : 1782304238315,
+    "onURL" : false,
+    "nearestState" : "state26"
+  },
+  "state38" : {
+    "name" : "state38",
+    "url" : "http://127.0.0.1:8080/owners/3/pets/new",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 38,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 38,
+    "timeAdded" : 1782304248704,
+    "onURL" : false,
+    "nearestState" : "state35"
+  },
+  "state26" : {
+    "name" : "state26",
+    "url" : "http://127.0.0.1:8080/owners/2/edit",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 26,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 26,
+    "timeAdded" : 1782304236578,
+    "onURL" : false,
+    "nearestState" : "state25"
+  },
+  "state14" : {
+    "name" : "state14",
+    "url" : "http://127.0.0.1:8080/owners/new",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 14,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 14,
+    "timeAdded" : 1782304229244,
+    "onURL" : false,
+    "nearestState" : "state10"
+  },
+  "state25" : {
+    "name" : "state25",
+    "url" : "http://127.0.0.1:8080/owners/2",
+    "candidateElements" : [ {
+      "top" : 363,
+      "left" : 57,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 113,
+      "height" : 40
+    }, {
+      "top" : 363,
+      "left" : 174,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/A[2]",
+      "width" : 128,
+      "height" : 40
+    }, {
+      "top" : 584,
+      "left" : 424,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 19
+    }, {
+      "top" : 584,
+      "left" : 499,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 69,
+      "height" : 19
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 3,
+    "id" : 25,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 25,
+    "timeAdded" : 1782304236018,
+    "onURL" : false,
+    "nearestState" : "state21"
+  }
+};
+
+		$(document).ready(
+				function() {
+					$.each(states, function() {
+						graph.addNode(this.name, {
+							img : 'screenshots/' + this.name + '_small.jpg',
+							url : "states/" + this.name + ".html"
+						});
+					});
+
+					var edgesSeen = {};
+					$.each(edges, function() {
+						var edgeKey = this.from + "-to-" + this.to;
+						if (!(edgeKey in edgesSeen)) {
+							edgesSeen[edgeKey] = true;
+							graph.addLink(this.from, this.to, {
+								text : this.text,
+								id : this.id,
+								eventType : this.eventType,
+								element : this.element
+
+							});
+						}
+					});
+
+					$("#hideButton").click(function() {
+						$(".panel-right").removeClass("in");
+						$('path[stroke="red"]').attr("stroke", "grey");
+					});
+
+					$("a[rel='popover']").popover({
+						content : $("#popup-content").html(),
+						html : true,
+						trigger : "hover"
+					});
+
+					$("a[data-toggle='tooltip']").tooltip();
+
+					var paused = false;
+					$("#pauseButton").click(
+							function() {
+								if (paused) {
+									renderer.resume();
+									paused = false;
+									$(this).children(":first").attr("class",
+											"icon-pause");
+								} else {
+									renderer.pause();
+									paused = true;
+									$(this).children(":first").attr("class",
+											"icon-play");
+								}
+							});
+
+
+					/* Makes nav links update the nav toolback with current page */
+					$('.nav-link').click(function(e) {
+						/* Example: #url */
+						var target = e.target.hash;
+
+						updateNav(target);
+					});
+
+					/* page: a string with target page, like "#nav" */
+					function updateNav(page) {
+						/* Removes active class from previous active link */
+						$('.navbar li').removeClass('active');
+
+						/* Find correct link on nav-bar and add active class to it */
+						$('.navbar li').each(function(index, element) {
+							if ($(element).find('a').get(0).hash === page) {
+								$(element).addClass('active');
+
+								return false;
+							}
+						});
+					}
+
+					function loadPage(page) {
+						$('.page').hide();
+						$('#container-' + page).show();
+
+						if (page === "graph") {
+							$('.graphBtn').show();
+						} else {
+							$('.graphBtn').hide();
+						}
+					}
+
+					$(window).on(
+							'hashchange',
+							function(e) {
+								pageRef = window.location.hash.substring(1);
+								if ($("#container-" + pageRef).length == 0
+										&& pageRef !== "graph") {
+									window.location.hash = "graph";
+								} else {
+									loadPage(pageRef);
+								}
+							});
+
+					$(window).trigger('hashchange');
+				});
+
+
+
+		function showInfo(link) {
+			$(".panel-right").addClass("in");
+			$(".panel-right [name='elemName']").text(link.data.text);
+			$(".panel-right [name='from']").html(asStateLink(link.fromId));
+			$(".panel-right [name='to']").html(asStateLink(link.toId));
+			$(".panel-right [name='id']").text(link.data.id);
+			$(".panel-right [name='element']").text(link.data.element);
+			$(".panel-right [name='eventType']").text(link.data.eventType);
+		}
+
+		function asStateLink(name) {
+			return "<a href='states/" + name + ".html' target='_new'>" + name
+					+ "</a>";
+		}
+
+		$('#container-graph svg').css("width", "100%");
+		function resize() {
+			$('#container-graph').css("height", window.innerHeight - 80);
+			$('#container-graph svg').css("height", window.innerHeight - 80);
+		}
+		$(window).resize(resize);
+		resize();
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+				<a class="brand" href="../index.html#graph">Crawl overview</a>
+			<ul class="nav">
+					<li class="active"><a href="#">State inspector</a></li>
+			</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+					<p>Hover over a state highlights the connected edges</p>
+					<p>Single click over a state highlights all its near-duplicates</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state12</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://127.0.0.1:8080/claroline/auth/login.php?sourceUrl=aHR0cDovLzEyNy4wLjAuMTo4MDgwL2NsYXJvbGluZS9hdXRoL2xvZ2luLnBocD9zb3VyY2VVcmw9YUhSMGNEb3ZMekV5Tnk0d0xqQXVNVG80TURnd0wyTnNZWEp2YkdsdVpTOWhkWFJvTDJ4dloybHVMbkJvY0Q5emIzVnlZMlZWY213OVlVaFNNR05FYjNaTWVrVjVUbmswZDB4cVFYVk5WRzgwVFVSbmQwd3lUbk5aV0VwMllrZHNkVnBUT1doa1dGSnZUREo0ZGxveWJIVk1ia0p2WTBRNWVtSXpWbmxaTWxaV1kyMTNPVmxWYUZOTlIwNUZZak5hVFdWclZqVlVibXN3WkRCNGNWRllWazVXUnpnd1ZGVlNibVF3ZDNsVWJrNWFWMFZ3TWxsclpITmtWbkJVVDFkb2ExZEdTblpVUkVvMFpHeHZlV0pJVmsxaWEwcDJXVEJSTldWdFNYcFdibXhhVFd4YVYxa3lNVE5QVm14V1lVWk9UbEl3TlVaWmFrNWhWRmRXY2xacVZsVmliWE4zV2tSQ05HTldSbGxXYXpWWFVucG5kMVpHVmxOaWJWRjNaRE5zVldKck5XRldNRlozVFd4c2NscElUbXRXYmtKVlZERmtiMkV4WkVkVGJscFZVa1Z2TUZwSGVIWmxWMHBKVm1zeGFXRXdjREpYVkVKU1RsZFdkRk5ZY0ZkaWJYaGhWRmQ0WVZZeGEzbE5WRTVRVm0xNFYxbFZXazlVYkVsM1RsVmFXbUZyTldoV1JtUlhZMnhhY1Zac1ZtbGlXRTR6VjJ0U1EwNUhUbGRTYkd4WFlYcFdXRlZ1Y0c1a01WcEhWbXhPYVdKV1JqTmFSRTV6VmxkS2NrNVhSbGROUmxvelZGZDRjMk5zY0VsVWJYUlhZbXRLVmxaRVJtdGlNa1Y0V2tWa1ZHSnNjRlpWYTFaMlRVWndTR1ZJV214V01IQktWbTF6ZUdGWFJYZGpSRXBZVmtWS1UxUnNaRmRrUms1WlkwWmthV0pZYUdoV1JtUTBXVlpaZUdFemJFNVdSVFZSVm0weE5GWXhiRlpYYXpsVllrVnNNMVJzVm1GWGJVWnlUbGRvVjFKdFVsaFpNbmhoWTFaYWMxWnRiR2xYUlRSNlZqSjBVMUV3TlVoVWJHUlRZa2Q0V0ZsWWNGZFhSbFoxWTBjMWEwMVdjRWhXYlhoUFlWZEtWMUpxVG1GU1JUVjZWbXhrUzJOck5WaFNiR1JPVW14dmVsWkdaRFJqTWs1elkwVnNWV0pZVWxoWmJYUkxWbXhhUlZKdGRHbE5hMVkwVjJ0V2ExWkhTbk5qUmxwV1lURmFNbFJWV25kVFIxWkpWMjE0VjAxSVFrdFdiVEY2WlVkR1dGSllaR3BTUlhCWlZtdFdTMVV4VW5OYVJtUnJVbXMxV2xrd1dtdGhWMHBaWVVkb1YxSnRVVEJYVmxwYVpVZEZlbUpGTlZkU1ZGWlNWbTB3ZUU1R1dYaGlSbHBZWVhwc1ZsbHJWbk5OTVZKelZtMUdXR0pWV25sVWJHUnZWakZLZEZWc2FGcE5ibWhvV1RGYVlXTXhXblJpUjJ4WVVsUlNObFpxU2pCVk1VVjNUbFZvVldKSFVsUlphMlEwVjBac1dXTkdaRmhTYkZveFdUQmpNV0V3TVZkalJXaFhZbGhvVUZsV1pFdFdNVXB4VkcxR1UxSlVWalpXYlhoclV6Sk9jazVXYUZOaVIxSlBWVzE0ZG1Wc1drZGFSRkpxVFdzMWVsa3dWbk5XVjBwWlZXeG9XbUpZVWt4V2JYaGhVbFpLZEdSSGJFNWhNVmt3VmpKMFYyRXhXa2hUYms1cVVteHdWMWxVUm1GTmJGSldWMjVrVkZJeFdrcFdNakUwVmpBeFNWRnJkRmRpVkVZMldsVmtSMWRHU2xsYVIzQlRVbGhDV2xadGRGZFRNVlY0Vlc1T1lWSnRVbkpWYlhNeFYyeHJkMWR0ZEdoV01IQmFXVlZrYjFZeFNuUlZWRUpZVm14d1lWcFZaRVpsYlVwR1RsWmtVMVpHV2xOV2JUQjNaVVUxUjFkWWFHbFNiSEJaV1Zod2MxWnNiSEpXYms1T1RWWktlbFp0TVVkWFIwcFdWMjVzVldKSFVuWldha1pMWkVaV2MyRkdjRTVpYldodlYxUkdZVmxYVFhoWGJsSnBVako0V1ZWc1VsTk9iRnB4VTJwQ1ZrMVZWak5VYkZadlZsZEtTRlZzVWxwaE1sRXdWakJhYzFkWFRrZGFSbWhUWWtadmVGZFVRbXBOVjBWM1RWWmthbEpYYUZoWmJHaHZWVVpzVjFwRmRGZE5WWEI0VmtjeFIxVXhTbFZXYWxwWFlsaG9jbFY2U2s5amF6VlhZVVpPYVZJeFNsQldWekUwWkcxV2MxZHJaR0ZTUmtweFZGZHpNV1ZzYTNkV2JrNVhWakJ3V2xaWGVHOVhiVXBaVld0NFYySllhR2hWYkZwTFpFZFNTR0pGTldoTlZtdDNWbXBLTUZZeVJYaFhhMmhVWW1zMWNWVnRlSGRXTVd4VlVtMUdUbUpHU2xkV01qVnJWa1pKZUZkcmNGZE5ha1V3Vm1wQmVGTldSbkprUm1ScFZrVlpNbGRzVm10U01XUkhVMnhzWVZJelFsUlZiR2hEVjJ4YWRHUkdaRlJOVmxZMFZsYzFUMWxXU25SVmJrcFdZbGhOZUZZeWVISmtNV1IwWkVkb1YwMUlRbUZYVmxacllqRlplRk51VWxaV1JVcFpWbTE0ZDFsV2NGWmFSVnBzWWxWd1IxUnNXbXRWTVZwSFYyeE9WMkpVUWpOYVZWVXhVakZrV1dGSGJGTmlTRUphVjFab2QyTXhXbk5pU0VwWFltczFUMVJXV2t0bGJGcDBUVlZrV0ZJd2NGZFdNalZ6VmxkS1NGVnVXbGRoYTFwTVdrVmFWMk15UmtkalJUVnBZbGRvZGxZeFVrZFpWbXhZVkZob1dHSnNTbkJWYWtvMFYxWldjMVZzVGs5aVJuQjRWVEp3UTFack1WWldhazVWWWtaYWRsWnNaRXRUUmxaelZXeHdhRTFzUlhkV2FrSmhZekZrV0ZSclpHRlNiV2hVV1d0YWRtVkdaRlZSYlhCT1ZqQldNMVJXV210aGJFcFlZVVpvV21KSGFIWldWVnB6VmpGd1JtUkdaRTVXV0VJMFZtdGplRkl4VlhoVGJGWlhZV3h3V0Zsc2FHOWpiRlkyVTJzNWFtRjZWbGhaVlZwUFlWWkplRk5zUWxkV2VrVXdXa2N4VjJNeFpISmFSMFpUVW10d2VGWkdaSHBOVjFaellUTmtWMkpyTlZoV2FrSjNWMnhhV0dWSE9WaGlWWEJhVmxkME5GWXlTbGxoUjJoV1lrWndURnBGWkZOVFIwcEdUbGRvVGxadGRETldiWEJMVFVaWmVWSllhRmhoTW1oVldXMXpNV05XVm5SbFNHUlhUVmQ0VmxWdE1VZFViVXBIVTJ4a1YwMXFWbkpXYTFwS1pVWmtjbU5HWkU1aGExVjNWbTF3UW1WR1RsZFNia3ByVW0xU2NGWnJWbHBOYkdSelZtMTBVMDFYVWtoVk1uaHpXVlpKZWxGc1VsWmlSMmhFVmpKNFlXUkhVa2RhUmxKT1ZteFpNRlpzWXpGVU1XeFhVMjVTVm1KcmNGZFpiR2hPWlVaWmVXVklTbXROVjFJd1drVmtiMVl3TVVsUmJVWllWbXhhY2xscVJscGxSazUxVld4YVYxSlZjRnBXYlRFMFpERnNWMk5HV21GU1ZuQnpXV3hXZDFJeFVuTlhiWFJXVFZad1NGWXllRTlXTWtwVlVXcE9ZVlpXVlhoVmFrWnJWMWRHU0dKR1RtbFRSVXBoVmpGYWIyUXlUWGhYYms1cFUwVndXRmx0Y3pGVU1WSlhWMnQwYkdKR2NEQlVWbFpyVjBaSmQyTkdaRmROYWxaNlZteGtTMU5HVm5WWGJHUm9ZVEZ3VFZkclZtRldNazE1VW10a2FsSlVWbkJaYkdSdlpHeFplRlZyWkZwV2JYaFpWa1pvYjFkSFNuTlRia0pXWVd0dk1GWXhXbGRqTVZaelZHczVhVkp1UWpSV1ZFcDNVVEZhY2sxV1dsZGhhelZXV1d0YVlXUnNXbk5hUlhSVVVteGFlbFpYZUhkaFJURnpVbGhrVjJGclNtaFpla1pyVjBaU2NscEhSbE5pVjJoVlYxZDBZV1J0VmtkYVJsWlNZbGhDVDFacVFsZE5NVkpYVjIxMGFHSkZjRmxaVlZwdlYyMUtTR0ZJV2xkV1ZuQjZWbXBHZDFKdFVrZGFSVFZYVjBWSk1GWnRkR3BsUmtsNFZsaG9WR0pHV2xoWlYzaDNWMVphZEdWSVpHaFNiSEJHVlcxMGQySkdTblZSYTNCWFZucEdkbFpVU2t0VFZrWjFWMnhvVjJKRmNFbFhhMUpMVWpGSmVGcElTbUZTYlZKd1ZteGFkMWRHV2tkWGJGcE9WbXRzTkZaWE5VOVhSMHBXVjJ4b1YyRnJTak5XTVZwM1ZteGFWVlpzYUdsU01VcExWbFprTkdJeFduUlNXR2hxVW0xU2FGWnRNVk5YUmxaeFVteE9hazFXY0hsVWJGcHJWMFpLVm1OR2NGZGhhMXBVVlZSR2MxWXhaRmxoUm1ocFVqSm9WVlpxUW10aU1XUkhWMjVHVldKVWJGWlVWbHBMVmpGWmVXUkhSbWhXYTNCV1ZWZHdUMVl4V25KT1ZtUmhWak5vVEZWWGRIZFdWbEp5Vm10MFYxSlVWa2MlM0Q%3D'>http://127.0.0.1:8080/claroline/auth/login.php?sourceUrl=aHR0cDovLzEyNy4wLjAuMTo4MDgwL2NsYXJvbGluZS9hdXRoL2xvZ2luLnBocD9zb3VyY2VVcmw9YUhSMGNEb3ZMekV5Tnk0d0xqQXVNVG80TURnd0wyTnNZWEp2YkdsdVpTOWhkWFJvTDJ4dloybHVMbkJvY0Q5emIzVnlZMlZWY213OVlVaFNNR05FYjNaTWVrVjVUbmswZDB4cVFYVk5WRzgwVFVSbmQwd3lUbk5aV0VwMllrZHNkVnBUT1doa1dGSnZUREo0ZGxveWJIVk1ia0p2WTBRNWVtSXpWbmxaTWxaV1kyMTNPVmxWYUZOTlIwNUZZak5hVFdWclZqVlVibXN3WkRCNGNWRllWazVXUnpnd1ZGVlNibVF3ZDNsVWJrNWFWMFZ3TWxsclpITmtWbkJVVDFkb2ExZEdTblpVUkVvMFpHeHZlV0pJVmsxaWEwcDJXVEJSTldWdFNYcFdibXhhVFd4YVYxa3lNVE5QVm14V1lVWk9UbEl3TlVaWmFrNWhWRmRXY2xacVZsVmliWE4zV2tSQ05HTldSbGxXYXpWWFVucG5kMVpHVmxOaWJWRjNaRE5zVldKck5XRldNRlozVFd4c2NscElUbXRXYmtKVlZERmtiMkV4WkVkVGJscFZVa1Z2TUZwSGVIWmxWMHBKVm1zeGFXRXdjREpYVkVKU1RsZFdkRk5ZY0ZkaWJYaGhWRmQ0WVZZeGEzbE5WRTVRVm0xNFYxbFZXazlVYkVsM1RsVmFXbUZyTldoV1JtUlhZMnhhY1Zac1ZtbGlXRTR6VjJ0U1EwNUhUbGRTYkd4WFlYcFdXRlZ1Y0c1a01WcEhWbXhPYVdKV1JqTmFSRTV6VmxkS2NrNVhSbGROUmxvelZGZDRjMk5zY0VsVWJYUlhZbXRLVmxaRVJtdGlNa1Y0V2tWa1ZHSnNjRlpWYTFaMlRVWndTR1ZJV214V01IQktWbTF6ZUdGWFJYZGpSRXBZVmtWS1UxUnNaRmRrUms1WlkwWmthV0pZYUdoV1JtUTBXVlpaZUdFemJFNVdSVFZSVm0weE5GWXhiRlpYYXpsVllrVnNNMVJzVm1GWGJVWnlUbGRvVjFKdFVsaFpNbmhoWTFaYWMxWnRiR2xYUlRSNlZqSjBVMUV3TlVoVWJHUlRZa2Q0V0ZsWWNGZFhSbFoxWTBjMWEwMVdjRWhXYlhoUFlWZEtWMUpxVG1GU1JUVjZWbXhrUzJOck5WaFNiR1JPVW14dmVsWkdaRFJqTWs1elkwVnNWV0pZVWxoWmJYUkxWbXhhUlZKdGRHbE5hMVkwVjJ0V2ExWkhTbk5qUmxwV1lURmFNbFJWV25kVFIxWkpWMjE0VjAxSVFrdFdiVEY2WlVkR1dGSllaR3BTUlhCWlZtdFdTMVV4VW5OYVJtUnJVbXMxV2xrd1dtdGhWMHBaWVVkb1YxSnRVVEJYVmxwYVpVZEZlbUpGTlZkU1ZGWlNWbTB3ZUU1R1dYaGlSbHBZWVhwc1ZsbHJWbk5OTVZKelZtMUdXR0pWV25sVWJHUnZWakZLZEZWc2FGcE5ibWhvV1RGYVlXTXhXblJpUjJ4WVVsUlNObFpxU2pCVk1VVjNUbFZvVldKSFVsUlphMlEwVjBac1dXTkdaRmhTYkZveFdUQmpNV0V3TVZkalJXaFhZbGhvVUZsV1pFdFdNVXB4VkcxR1UxSlVWalpXYlhoclV6Sk9jazVXYUZOaVIxSlBWVzE0ZG1Wc1drZGFSRkpxVFdzMWVsa3dWbk5XVjBwWlZXeG9XbUpZVWt4V2JYaGhVbFpLZEdSSGJFNWhNVmt3VmpKMFYyRXhXa2hUYms1cVVteHdWMWxVUm1GTmJGSldWMjVrVkZJeFdrcFdNakUwVmpBeFNWRnJkRmRpVkVZMldsVmtSMWRHU2xsYVIzQlRVbGhDV2xadGRGZFRNVlY0Vlc1T1lWSnRVbkpWYlhNeFYyeHJkMWR0ZEdoV01IQmFXVlZrYjFZeFNuUlZWRUpZVm14d1lWcFZaRVpsYlVwR1RsWmtVMVpHV2xOV2JUQjNaVVUxUjFkWWFHbFNiSEJaV1Zod2MxWnNiSEpXYms1T1RWWktlbFp0TVVkWFIwcFdWMjVzVldKSFVuWldha1pMWkVaV2MyRkdjRTVpYldodlYxUkdZVmxYVFhoWGJsSnBVako0V1ZWc1VsTk9iRnB4VTJwQ1ZrMVZWak5VYkZadlZsZEtTRlZzVWxwaE1sRXdWakJhYzFkWFRrZGFSbWhUWWtadmVGZFVRbXBOVjBWM1RWWmthbEpYYUZoWmJHaHZWVVpzVjFwRmRGZE5WWEI0VmtjeFIxVXhTbFZXYWxwWFlsaG9jbFY2U2s5amF6VlhZVVpPYVZJeFNsQldWekUwWkcxV2MxZHJaR0ZTUmtweFZGZHpNV1ZzYTNkV2JrNVhWakJ3V2xaWGVHOVhiVXBaVld0NFYySllhR2hWYkZwTFpFZFNTR0pGTldoTlZtdDNWbXBLTUZZeVJYaFhhMmhVWW1zMWNWVnRlSGRXTVd4VlVtMUdUbUpHU2xkV01qVnJWa1pKZUZkcmNGZE5ha1V3Vm1wQmVGTldSbkprUm1ScFZrVlpNbGRzVm10U01XUkhVMnhzWVZJelFsUlZiR2hEVjJ4YWRHUkdaRlJOVmxZMFZsYzFUMWxXU25SVmJrcFdZbGhOZUZZeWVISmtNV1IwWkVkb1YwMUlRbUZYVmxacllqRlplRk51VWxaV1JVcFpWbTE0ZDFsV2NGWmFSVnBzWWxWd1IxUnNXbXRWTVZwSFYyeE9WMkpVUWpOYVZWVXhVakZrV1dGSGJGTmlTRUphVjFab2QyTXhXbk5pU0VwWFltczFUMVJXV2t0bGJGcDBUVlZrV0ZJd2NGZFdNalZ6VmxkS1NGVnVXbGRoYTFwTVdrVmFWMk15UmtkalJUVnBZbGRvZGxZeFVrZFpWbXhZVkZob1dHSnNTbkJWYWtvMFYxWldjMVZzVGs5aVJuQjRWVEp3UTFack1WWldhazVWWWtaYWRsWnNaRXRUUmxaelZXeHdhRTFzUlhkV2FrSmhZekZrV0ZSclpHRlNiV2hVV1d0YWRtVkdaRlZSYlhCT1ZqQldNMVJXV210aGJFcFlZVVpvV21KSGFIWldWVnB6VmpGd1JtUkdaRTVXV0VJMFZtdGplRkl4VlhoVGJGWlhZV3h3V0Zsc2FHOWpiRlkyVTJzNWFtRjZWbGhaVlZwUFlWWkplRk5zUWxkV2VrVXdXa2N4VjJNeFpISmFSMFpUVW10d2VGWkdaSHBOVjFaellUTmtWMkpyTlZoV2FrSjNWMnhhV0dWSE9WaGlWWEJhVmxkME5GWXlTbGxoUjJoV1lrWndURnBGWkZOVFIwcEdUbGRvVGxadGRETldiWEJMVFVaWmVWSllhRmhoTW1oVldXMXpNV05XVm5SbFNHUlhUVmQ0VmxWdE1VZFViVXBIVTJ4a1YwMXFWbkpXYTFwS1pVWmtjbU5HWkU1aGExVjNWbTF3UW1WR1RsZFNia3ByVW0xU2NGWnJWbHBOYkdSelZtMTBVMDFYVWtoVk1uaHpXVlpKZWxGc1VsWmlSMmhFVmpKNFlXUkhVa2RhUmxKT1ZteFpNRlpzWXpGVU1XeFhVMjVTVm1KcmNGZFpiR2hPWlVaWmVXVklTbXROVjFJd1drVmtiMVl3TVVsUmJVWllWbXhhY2xscVJscGxSazUxVld4YVYxSlZjRnBXYlRFMFpERnNWMk5HV21GU1ZuQnpXV3hXZDFJeFVuTlhiWFJXVFZad1NGWXllRTlXTWtwVlVXcE9ZVlpXVlhoVmFrWnJWMWRHU0dKR1RtbFRSVXBoVmpGYWIyUXlUWGhYYms1cFUwVndXRmx0Y3pGVU1WSlhWMnQwYkdKR2NEQlVWbFpyVjBaSmQyTkdaRmROYWxaNlZteGtTMU5HVm5WWGJHUm9ZVEZ3VFZkclZtRldNazE1VW10a2FsSlVWbkJaYkdSdlpHeFplRlZyWkZwV2JYaFpWa1pvYjFkSFNuTlRia0pXWVd0dk1GWXhXbGRqTVZaelZHczVhVkp1UWpSV1ZFcDNVVEZhY2sxV1dsZGhhelZXV1d0YVlXUnNXbk5hUlhSVVVteGFlbFpYZUhkaFJURnpVbGhrVjJGclNtaFpla1pyVjBaU2NscEhSbE5pVjJoVlYxZDBZV1J0VmtkYVJsWlNZbGhDVDFacVFsZE5NVkpYVjIxMGFHSkZjRmxaVlZwdlYyMUtTR0ZJV2xkV1ZuQjZWbXBHZDFKdFVrZGFSVFZYVjBWSk1GWnRkR3BsUmtsNFZsaG9WR0pHV2xoWlYzaDNWMVphZEdWSVpHaFNiSEJHVlcxMGQySkdTblZSYTNCWFZucEdkbFpVU2t0VFZrWjFWMnhvVjJKRmNFbFhhMUpMVWpGSmVGcElTbUZTYlZKd1ZteGFkMWRHV2tkWGJGcE9WbXRzTkZaWE5VOVhSMHBXVjJ4b1YyRnJTak5XTVZwM1ZteGFWVlpzYUdsU01VcExWbFprTkdJeFduUlNXR2hxVW0xU2FGWnRNVk5YUmxaeFVteE9hazFXY0hsVWJGcHJWMFpLVm1OR2NGZGhhMXBVVlZSR2MxWXhaRmxoUm1ocFVqSm9WVlpxUW10aU1XUkhWMjVHVldKVWJGWlVWbHBMVmpGWmVXUkhSbWhXYTNCV1ZWZHdUMVl4V25KT1ZtUmhWak5vVEZWWGRIZFdWbEp5Vm10MFYxSlVWa2MlM0Q%3D</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state11</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>-1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>12</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state12.png' /> 
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 1111px; top: 63px; width: 37px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state13.html'"></div>
+			</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Claroline&lt;/title&gt;
+&lt;meta http-equiv=&quot;Content-Script-Type&quot; content=&quot;text/javascript&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/HTML; charset=iso-8859-1&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;Claroline 1.11.10 - http://claroline.net&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/web/css/classic/main.css?1774485389&quot; media=&quot;screen, projection, tv&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/web/css/print.css?1774485389&quot; media=&quot;print&quot;&gt;
+
+&lt;link rel=&quot;top&quot; href=&quot;/index.php&quot; title=&quot;&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net/documentation.htm&quot; rel=&quot;Help&quot;&gt;
+&lt;link href=&quot;/CREDITS.txt&quot; rel=&quot;Author&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net&quot; rel=&quot;Copyright&quot;&gt;
+&lt;link href=&quot;/claroline/../favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    document.cookie=&quot;javascriptEnabled=true; path=&quot;;
+    &lt;/script&gt;
+
+&lt;script src=&quot;/web/js/jquery.js?1774485389&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/web/js/jquery.qtip.js?1774485389&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/web/js/claroline.js?1774485333&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/web/js/claroline.ui.js?1774485389&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+&lt;/script&gt;
+            
+
+&lt;/head&gt;
+
+&lt;body dir=&quot;ltr&quot; style=&quot;&quot;&gt;
+&lt;!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ --&gt;
+
+&lt;!-- claroPage --&gt;
+&lt;div id=&quot;claroPage&quot;&gt;
+
+&lt;!-- Banner --&gt;
+&lt;div id=&quot;topBanner&quot;&gt;
+
+&lt;!-- Platform Banner --&gt;
+&lt;div id=&quot;platformBanner&quot;&gt;
+    &lt;div id=&quot;campusBannerLeft&quot;&gt;
+        &lt;span id=&quot;siteName&quot;&gt;
+            &lt;a href=&quot;/index.php&quot; target=&quot;_top&quot;&gt;
+                        Claroline                        &lt;/a&gt;
+        &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerLeft --&gt;
+
+&lt;!-- End of campusBannerLeft --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;campusBannerRight&quot;&gt;
+        &lt;span id=&quot;institution&quot;&gt;
+                        
+                                                
+                    &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerRight --&gt;
+
+&lt;!-- End of campusBannerRight --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Platform Banner --&gt;
+
+&lt;div id=&quot;userBanner&quot;&gt;
+    &lt;div id=&quot;userBannerRight&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+            &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline/auth/login.php?sourceUrl=aHR0cDovLzEyNy4wLjAuMTo4MDgwL2NsYXJvbGluZS9hdXRoL2xvZ2luLnBocD9zb3VyY2VVcmw9YUhSMGNEb3ZMekV5Tnk0d0xqQXVNVG80TURnd0wyTnNZWEp2YkdsdVpTOWhkWFJvTDJ4dloybHVMbkJvY0Q5emIzVnlZMlZWY213OVlVaFNNR05FYjNaTWVrVjVUbmswZDB4cVFYVk5WRzgwVFVSbmQwd3lUbk5aV0VwMllrZHNkVnBUT1doa1dGSnZUREo0ZGxveWJIVk1ia0p2WTBRNWVtSXpWbmxaTWxaV1kyMTNPVmxWYUZOTlIwNUZZak5hVFdWclZqVlVibXN3WkRCNGNWRllWazVXUnpnd1ZGVlNibVF3ZDNsVWJrNWFWMFZ3TWxsclpITmtWbkJVVDFkb2ExZEdTblpVUkVvMFpHeHZlV0pJVmsxaWEwcDJXVEJSTldWdFNYcFdibXhhVFd4YVYxa3lNVE5QVm14V1lVWk9UbEl3TlVaWmFrNWhWRmRXY2xacVZsVmliWE4zV2tSQ05HTldSbGxXYXpWWFVucG5kMVpHVmxOaWJWRjNaRE5zVldKck5XRldNRlozVFd4c2NscElUbXRXYmtKVlZERmtiMkV4WkVkVGJscFZVa1Z2TUZwSGVIWmxWMHBKVm1zeGFXRXdjREpYVkVKU1RsZFdkRk5ZY0ZkaWJYaGhWRmQ0WVZZeGEzbE5WRTVRVm0xNFYxbFZXazlVYkVsM1RsVmFXbUZyTldoV1JtUlhZMnhhY1Zac1ZtbGlXRTR6VjJ0U1EwNUhUbGRTYkd4WFlYcFdXRlZ1Y0c1a01WcEhWbXhPYVdKV1JqTmFSRTV6VmxkS2NrNVhSbGROUmxvelZGZDRjMk5zY0VsVWJYUlhZbXRLVmxaRVJtdGlNa1Y0V2tWa1ZHSnNjRlpWYTFaMlRVWndTR1ZJV214V01IQktWbTF6ZUdGWFJYZGpSRXBZVmtWS1UxUnNaRmRrUms1WlkwWmthV0pZYUdoV1JtUTBXVlpaZUdFemJFNVdSVFZSVm0weE5GWXhiRlpYYXpsVllrVnNNMVJzVm1GWGJVWnlUbGRvVjFKdFVsaFpNbmhoWTFaYWMxWnRiR2xYUlRSNlZqSjBVMUV3TlVoVWJHUlRZa2Q0V0ZsWWNGZFhSbFoxWTBjMWEwMVdjRWhXYlhoUFlWZEtWMUpxVG1GU1JUVjZWbXhrUzJOck5WaFNiR1JPVW14dmVsWkdaRFJqTWs1elkwVnNWV0pZVWxoWmJYUkxWbXhhUlZKdGRHbE5hMVkwVjJ0V2ExWkhTbk5qUmxwV1lURmFNbFJWV25kVFIxWkpWMjE0VjAxSVFrdFdiVEY2WlVkR1dGSllaR3BTUlhCWlZtdFdTMVV4VW5OYVJtUnJVbXMxV2xrd1dtdGhWMHBaWVVkb1YxSnRVVEJYVmxwYVpVZEZlbUpGTlZkU1ZGWlNWbTB3ZUU1R1dYaGlSbHBZWVhwc1ZsbHJWbk5OTVZKelZtMUdXR0pWV25sVWJHUnZWakZLZEZWc2FGcE5ibWhvV1RGYVlXTXhXblJpUjJ4WVVsUlNObFpxU2pCVk1VVjNUbFZvVldKSFVsUlphMlEwVjBac1dXTkdaRmhTYkZveFdUQmpNV0V3TVZkalJXaFhZbGhvVUZsV1pFdFdNVXB4VkcxR1UxSlVWalpXYlhoclV6Sk9jazVXYUZOaVIxSlBWVzE0ZG1Wc1drZGFSRkpxVFdzMWVsa3dWbk5XVjBwWlZXeG9XbUpZVWt4V2JYaGhVbFpLZEdSSGJFNWhNVmt3VmpKMFYyRXhXa2hUYms1cVVteHdWMWxVUm1GTmJGSldWMjVrVkZJeFdrcFdNakUwVmpBeFNWRnJkRmRpVkVZMldsVmtSMWRHU2xsYVIzQlRVbGhDV2xadGRGZFRNVlY0Vlc1T1lWSnRVbkpWYlhNeFYyeHJkMWR0ZEdoV01IQmFXVlZrYjFZeFNuUlZWRUpZVm14d1lWcFZaRVpsYlVwR1RsWmtVMVpHV2xOV2JUQjNaVVUxUjFkWWFHbFNiSEJaV1Zod2MxWnNiSEpXYms1T1RWWktlbFp0TVVkWFIwcFdWMjVzVldKSFVuWldha1pMWkVaV2MyRkdjRTVpYldodlYxUkdZVmxYVFhoWGJsSnBVako0V1ZWc1VsTk9iRnB4VTJwQ1ZrMVZWak5VYkZadlZsZEtTRlZzVWxwaE1sRXdWakJhYzFkWFRrZGFSbWhUWWtadmVGZFVRbXBOVjBWM1RWWmthbEpYYUZoWmJHaHZWVVpzVjFwRmRGZE5WWEI0VmtjeFIxVXhTbFZXYWxwWFlsaG9jbFY2U2s5amF6VlhZVVpPYVZJeFNsQldWekUwWkcxV2MxZHJaR0ZTUmtweFZGZHpNV1ZzYTNkV2JrNVhWakJ3V2xaWGVHOVhiVXBaVld0NFYySllhR2hWYkZwTFpFZFNTR0pGTldoTlZtdDNWbXBLTUZZeVJYaFhhMmhVWW1zMWNWVnRlSGRXTVd4VlVtMUdUbUpHU2xkV01qVnJWa1pKZUZkcmNGZE5ha1V3Vm1wQmVGTldSbkprUm1ScFZrVlpNbGRzVm10U01XUkhVMnhzWVZJelFsUlZiR2hEVjJ4YWRHUkdaRlJOVmxZMFZsYzFUMWxXU25SVmJrcFdZbGhOZUZZeWVISmtNV1IwWkVkb1YwMUlRbUZYVmxacllqRlplRk51VWxaV1JVcFpWbTE0ZDFsV2NGWmFSVnBzWWxWd1IxUnNXbXRWTVZwSFYyeE9WMkpVUWpOYVZWVXhVakZrV1dGSGJGTmlTRUphVjFab2QyTXhXbk5pU0VwWFltczFUMVJXV2t0bGJGcDBUVlZrV0ZJd2NGZFdNalZ6VmxkS1NGVnVXbGRoYTFwTVdrVmFWMk15UmtkalJUVnBZbGRvZGxZeFVrZFpWbXhZVkZob1dHSnNTbkJWYWtvMFYxWldjMVZzVGs5aVJuQjRWVEp3UTFack1WWldhazVWWWtaYWRsWnNaRXRUUmxaelZXeHdhRTFzUlhkV2FrSmhZekZrV0ZSclpHRlNiV2hVV1d0YWRtVkdaRlZSYlhCT1ZqQldNMVJXV210aGJFcFlZVVpvV21KSGFIWldWVnB6VmpGd1JtUkdaRTVXV0VJMFZtdGplRkl4VlhoVGJGWlhZV3h3V0Zsc2FHOWpiRlkyVTJzNWFtRjZWbGhaVlZwUFlWWkplRk5zUWxkV2VrVXdXa2N4VjJNeFpISmFSMFpUVW10d2VGWkdaSHBOVjFaellUTmtWMkpyTlZoV2FrSjNWMnhhV0dWSE9WaGlWWEJhVmxkME5GWXlTbGxoUjJoV1lrWndURnBGWkZOVFIwcEdUbGRvVGxadGRETldiWEJMVFVaWmVWSllhRmhoTW1oVldXMXpNV05XVm5SbFNHUlhUVmQ0VmxWdE1VZFViVXBIVTJ4a1YwMXFWbkpXYTFwS1pVWmtjbU5HWkU1aGExVjNWbTF3UW1WR1RsZFNia3ByVW0xU2NGWnJWbHBOYkdSelZtMTBVMDFYVWtoVk1uaHpXVlpKZWxGc1VsWmlSMmhFVmpKNFlXUkhVa2RhUmxKT1ZteFpNRlpzWXpGVU1XeFhVMjVTVm1KcmNGZFpiR2hPWlVaWmVXVklTbXROVjFJd1drVmtiMVl3TVVsUmJVWllWbXhhY2xscVJscGxSazUxVld4YVYxSlZjRnBXYlRFMFpERnNWMk5HV21GU1ZuQnpXV3hXZDFJeFVuTlhiWFJXVFZad1NGWXllRTlXTWtwVlVXcE9ZVlpXVlhoVmFrWnJWMWRHU0dKR1RtbFRSVXBoVmpGYWIyUXlUWGhYYms1cFUwVndXRmx0Y3pGVU1WSlhWMnQwYkdKR2NEQlVWbFpyVjBaSmQyTkdaRmROYWxaNlZteGtTMU5HVm5WWGJHUm9ZVEZ3VFZkclZtRldNazE1VW10a2FsSlVWbkJaYkdSdlpHeFplRlZyWkZwV2JYaFpWa1pvYjFkSFNuTlRia0pXWVd0dk1GWXhXbGRqTVZaelZHczVhVkp1UWpSV1ZFcDNVVEZhY2sxV1dsZGhhelZXV1d0YVlXUnNXbk5hUlhSVVVteGFlbFpYZUhkaFJURnpVbGhrVjJGclNtaFpla1pyVjBaU2NscEhSbE5pVjJoVlYxZDBZV1J0VmtkYVJsWlNZbGhDVDFacVFsZE5NVkpYVjIxMGFHSkZjRmxaVlZwdlYyMUtTR0ZJV2xkV1ZuQjZWbXBHZDFKdFVrZGFSVFZYVjBWSk1GWnRkR3BsUmtsNFZsaG9WR0pHV2xoWlYzaDNWMFpzYzJGSE9XcGlSbGt5VlRKek5XRnRSalpXYkdoYVZsWndVRmxXV2twbFJrNXpVV3hrVjJWclZYZFhhMk40VmpKTmVGcElTbUZTTUZwVVZXMTBkMlZHV2tkYVNIQk9WakZhZWxsVVRtdFdNa3B5VGxab1YyRnJTak5XTW5oaFYwZFdTRTlXYUdsV1dFSmhWbXhrTUU1R1dYbFRiR3hvVWpKb1YxbHJXbmRVUm5CR1drWk9WRkl3Y0VkVWJHUnZWR3hhZEdSRVRsZGlXRUpNVkZWYVdtVldTbGxoUm1ob1RXMW9WbGRYTVhwTlYwNVhWbTVTYkZOSFVsaFVWbVEwVm14V2RFMVZaRlZpVlhCSVZUSjRhMVl3TVhGV2JrcFhZVEZ3UzFwVldtdGpiVTVIV2tVMWFHRXhWak5XYlRGM1VXMVdSMVJzWkZOaWEzQnlWVzB4VTJOR1duSldiSEJPWWtkU2VsWnRNVEJWTURGWVZXdG9WazF1YUhwWFZscEtaV3hHYzFWc1dtbFNNbWhGVm1wS05GbFhVa2hWYTJSaFVteEtUMVp0ZUZwTlJscHpXWHBHVlUxWGVGaFZNalZUVm0xS2NtTkdaRnBpUjJoUFdsVmFXbVZYVmtsVGJYUk9WakZKZDFkclZtdGlNVmwzVFZWc1VtSlZXbGxXYlhoaFkyeHNjVkpzY0d4U2F6VXhWbGQ0WVZZeFNsWmpSbkJYWWxSRk1GcEVSbk5XTWs1SFYyMUdVMVp1UW5wWFYzaFhaREZKZUZWdVRsaGlXRkpYVkZaYWQxTkdXWGxsUlRsWFRXdHdWbFZYY0U5WlZscFhWbGhvVm1GclduSldNV1JIVTBkS1IxUnRiRlJTVlhCb1ZtcEdZV0l5VVhsVVdHaFlZbXMxY0ZVd1ZuZFhSbXgwWTNwR1ZVMVdTbGhXTW5Rd1lrZEtSMk5FUWxWV2JGcHlWakJhU21ReVRrZGFSbVJPWVd4YU5sWnRlR3RUTVU1SFZtNVdXR0pIVW05WlZFWjNWRlprY2xadFJsZE5hekUxVlcxMGEyRnNTbFZXYmtKYVlrZFNkbHBIZUZwbFJsWnlXa1p3VjJKWWFGcFdhMXB2WWpGa1NGTnVUbFJpYTBwWFdWZDBkazFHV1hoWGJHUnFUVlphZWxaSGN6VmhWa3AxVVdwU1YxWkZjRE5WVkVaaFkyc3hWMWRzWkdoaGVsWlhWMWQwWVZsWFVuTlhiazVoVWxoU1ZWVnRlR0ZsYkZwWVpVaGthRkpVUm5wVmJHaHJWakpHY2xOdGFGcGxhMXB5VmpCYVUyTnNjRWhTYkU1cFZqSm9WbFl4WkRCWlYxSjBWbXRrWVZKc1dsTlpiR2hEVkRGYWNWRnNaRTVOVmtwWVZqSXhNR0ZIU2taalJteGFWbFp3ZGxZeU1VdFRSMFpKVjJ4a1YxWnVRalpXYlhCSFpERktkRlZyWkdGU1ZGWllWakJXU2sxR1duUmtSM0JzVW10c05GWnNhRzlXUjBwSFYyeG9XbFl6YUROV01WcGhaRWRXU1ZwSGFGTmlTRUpIVmxjeE1HUXlTa2RUYmxaU1lUTkNXRlp1Y0Vka2JGcFZVMnQwVkZacldqRldNbmh2VmpKS1JtTkZiRmhoTVVwTVZXcEdTbVZHY0VsVGJVWlRZbFpLZDFadGVHRmtNV1JIVjJ0a1dHSkdjRTlXYlhSelRrWmFXRTVWT1ZoU01IQlhWako0YjFZeVJuSlRhazVYVFZad00xWnRlR0ZXVmxwellVZHNVMDFWY0V4V2JGcHJUa2RKZUZkdVVsTlhSMmh4VlcweFUyRkdXblJOVms1WVVteGFlRlZ0ZUU5aGF6RlhZMGhzVldKR2NISldNRnBMVm0xT1IyTkdaR2hoTVhCVlZsWlNSMk14V1hoYVJteG9VbTFvY0ZWcVNtOVdWbHB4VVcxMGFVMVhVa2hXTWpWSFZsZEtWV0pHV2xWV2JIQk1WbXBHV21WWFVraFNiV2hYWVROQ1YxWldaSGRVTVZsNFYyNUtUMVp0VW1oV2FrNXZWRVpXV0dSSVpGZFdiRXA1Vm0xME1GWXhTbFZXYTJNbE0wUSUzRA%3D%3D&quot; target=&quot;_top&quot;&gt;Login&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of User Banner --&gt;
+
+&lt;!-- BreadcrumbLine  --&gt;
+&lt;div id=&quot;breadcrumbLine&quot;&gt;
+    &lt;hr&gt;
+    &lt;div class=&quot;breadcrumbTrails&quot;&gt;
+        &lt;ul class=&quot;breadCrumbs&quot;&gt;
+&lt;li class=&quot;breadCrumbsNode lastBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/index.php&quot; target=&quot;_top&quot;&gt;&lt;img src=&quot;/web/img/home.png?1774485389&quot; alt=&quot;home&quot;&gt;&amp;nbsp;Claroline&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;toolViewOption&quot;&gt;
+            &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+    &lt;hr&gt;
+&lt;/div&gt;
+&lt;!-- End of BreadcrumbLine  --&gt;
+
+&lt;/div&gt;
+&lt;!-- End of topBanner --&gt;
+&lt;!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ --&gt;
+
+
+&lt;!-- - - - - - - - - - - Claroline Body - - - - - - - - - --&gt;
+&lt;div id=&quot;claroBody&quot;&gt;
+    
+    
+                
+
+&lt;!-- Page content --&gt;
+&lt;!-- $Id: auth_form.tpl.php 14314 2012-11-07 09:09:19Z zefredz $ --&gt;
+
+
+&lt;div style=&quot;width: 180px; margin: 0 auto;&quot;&gt;
+    &lt;form class=&quot;claroLoginForm&quot; action=&quot;/claroline/auth/login.php&quot; method=&quot;post&quot;&gt;
+        &lt;fieldset&gt;
+          &lt;legend&gt;Authentication Required&lt;/legend&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;sourceUrl&quot; value=&quot;aHR0cDovLzEyNy4wLjAuMTo4MDgwL2NsYXJvbGluZS9hdXRoL2xvZ2luLnBocD9zb3VyY2VVcmw9YUhSMGNEb3ZMekV5Tnk0d0xqQXVNVG80TURnd0wyTnNZWEp2YkdsdVpTOWhkWFJvTDJ4dloybHVMbkJvY0Q5emIzVnlZMlZWY213OVlVaFNNR05FYjNaTWVrVjVUbmswZDB4cVFYVk5WRzgwVFVSbmQwd3lUbk5aV0VwMllrZHNkVnBUT1doa1dGSnZUREo0ZGxveWJIVk1ia0p2WTBRNWVtSXpWbmxaTWxaV1kyMTNPVmxWYUZOTlIwNUZZak5hVFdWclZqVlVibXN3WkRCNGNWRllWazVXUnpnd1ZGVlNibVF3ZDNsVWJrNWFWMFZ3TWxsclpITmtWbkJVVDFkb2ExZEdTblpVUkVvMFpHeHZlV0pJVmsxaWEwcDJXVEJSTldWdFNYcFdibXhhVFd4YVYxa3lNVE5QVm14V1lVWk9UbEl3TlVaWmFrNWhWRmRXY2xacVZsVmliWE4zV2tSQ05HTldSbGxXYXpWWFVucG5kMVpHVmxOaWJWRjNaRE5zVldKck5XRldNRlozVFd4c2NscElUbXRXYmtKVlZERmtiMkV4WkVkVGJscFZVa1Z2TUZwSGVIWmxWMHBKVm1zeGFXRXdjREpYVkVKU1RsZFdkRk5ZY0ZkaWJYaGhWRmQ0WVZZeGEzbE5WRTVRVm0xNFYxbFZXazlVYkVsM1RsVmFXbUZyTldoV1JtUlhZMnhhY1Zac1ZtbGlXRTR6VjJ0U1EwNUhUbGRTYkd4WFlYcFdXRlZ1Y0c1a01WcEhWbXhPYVdKV1JqTmFSRTV6VmxkS2NrNVhSbGROUmxvelZGZDRjMk5zY0VsVWJYUlhZbXRLVmxaRVJtdGlNa1Y0V2tWa1ZHSnNjRlpWYTFaMlRVWndTR1ZJV214V01IQktWbTF6ZUdGWFJYZGpSRXBZVmtWS1UxUnNaRmRrUms1WlkwWmthV0pZYUdoV1JtUTBXVlpaZUdFemJFNVdSVFZSVm0weE5GWXhiRlpYYXpsVllrVnNNMVJzVm1GWGJVWnlUbGRvVjFKdFVsaFpNbmhoWTFaYWMxWnRiR2xYUlRSNlZqSjBVMUV3TlVoVWJHUlRZa2Q0V0ZsWWNGZFhSbFoxWTBjMWEwMVdjRWhXYlhoUFlWZEtWMUpxVG1GU1JUVjZWbXhrUzJOck5WaFNiR1JPVW14dmVsWkdaRFJqTWs1elkwVnNWV0pZVWxoWmJYUkxWbXhhUlZKdGRHbE5hMVkwVjJ0V2ExWkhTbk5qUmxwV1lURmFNbFJWV25kVFIxWkpWMjE0VjAxSVFrdFdiVEY2WlVkR1dGSllaR3BTUlhCWlZtdFdTMVV4VW5OYVJtUnJVbXMxV2xrd1dtdGhWMHBaWVVkb1YxSnRVVEJYVmxwYVpVZEZlbUpGTlZkU1ZGWlNWbTB3ZUU1R1dYaGlSbHBZWVhwc1ZsbHJWbk5OTVZKelZtMUdXR0pWV25sVWJHUnZWakZLZEZWc2FGcE5ibWhvV1RGYVlXTXhXblJpUjJ4WVVsUlNObFpxU2pCVk1VVjNUbFZvVldKSFVsUlphMlEwVjBac1dXTkdaRmhTYkZveFdUQmpNV0V3TVZkalJXaFhZbGhvVUZsV1pFdFdNVXB4VkcxR1UxSlVWalpXYlhoclV6Sk9jazVXYUZOaVIxSlBWVzE0ZG1Wc1drZGFSRkpxVFdzMWVsa3dWbk5XVjBwWlZXeG9XbUpZVWt4V2JYaGhVbFpLZEdSSGJFNWhNVmt3VmpKMFYyRXhXa2hUYms1cVVteHdWMWxVUm1GTmJGSldWMjVrVkZJeFdrcFdNakUwVmpBeFNWRnJkRmRpVkVZMldsVmtSMWRHU2xsYVIzQlRVbGhDV2xadGRGZFRNVlY0Vlc1T1lWSnRVbkpWYlhNeFYyeHJkMWR0ZEdoV01IQmFXVlZrYjFZeFNuUlZWRUpZVm14d1lWcFZaRVpsYlVwR1RsWmtVMVpHV2xOV2JUQjNaVVUxUjFkWWFHbFNiSEJaV1Zod2MxWnNiSEpXYms1T1RWWktlbFp0TVVkWFIwcFdWMjVzVldKSFVuWldha1pMWkVaV2MyRkdjRTVpYldodlYxUkdZVmxYVFhoWGJsSnBVako0V1ZWc1VsTk9iRnB4VTJwQ1ZrMVZWak5VYkZadlZsZEtTRlZzVWxwaE1sRXdWakJhYzFkWFRrZGFSbWhUWWtadmVGZFVRbXBOVjBWM1RWWmthbEpYYUZoWmJHaHZWVVpzVjFwRmRGZE5WWEI0VmtjeFIxVXhTbFZXYWxwWFlsaG9jbFY2U2s5amF6VlhZVVpPYVZJeFNsQldWekUwWkcxV2MxZHJaR0ZTUmtweFZGZHpNV1ZzYTNkV2JrNVhWakJ3V2xaWGVHOVhiVXBaVld0NFYySllhR2hWYkZwTFpFZFNTR0pGTldoTlZtdDNWbXBLTUZZeVJYaFhhMmhVWW1zMWNWVnRlSGRXTVd4VlVtMUdUbUpHU2xkV01qVnJWa1pKZUZkcmNGZE5ha1V3Vm1wQmVGTldSbkprUm1ScFZrVlpNbGRzVm10U01XUkhVMnhzWVZJelFsUlZiR2hEVjJ4YWRHUkdaRlJOVmxZMFZsYzFUMWxXU25SVmJrcFdZbGhOZUZZeWVISmtNV1IwWkVkb1YwMUlRbUZYVmxacllqRlplRk51VWxaV1JVcFpWbTE0ZDFsV2NGWmFSVnBzWWxWd1IxUnNXbXRWTVZwSFYyeE9WMkpVUWpOYVZWVXhVakZrV1dGSGJGTmlTRUphVjFab2QyTXhXbk5pU0VwWFltczFUMVJXV2t0bGJGcDBUVlZrV0ZJd2NGZFdNalZ6VmxkS1NGVnVXbGRoYTFwTVdrVmFWMk15UmtkalJUVnBZbGRvZGxZeFVrZFpWbXhZVkZob1dHSnNTbkJWYWtvMFYxWldjMVZzVGs5aVJuQjRWVEp3UTFack1WWldhazVWWWtaYWRsWnNaRXRUUmxaelZXeHdhRTFzUlhkV2FrSmhZekZrV0ZSclpHRlNiV2hVV1d0YWRtVkdaRlZSYlhCT1ZqQldNMVJXV210aGJFcFlZVVpvV21KSGFIWldWVnB6VmpGd1JtUkdaRTVXV0VJMFZtdGplRkl4VlhoVGJGWlhZV3h3V0Zsc2FHOWpiRlkyVTJzNWFtRjZWbGhaVlZwUFlWWkplRk5zUWxkV2VrVXdXa2N4VjJNeFpISmFSMFpUVW10d2VGWkdaSHBOVjFaellUTmtWMkpyTlZoV2FrSjNWMnhhV0dWSE9WaGlWWEJhVmxkME5GWXlTbGxoUjJoV1lrWndURnBGWkZOVFIwcEdUbGRvVGxadGRETldiWEJMVFVaWmVWSllhRmhoTW1oVldXMXpNV05XVm5SbFNHUlhUVmQ0VmxWdE1VZFViVXBIVTJ4a1YwMXFWbkpXYTFwS1pVWmtjbU5HWkU1aGExVjNWbTF3UW1WR1RsZFNia3ByVW0xU2NGWnJWbHBOYkdSelZtMTBVMDFYVWtoVk1uaHpXVlpKZWxGc1VsWmlSMmhFVmpKNFlXUkhVa2RhUmxKT1ZteFpNRlpzWXpGVU1XeFhVMjVTVm1KcmNGZFpiR2hPWlVaWmVXVklTbXROVjFJd1drVmtiMVl3TVVsUmJVWllWbXhhY2xscVJscGxSazUxVld4YVYxSlZjRnBXYlRFMFpERnNWMk5HV21GU1ZuQnpXV3hXZDFJeFVuTlhiWFJXVFZad1NGWXllRTlXTWtwVlVXcE9ZVlpXVlhoVmFrWnJWMWRHU0dKR1RtbFRSVXBoVmpGYWIyUXlUWGhYYms1cFUwVndXRmx0Y3pGVU1WSlhWMnQwYkdKR2NEQlVWbFpyVjBaSmQyTkdaRmROYWxaNlZteGtTMU5HVm5WWGJHUm9ZVEZ3VFZkclZtRldNazE1VW10a2FsSlVWbkJaYkdSdlpHeFplRlZyWkZwV2JYaFpWa1pvYjFkSFNuTlRia0pXWVd0dk1GWXhXbGRqTVZaelZHczVhVkp1UWpSV1ZFcDNVVEZhY2sxV1dsZGhhelZXV1d0YVlXUnNXbk5hUlhSVVVteGFlbFpYZUhkaFJURnpVbGhrVjJGclNtaFpla1pyVjBaU2NscEhSbE5pVjJoVlYxZDBZV1J0VmtkYVJsWlNZbGhDVDFacVFsZE5NVkpYVjIxMGFHSkZjRmxaVlZwdlYyMUtTR0ZJV2xkV1ZuQjZWbXBHZDFKdFVrZGFSVFZYVjBWSk1GWnRkR3BsUmtsNFZsaG9WR0pHV2xoWlYzaDNWMVphZEdWSVpHaFNiSEJHVlcxMGQySkdTblZSYTNCWFZucEdkbFpVU2t0VFZrWjFWMnhvVjJKRmNFbFhhMUpMVWpGSmVGcElTbUZTYlZKd1ZteGFkMWRHV2tkWGJGcE9WbXRzTkZaWE5VOVhSMHBXVjJ4b1YyRnJTak5XTVZwM1ZteGFWVlpzYUdsU01VcExWbFprTkdJeFduUlNXR2hxVW0xU2FGWnRNVk5YUmxaeFVteE9hazFXY0hsVWJGcHJWMFpLVm1OR2NGZGhhMXBVVlZSR2MxWXhaRmxoUm1ocFVqSm9WVlpxUW10aU1XUkhWMjVHVldKVWJGWlVWbHBMVmpGWmVXUkhSbWhXYTNCV1ZWZHdUMVl4V25KT1ZtUmhWak5vVEZWWGRIZFdWbEp5Vm10MFYxSlVWa2MlM0Q=&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;sourceCid&quot; value=&quot;&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;sourceGid&quot; value=&quot;&quot;&gt;
+            
+                        
+            &lt;label for=&quot;login&quot;&gt;Username&lt;/label&gt;&lt;br&gt;
+            &lt;input type=&quot;text&quot; name=&quot;login&quot; id=&quot;login&quot; size=&quot;15&quot; tabindex=&quot;1&quot; value=&quot;&quot;&gt;&lt;br&gt;
+            &lt;br&gt;
+            &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;&lt;br&gt;
+            &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; size=&quot;15&quot; tabindex=&quot;2&quot; autocomplete=&quot;off&quot;&gt;&lt;br&gt;
+            &lt;br&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;Ok&quot;&gt;&amp;nbsp;
+            &lt;a href=&quot;/claroline/&quot;&gt;&lt;input type=&quot;button&quot; onclick=&quot;document.location='/claroline/';return false&quot; value=&quot;Cancel&quot;&gt;&lt;/a&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+    
+    &lt;/div&gt;&lt;!-- End of Page Content --&gt;
+
+
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - --&gt;
+
+&lt;!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ --&gt;
+
+
+&lt;div id=&quot;campusFooter&quot;&gt;
+    &lt;hr&gt;
+    &lt;div id=&quot;campusFooterLeft&quot;&gt;
+        
+&lt;!-- campusFooterLeft --&gt;
+
+&lt;!-- End of campusFooterLeft --&gt;
+            &lt;/div&gt;
+    &lt;div id=&quot;campusFooterRight&quot;&gt;
+        
+&lt;!-- campusFooterRight --&gt;
+
+&lt;!-- End of campusFooterRight --&gt;
+        &lt;div id=&quot;platformManager&quot;&gt;Administrator for Claroline : &lt;a href=&quot;mailto:test@test.com?subject=[Claroline]&quot;&gt;test test&lt;/a&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div id=&quot;campusFooterCenter&quot;&gt;
+        
+&lt;!-- campusFooterCenter --&gt;
+
+&lt;!-- End of campusFooterCenter --&gt;
+        &lt;span class=&quot;poweredBy&quot;&gt;Powered by &lt;a href=&quot;http://www.claroline.net&quot; target=&quot;_blank&quot;&gt;Claroline&lt;/a&gt; &copy; 2001 - 2013&lt;/span&gt;    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of claroPage --&gt;
+&lt;/div&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/SPAN[1]/A[1]</td>
+							<td><a href="state13.html">state13</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

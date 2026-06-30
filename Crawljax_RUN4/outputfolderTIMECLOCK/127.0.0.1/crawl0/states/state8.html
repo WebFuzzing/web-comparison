@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+				<a class="brand" href="../index.html#graph">Crawl overview</a>
+			<ul class="nav">
+					<li class="active"><a href="#">State inspector</a></li>
+			</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+					<p>Hover over a state highlights the connected edges</p>
+					<p>Single click over a state highlights all its near-duplicates</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state8</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://127.0.0.1:8080/timeclock.php'>http://127.0.0.1:8080/timeclock.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state6</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>-1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state8.png' /> 
+			</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;css/default.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;print&quot; href=&quot;css/print.css&quot;&gt;
+&lt;meta http-equiv=&quot;refresh&quot; content=&quot;300;URL=timeclock.php&quot;&gt;
+&lt;script language=&quot;javascript&quot; src=&quot;scripts/pnguin_timeclock.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table class=&quot;header&quot; width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;1&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;index.php&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;images/logos/phptimeclock.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot; scope=&quot;col&quot; align=&quot;right&quot; valign=&quot;middle&quot;&gt;&lt;a href=&quot;http://www.historychannel.com/tdih&quot; style=&quot;color:#000000;font-family:Tahoma;font-size:10pt;
+            text-decoration:none;&quot;&gt;June 23, 2026&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;table class=&quot;topmain_row_color&quot; width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot;&gt;&lt;img src=&quot;images/icons/house.png&quot; border=&quot;0&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;10&quot;&gt;&lt;a href=&quot;index.php&quot; style=&quot;color:#000000;font-family:Tahoma;font-size:10pt;text-decoration:none;&quot;&gt;
+        Home&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;23&quot;&gt;&lt;img src=&quot;images/icons/bricks.png&quot; border=&quot;0&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;10&quot;&gt;&lt;a href=&quot;login.php&quot; style=&quot;color:#000000;font-family:Tahoma;font-size:10pt;text-decoration:none;&quot;&gt;
+        Administration&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;23&quot;&gt;&lt;img src=&quot;images/icons/report.png&quot; border=&quot;0&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;10&quot;&gt;&lt;a href=&quot;reports/index.php&quot; style=&quot;color:#000000;font-family:Tahoma;font-size:10pt;
+        text-decoration:none;&quot;&gt;Reports&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;table width=&quot;100%&quot; height=&quot;89%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;1&quot;&gt;
+  &lt;tbody&gt;&lt;tr valign=&quot;top&quot;&gt;
+    &lt;td class=&quot;left_main&quot; width=&quot;170&quot; align=&quot;left&quot; scope=&quot;col&quot;&gt;
+      &lt;table class=&quot;hide&quot; width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;left_rows&quot; height=&quot;7&quot; align=&quot;left&quot; valign=&quot;middle&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;left_rows&quot; height=&quot;18&quot; align=&quot;left&quot; valign=&quot;middle&quot;&gt;&lt;a class=&quot;admin_headings&quot; href=&quot;http://slashdot11.org/&quot;&gt;Book a Meeting Room&lt;/a&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;left_rows&quot; height=&quot;18&quot; align=&quot;left&quot; valign=&quot;middle&quot;&gt;&lt;a class=&quot;admin_headings&quot; href=&quot;http://slashdot22.org/&quot;&gt;Google News&lt;/a&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;left_rows&quot; height=&quot;18&quot; align=&quot;left&quot; valign=&quot;middle&quot;&gt;&lt;a class=&quot;admin_headings&quot; href=&quot;http://slashdot33.org/&quot;&gt;Mailing Lists&lt;/a&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;left_rows&quot; height=&quot;18&quot; align=&quot;left&quot; valign=&quot;middle&quot;&gt;&lt;a class=&quot;admin_headings&quot; href=&quot;http://slashdot44.org/&quot;&gt;Slashdot&lt;/a&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;left_rows&quot; height=&quot;18&quot; align=&quot;left&quot; valign=&quot;middle&quot;&gt;&lt;a class=&quot;admin_headings&quot; href=&quot;http://slashdot55.org/&quot;&gt;Vacation Calendar&lt;/a&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
+        &lt;form name=&quot;timeclock&quot; action=&quot;/timeclock.php&quot; method=&quot;post&quot;&gt;&lt;/form&gt;
+        &lt;tr&gt;&lt;td height=&quot;20&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;title_underline&quot; height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;padding-left:10px;&quot;&gt;Please sign in below:&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;7&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; class=&quot;misc_items&quot;&gt;Name:&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; class=&quot;misc_items&quot;&gt;
+              &lt;select name=&quot;left_fullname&quot; tabindex=&quot;1&quot;&gt;
+              &lt;option value=&quot;&quot;&gt;...&lt;/option&gt;
+              &lt;/select&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;7&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; class=&quot;misc_items&quot;&gt;In/Out:&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; class=&quot;misc_items&quot;&gt;
+              &lt;select name=&quot;left_inout&quot; tabindex=&quot;3&quot;&gt;
+              &lt;option value=&quot;&quot;&gt;...&lt;/option&gt;
+              &lt;option&gt;break&lt;/option&gt;
+              &lt;option&gt;in&lt;/option&gt;
+              &lt;option&gt;lunch&lt;/option&gt;
+              &lt;option&gt;out&lt;/option&gt;
+              &lt;/select&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;7&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; class=&quot;misc_items&quot;&gt;Notes:&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; class=&quot;misc_items&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;left_notes&quot; maxlength=&quot;250&quot; size=&quot;17&quot; tabindex=&quot;4&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td width=&quot;100%&quot;&gt;&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                  &lt;tbody&gt;&lt;tr&gt;&lt;td nowrap=&quot;&quot; height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; class=&quot;misc_items&quot; width=&quot;10%&quot;&gt;Remember&amp;nbsp;Me?&lt;/td&gt;&lt;td width=&quot;90%&quot; align=&quot;left&quot; class=&quot;misc_items&quot; style=&quot;padding-left:0px;padding-right:0px;&quot; tabindex=&quot;5&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;remember_me&quot; value=&quot;1&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+                    &lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;
+        &lt;/tr&gt;&lt;tr&gt;&lt;td height=&quot;7&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;4&quot; align=&quot;left&quot; valign=&quot;middle&quot; class=&quot;misc_items&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;submit_button&quot; value=&quot;Submit&quot; align=&quot;center&quot; tabindex=&quot;6&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td height=&quot;90%&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;
+    &lt;td align=&quot;left&quot; class=&quot;right_main&quot; scope=&quot;col&quot;&gt;
+      &lt;table width=&quot;100%&quot; height=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;1&quot;&gt;
+        &lt;tbody&gt;&lt;tr class=&quot;right_main_text&quot;&gt;
+          &lt;td valign=&quot;top&quot;&gt;
+&lt;br&gt;
+You have not chosen a username or a status. Please try again.
+        &lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;hide&quot;&gt;&lt;td height=&quot;4%&quot; class=&quot;misc_items&quot; align=&quot;right&quot; valign=&quot;middle&quot; scope=&quot;row&quot; colspan=&quot;2&quot;&gt;Powered by&amp;nbsp;&lt;a class=&quot;footer_links&quot; href=&quot;http://httpd.apache.org/&quot;&gt;Apache&lt;/a&gt;&amp;nbsp;&plusmn;&lt;a class=&quot;footer_links&quot; href=&quot;http://mysql.org&quot;&gt;&amp;nbsp;MySql&lt;/a&gt; 
+            &plusmn;&lt;a class=&quot;footer_links&quot; href=&quot;http://php.net&quot;&gt;&amp;nbsp;PHP&lt;/a&gt;&amp;nbsp;&bull;&lt;a class=&quot;footer_links&quot; href=&quot;http://timeclock.sourceforge.net&quot;&gt;&amp;nbsp;PHP Timeclock&amp;nbsp;1.04&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

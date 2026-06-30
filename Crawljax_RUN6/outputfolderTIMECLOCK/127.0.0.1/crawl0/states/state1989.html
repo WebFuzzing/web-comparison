@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+				<a class="brand" href="../index.html#graph">Crawl overview</a>
+			<ul class="nav">
+					<li class="active"><a href="#">State inspector</a></li>
+			</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+					<p>Hover over a state highlights the connected edges</p>
+					<p>Single click over a state highlights all its near-duplicates</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state1989</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://127.0.0.1:8080/reports/timerpt.php'>http://127.0.0.1:8080/reports/timerpt.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>44</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state1988</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>-1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>1989</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state1989.png' /> 
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 613px; top: 168px; width: 18px; height: 16px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state1990.html'"></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 735px; top: 168px; width: 18px; height: 16px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 627px; top: 199px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 644px; top: 199px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 661px; top: 199px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 684px; top: 199px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 701px; top: 199px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 718px; top: 199px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 735px; top: 199px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 633px; top: 214px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 650px; top: 214px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 667px; top: 214px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 684px; top: 214px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 701px; top: 214px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 712px; top: 214px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 729px; top: 214px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 627px; top: 229px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 644px; top: 229px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 661px; top: 229px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 678px; top: 229px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 695px; top: 229px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 712px; top: 229px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 729px; top: 229px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 627px; top: 244px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 644px; top: 244px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 661px; top: 244px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 678px; top: 244px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 695px; top: 244px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 712px; top: 244px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 729px; top: 244px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 627px; top: 259px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 644px; top: 259px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 661px; top: 259px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 678px; top: 259px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 695px; top: 259px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 712px; top: 259px; width: 14px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 735px; top: 259px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 633px; top: 274px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 650px; top: 274px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 667px; top: 274px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 684px; top: 274px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 701px; top: 274px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 718px; top: 274px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 735px; top: 274px; width: 8px; height: 15px; border: 2px solid orange;  " ></div>
+			</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;&lt;title&gt;PHP Timeclock 1.04 - Daily Time Report&lt;/title&gt;
+
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;../css/default.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;print&quot; href=&quot;../css/print.css&quot;&gt;
+&lt;script language=&quot;javascript&quot; src=&quot;../scripts/CalendarPopup.js&quot;&gt;&lt;/script&gt;
+&lt;script language=&quot;javascript&quot;&gt;document.write(getCalendarStyles());&lt;/script&gt;&lt;style&gt;
+.cpYearNavigation,.cpMonthNavigation { background-color:#cdc0b0; text-align:center; vertical-align:center; text-decoration:none; color:#000000; font-family:Tahoma; border-width:0px 0px 1px 0px; border-style:solid; border-color: #748771; }
+.cpDayColumnHeader, .cpYearNavigation,.cpMonthNavigation,.cpCurrentMonthDate,.cpCurrentMonthDateDisabled,.cpOtherMonthDate,.cpOtherMonthDateDisabled,.cpCurrentDate,.cpCurrentDateDisabled,.cpTodayText,.cpTodayTextDisabled,.cpText { font-family:Tahoma; font-size:11px; }
+TD.cpDayColumnHeader { text-align:right; border:solid thin #C0C0C0;border-width:0px 0px 1px 0px; }
+.cpCurrentMonthDate, .cpOtherMonthDate, .cpCurrentDate  { text-align:right; text-decoration:none; }
+.cpCurrentMonthDateDisabled, .cpOtherMonthDateDisabled, .cpCurrentDateDisabled { color:#D0D0D0; text-align:right; text-decoration:line-through; }
+.cpCurrentMonthDate, .cpCurrentDate { color:#000000; }
+.cpOtherMonthDate { color:#808080; }
+TD.cpCurrentDate { color:white; background-color: #eeeeee; border-width:1px; border:solid thin #748771; }
+TD.cpCurrentDateDisabled { border-width:1px; border:solid thin #FFAAAA; }
+TD.cpTodayText, TD.cpTodayTextDisabled { border:solid thin #C0C0C0; border-width:1px 0px 0px 0px;}
+A.cpTodayText, SPAN.cpTodayTextDisabled { height:20px; }
+A.cpTodayText { color:black; }
+.cpTodayTextDisabled { color:#D0D0D0; }
+.cpBorder { border:solid thin #748771;border-width:1px 1px 1px 1px; }
+&lt;/style&gt;
+
+&lt;script language=&quot;javascript&quot;&gt;var cal = new CalendarPopup('mydiv');&lt;/script&gt;
+&lt;script language=&quot;javascript&quot; src=&quot;../scripts/pnguin.js&quot;&gt;&lt;/script&gt;
+&lt;script language=&quot;JavaScript&quot;&gt;
+
+function office_names() {
+var select = document.form.office_name;
+var groups_select = document.form.group_name;
+var users_select = document.form.user_name;
+select.options[0] = new Option(&quot;All&quot;);
+select.options[0].value = 'All';
+groups_select.options[0] = new Option(&quot;All&quot;);
+groups_select.options[0].value = 'All';
+users_select.options[0] = new Option(&quot;All&quot;);
+users_select.options[0].value = 'All';
+
+select.options[1] = new Option(&quot;test&quot;);
+select.options[1].value = &quot;test&quot;;
+}
+
+
+function group_names() {
+var offices_select = document.form.office_name;
+var groups_select = document.form.group_name;
+var users_select = document.form.user_name;
+groups_select.options[0] = new Option(&quot;All&quot;);
+groups_select.options[0].value = 'All';
+users_select.options[0] = new Option(&quot;All&quot;);
+users_select.options[0].value = 'All';
+
+if (offices_select.options[offices_select.selectedIndex].text == &quot;test&quot;) {
+groups_select.options[0] = new Option(&quot;All&quot;);
+groups_select.options[0].value = 'All';
+}
+if (users_select.options[users_select.selectedIndex].value != 'All') {
+  users_select.length = 0;
+}
+if (groups_select.options[groups_select.selectedIndex].value != 'All') {
+  groups_select.length = 0;
+}
+if (offices_select.options[offices_select.selectedIndex].value == 'All') {
+groups_select.options[0] = new Option(&quot;All&quot;);
+groups_select.options[0].value = 'All';
+}
+if (groups_select.options[groups_select.selectedIndex].value == 'All') {
+users_select.options[0] = new Option(&quot;All&quot;);
+users_select.options[0].value = 'All';
+}
+}
+
+
+function user_names() {
+var offices_select = document.form.office_name;
+var groups_select = document.form.group_name;
+var users_select = document.form.user_name;
+users_select.options[0] = new Option(&quot;All&quot;);
+users_select.options[0].value = 'All';
+
+if (offices_select.options[offices_select.selectedIndex].value != 'All') {
+  users_select.length = 0;
+}
+
+if (offices_select.options[offices_select.selectedIndex].text == &quot;test&quot;) {
+} 
+&lt;br /&gt;
+&lt;font size='1'&gt;&lt;table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'&gt;
+&lt;tr&gt;&lt;th align='left' bgcolor='#f57900' colspan=&quot;5&quot;&gt;&lt;span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'&gt;( ! )&lt;/span&gt; Warning: mysql_free_result() expects parameter 1 to be resource, null given in /var/www/html/scripts/dropdown_get_reports.php on line &lt;i&gt;152&lt;/i&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th align='left' bgcolor='#e9b96e' colspan='5'&gt;Call Stack&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th align='center' bgcolor='#eeeeec'&gt;#&lt;/th&gt;&lt;th align='left' bgcolor='#eeeeec'&gt;Time&lt;/th&gt;&lt;th align='left' bgcolor='#eeeeec'&gt;Memory&lt;/th&gt;&lt;th align='left' bgcolor='#eeeeec'&gt;Function&lt;/th&gt;&lt;th align='left' bgcolor='#eeeeec'&gt;Location&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor='#eeeeec' align='center'&gt;1&lt;/td&gt;&lt;td bgcolor='#eeeeec' align='center'&gt;0.0057&lt;/td&gt;&lt;td bgcolor='#eeeeec' align='right'&gt;352616&lt;/td&gt;&lt;td bgcolor='#eeeeec'&gt;{main}(  )&lt;/td&gt;&lt;td title='/var/www/html/reports/timerpt.php' bgcolor='#eeeeec'&gt;.../timerpt.php&lt;b&gt;:&lt;/b&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor='#eeeeec' align='center'&gt;2&lt;/td&gt;&lt;td bgcolor='#eeeeec' align='center'&gt;0.0096&lt;/td&gt;&lt;td bgcolor='#eeeeec' align='right'&gt;378536&lt;/td&gt;&lt;td bgcolor='#eeeeec'&gt;include( &lt;font color='#00bb00'&gt;'/var/www/html/reports/header_get_reports.php'&lt;/font&gt; )&lt;/td&gt;&lt;td title='/var/www/html/reports/timerpt.php' bgcolor='#eeeeec'&gt;.../timerpt.php&lt;b&gt;:&lt;/b&gt;34&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor='#eeeeec' align='center'&gt;3&lt;/td&gt;&lt;td bgcolor='#eeeeec' align='center'&gt;0.0154&lt;/td&gt;&lt;td bgcolor='#eeeeec' align='right'&gt;455368&lt;/td&gt;&lt;td bgcolor='#eeeeec'&gt;include( &lt;font color='#00bb00'&gt;'/var/www/html/scripts/dropdown_get_reports.php'&lt;/font&gt; )&lt;/td&gt;&lt;td title='/var/www/html/reports/header_get_reports.php' bgcolor='#eeeeec'&gt;.../header_get_reports.php&lt;b&gt;:&lt;/b&gt;66&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor='#eeeeec' align='center'&gt;4&lt;/td&gt;&lt;td bgcolor='#eeeeec' align='center'&gt;0.0177&lt;/td&gt;&lt;td bgcolor='#eeeeec' align='right'&gt;455904&lt;/td&gt;&lt;td bgcolor='#eeeeec'&gt;&lt;a href='http://www.php.net/function.mysql-free-result' target='_new'&gt;mysql_free_result&lt;/a&gt;
+(  )&lt;/td&gt;&lt;td title='/var/www/html/scripts/dropdown_get_reports.php' bgcolor='#eeeeec'&gt;.../dropdown_get_reports.php&lt;b&gt;:&lt;/b&gt;152&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/font&gt;
+if (groups_select.options[groups_select.selectedIndex].value == 'All') {
+users_select.options[0] = new Option(&quot;All&quot;);
+users_select.options[0].value = 'All';
+}
+}
+
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;office_names();&quot;&gt;
+&lt;table class=&quot;header&quot; width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;1&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;a href=&quot;../index.php&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;../images/logos/phptimeclock.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot; scope=&quot;col&quot; align=&quot;right&quot; valign=&quot;middle&quot;&gt;&lt;a href=&quot;http://www.historychannel.com/tdih&quot; style=&quot;color:#000000;font-family:Tahoma;font-size:10pt;
+        text-decoration:none;&quot;&gt;June 24, 2026&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;table class=&quot;topmain_row_color&quot; width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot;&gt;&lt;img src=&quot;../images/icons/house.png&quot; border=&quot;0&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;10&quot;&gt;&lt;a href=&quot;../index.php&quot; style=&quot;color:#000000;font-family:Tahoma;font-size:10pt;text-decoration:none;&quot;&gt;
+        Home&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;23&quot;&gt;&lt;img src=&quot;../images/icons/bricks.png&quot; border=&quot;0&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;10&quot;&gt;&lt;a href=&quot;../login.php&quot; style=&quot;color:#000000;font-family:Tahoma;font-size:10pt;text-decoration:none;&quot;&gt;
+        Administration&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;23&quot;&gt;&lt;img src=&quot;../images/icons/report.png&quot; border=&quot;0&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;10&quot;&gt;&lt;a href=&quot;index.php&quot; style=&quot;color:#000000;font-family:Tahoma;font-size:10pt;text-decoration:none;&quot;&gt;
+        Reports&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;table width=&quot;100%&quot; height=&quot;89%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;1&quot;&gt;
+  &lt;tbody&gt;&lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+      &lt;table width=&quot;100%&quot; height=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;1&quot;&gt;
+        &lt;tbody&gt;&lt;tr class=&quot;right_main_text&quot;&gt;
+          &lt;td valign=&quot;top&quot;&gt;
+            &lt;br&gt;
+            &lt;form name=&quot;form&quot; action=&quot;/reports/timerpt.php&quot; method=&quot;post&quot; onsubmit=&quot;return isFromOrToDate();&quot;&gt;
+            &lt;table align=&quot;center&quot; class=&quot;table_border&quot; width=&quot;60%&quot; border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot;&gt;
+              &lt;tbody&gt;&lt;tr&gt;
+                &lt;th class=&quot;rightside_heading&quot; nowrap=&quot;&quot; halign=&quot;left&quot; colspan=&quot;3&quot;&gt;&lt;img src=&quot;../images/icons/report.png&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Daily 
+                    Time Report&lt;/th&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td height=&quot;15&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+              &lt;input type=&quot;hidden&quot; name=&quot;date_format&quot; value=&quot;M/d/yyyy&quot;&gt;
+              &lt;tr&gt;&lt;td class=&quot;table_rows&quot; height=&quot;25&quot; width=&quot;20%&quot; style=&quot;padding-left:32px;&quot; nowrap=&quot;&quot;&gt;Choose Office:&lt;/td&gt;&lt;td colspan=&quot;2&quot; width=&quot;80%&quot; style=&quot;color:red;font-family:Tahoma;font-size:10px;padding-left:20px;&quot;&gt;
+                      &lt;select name=&quot;office_name&quot; onchange=&quot;group_names();&quot;&gt;
+                      &lt;/select&gt;&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td class=&quot;table_rows&quot; height=&quot;25&quot; width=&quot;20%&quot; style=&quot;padding-left:32px;&quot; nowrap=&quot;&quot;&gt;Choose Group:&lt;/td&gt;&lt;td colspan=&quot;2&quot; width=&quot;80%&quot; style=&quot;color:red;font-family:Tahoma;font-size:10px;padding-left:20px;&quot;&gt;
+                      &lt;select name=&quot;group_name&quot; onchange=&quot;user_names();&quot;&gt;
+                      &lt;/select&gt;&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td class=&quot;table_rows&quot; height=&quot;25&quot; width=&quot;20%&quot; style=&quot;padding-left:32px;&quot; nowrap=&quot;&quot;&gt;Choose Username:&lt;/td&gt;&lt;td colspan=&quot;2&quot; width=&quot;80%&quot; style=&quot;color:red;font-family:Tahoma;font-size:10px;padding-left:20px;&quot;&gt;
+                      &lt;select name=&quot;user_name&quot;&gt;
+                      &lt;/select&gt;&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td class=&quot;table_rows&quot; style=&quot;padding-left:32px;&quot; width=&quot;20%&quot; nowrap=&quot;&quot;&gt;From Date: (m/d/yyyy)&lt;/td&gt;&lt;td style=&quot;color:red;font-family:Tahoma;font-size:10px;padding-left:20px;&quot; width=&quot;80%&quot;&gt;
+                      &lt;input type=&quot;text&quot; size=&quot;10&quot; maxlength=&quot;10&quot; name=&quot;from_date&quot; style=&quot;color:#27408b&quot;&gt;&amp;nbsp;*&amp;nbsp;&amp;nbsp;
+                      &lt;a href=&quot;#&quot; onclick=&quot;form.from_date.value='';cal.select(document.forms['form'].from_date,'from_date_anchor','M/d/yyyy');
+                      return false;&quot; name=&quot;from_date_anchor&quot; id=&quot;from_date_anchor&quot; style=&quot;font-size:11px;color:#27408b;&quot;&gt;Pick Date&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;
+              &lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table_rows&quot; style=&quot;padding-left:32px;&quot; width=&quot;20%&quot; nowrap=&quot;&quot;&gt;To Date: (m/d/yyyy)&lt;/td&gt;&lt;td style=&quot;color:red;font-family:Tahoma;font-size:10px;padding-left:20px;&quot; width=&quot;80%&quot;&gt;
+                      &lt;input type=&quot;text&quot; size=&quot;10&quot; maxlength=&quot;10&quot; name=&quot;to_date&quot; style=&quot;color:#27408b&quot;&gt;&amp;nbsp;*&amp;nbsp;&amp;nbsp;
+                      &lt;a href=&quot;#&quot; onclick=&quot;form.to_date.value='';cal.select(document.forms['form'].to_date,'to_date_anchor','M/d/yyyy');
+                      return false;&quot; name=&quot;to_date_anchor&quot; id=&quot;to_date_anchor&quot; style=&quot;font-size:11px;color:#27408b;&quot;&gt;Pick Date&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;
+              &lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;table_rows&quot; align=&quot;right&quot; colspan=&quot;3&quot; style=&quot;color:red;font-family:Tahoma;font-size:10px;&quot;&gt;*&amp;nbsp;required&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;&lt;/table&gt;
+            &lt;div style=&quot;position: absolute; visibility: visible; background-color: rgb(255, 255, 255); left: 612px; top: 169px;&quot; id=&quot;mydiv&quot; height=&quot;200&quot;&gt;&lt;table class=&quot;cpBorder&quot; width=&quot;144&quot; border=&quot;0&quot; borderwidth=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;1&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;CENTER&quot;&gt;
+&lt;center&gt;
+&lt;table width=&quot;144&quot; border=&quot;0&quot; borderwidth=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&quot;cpMonthNavigation&quot; width=&quot;22&quot;&gt;&lt;a class=&quot;cpMonthNavigation&quot; href=&quot;javascript:CP_refreshCalendar(0,12,1861);&quot;&gt;&amp;lt;&amp;lt;&lt;/a&gt;&lt;/td&gt;
+&lt;td class=&quot;cpMonthNavigation&quot; width=&quot;100&quot;&gt;&lt;span class=&quot;cpMonthNavigation&quot;&gt;January 1862&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;cpMonthNavigation&quot; width=&quot;22&quot;&gt;&lt;a class=&quot;cpMonthNavigation&quot; href=&quot;javascript:CP_refreshCalendar(0,2,1862);&quot;&gt;&amp;gt;&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;table width=&quot;120&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;1&quot; align=&quot;CENTER&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td class=&quot;cpDayColumnHeader&quot; width=&quot;14%&quot;&gt;&lt;span class=&quot;cpDayColumnHeader&quot;&gt;S&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;cpDayColumnHeader&quot; width=&quot;14%&quot;&gt;&lt;span class=&quot;cpDayColumnHeader&quot;&gt;M&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;cpDayColumnHeader&quot; width=&quot;14%&quot;&gt;&lt;span class=&quot;cpDayColumnHeader&quot;&gt;T&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;cpDayColumnHeader&quot; width=&quot;14%&quot;&gt;&lt;span class=&quot;cpDayColumnHeader&quot;&gt;W&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;cpDayColumnHeader&quot; width=&quot;14%&quot;&gt;&lt;span class=&quot;cpDayColumnHeader&quot;&gt;T&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;cpDayColumnHeader&quot; width=&quot;14%&quot;&gt;&lt;span class=&quot;cpDayColumnHeader&quot;&gt;F&lt;/span&gt;&lt;/td&gt;
+&lt;td class=&quot;cpDayColumnHeader&quot; width=&quot;14%&quot;&gt;&lt;span class=&quot;cpDayColumnHeader&quot;&gt;S&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1861,12,29);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;29&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1861,12,30);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;30&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1861,12,31);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;31&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,1);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;1&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,2);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;2&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,3);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;3&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,4);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;4&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,5);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;5&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,6);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;6&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,7);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;7&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,8);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;8&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,9);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;9&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,10);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;10&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,11);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;11&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,12);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;12&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,13);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;13&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,14);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;14&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,15);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;15&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,16);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;16&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,17);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;17&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,18);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;18&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,19);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;19&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,20);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;20&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,21);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;21&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,22);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;22&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,23);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;23&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,24);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;24&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,25);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;25&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,26);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;26&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,27);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;27&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,28);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;28&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,29);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;29&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,30);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;30&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpCurrentMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,1,31);CP_hideCalendar('0');&quot; class=&quot;cpCurrentMonthDate&quot;&gt;31&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,2,1);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;1&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,2,2);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;2&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,2,3);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;3&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,2,4);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;4&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,2,5);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;5&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,2,6);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;6&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,2,7);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;7&lt;/a&gt;&lt;/td&gt;
+	&lt;td class=&quot;cpOtherMonthDate&quot;&gt;&lt;a href=&quot;javascript:CP_tmpReturnFunction(1862,2,8);CP_hideCalendar('0');&quot; class=&quot;cpOtherMonthDate&quot;&gt;8&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+	&lt;td colspan=&quot;7&quot; align=&quot;CENTER&quot; class=&quot;cpTodayText&quot;&gt;
+		&lt;a class=&quot;cpTodayText&quot; href=&quot;javascript:CP_tmpReturnFunction('2026','6','24');CP_hideCalendar('0');&quot;&gt;Today&lt;/a&gt;
+		&lt;br&gt;
+	&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/center&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+            &lt;table align=&quot;center&quot; width=&quot;60%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;3&quot;&gt;
+              &lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;table_rows&quot; height=&quot;25&quot; valign=&quot;bottom&quot;&gt;1.&amp;nbsp;&amp;nbsp;&amp;nbsp;Export to CSV? (link to CSV file will be in the top right of 
+                      the next page)&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td class=&quot;table_rows&quot; align=&quot;left&quot; nowrap=&quot;&quot; style=&quot;padding-left:15px;&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;csv&quot; value=&quot;1&quot;&gt;&amp;nbsp;Yes
+                      &lt;input type=&quot;radio&quot; name=&quot;csv&quot; value=&quot;0&quot; checked=&quot;&quot;&gt;&amp;nbsp;No&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td class=&quot;table_rows&quot; height=&quot;25&quot; valign=&quot;bottom&quot;&gt;2.&amp;nbsp;&amp;nbsp;&amp;nbsp;Display connecting ip address information?
+                      &lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td class=&quot;table_rows&quot; align=&quot;left&quot; nowrap=&quot;&quot; style=&quot;padding-left:15px;&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;tmp_display_ip&quot; value=&quot;1&quot; checked=&quot;&quot;&gt;&amp;nbsp;Yes&lt;input type=&quot;radio&quot; name=&quot;tmp_display_ip&quot; value=&quot;0&quot;&gt;&amp;nbsp;No&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td height=&quot;10&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;&lt;/table&gt;
+            &lt;table align=&quot;center&quot; width=&quot;60%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;3&quot;&gt;
+              &lt;tbody&gt;&lt;tr&gt;&lt;td width=&quot;30&quot;&gt;&lt;input type=&quot;image&quot; name=&quot;submit&quot; value=&quot;Edit Time&quot; align=&quot;middle&quot; src=&quot;../images/buttons/next_button.png&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;index.php&quot;&gt;&lt;img src=&quot;../images/buttons/cancel_button.png&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/form&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hide&quot;&gt;&lt;td height=&quot;4%&quot; class=&quot;misc_items&quot; align=&quot;right&quot; valign=&quot;middle&quot; scope=&quot;row&quot; colspan=&quot;2&quot;&gt;Powered by&amp;nbsp;&lt;a class=&quot;footer_links&quot; href=&quot;http://httpd.apache.org/&quot;&gt;Apache&lt;/a&gt;&amp;nbsp;&plusmn;&lt;a class=&quot;footer_links&quot; href=&quot;http://mysql.org&quot;&gt;&amp;nbsp;MySql&lt;/a&gt; 
+            &plusmn;&lt;a class=&quot;footer_links&quot; href=&quot;http://php.net&quot;&gt;&amp;nbsp;PHP&lt;/a&gt;&amp;nbsp;&bull;&lt;a class=&quot;footer_links&quot; href=&quot;http://timeclock.sourceforge.net&quot;&gt;&amp;nbsp;PHP Timeclock&amp;nbsp;1.04&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]</td>
+							<td><a href="state1990.html">state1990</a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[2]/TD[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[3]/TD[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[4]/TD[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[5]/TD[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[6]/TD[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/CENTER[1]/TABLE[2]/TBODY[1]/TR[7]/TD[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

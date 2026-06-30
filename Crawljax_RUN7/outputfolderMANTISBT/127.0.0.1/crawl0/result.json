@@ -1,0 +1,76 @@
+{
+  "states" : {
+    "index" : {
+      "name" : "index",
+      "url" : "http://127.0.0.1:8080/",
+      "candidateElements" : [ {
+        "top" : 530,
+        "left" : 330,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/DIV[1]/DIV[2]/A[1]",
+        "width" : 165,
+        "height" : 21
+      }, {
+        "top" : 532,
+        "left" : 1154,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/A[1]",
+        "width" : 27,
+        "height" : 30
+      }, {
+        "top" : 301,
+        "left" : 640,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/INPUT[2]",
+        "width" : 195,
+        "height" : 42
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 0,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 0,
+      "timeAdded" : 1782286550232,
+      "onURL" : true,
+      "nearestState" : "null"
+    }
+  },
+  "edges" : [ {
+    "from" : "index",
+    "to" : "index",
+    "text" : "http://127.0.0.1:8080/",
+    "id" : "url http://127.0.0.1:8080/",
+    "element" : "unkown",
+    "eventType" : "reload"
+  } ],
+  "statistics" : {
+    "duration" : "5 seconds",
+    "crawlPaths" : 0,
+    "averageDomSize" : "4.036 kB",
+    "edges" : 1,
+    "startDate" : "2026-06-24 09:35:26 CEST",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "leastFanIn" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "mostFanOut" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "mostFanIn" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "totalNumberOfStates" : 1,
+      "urls" : {
+        "http://127.0.0.1:8080/" : [ "index" ]
+      }
+    },
+    "failedEvents" : 0
+  },
+  "exitStatus" : "EXHAUSTED"
+}

@@ -1,0 +1,111 @@
+{
+  "states" : {
+    "index" : {
+      "name" : "index",
+      "url" : "http://127.0.0.1:8080/",
+      "candidateElements" : [ {
+        "top" : 45,
+        "left" : 9,
+        "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 212,
+        "height" : 17
+      }, {
+        "top" : 63,
+        "left" : 941,
+        "xpath" : "/HTML[1]/BODY[1]/TABLE[2]/TBODY[1]/TR[1]/TD[2]/A[1]",
+        "width" : 43,
+        "height" : 16
+      }, {
+        "top" : 63,
+        "left" : 1007,
+        "xpath" : "/HTML[1]/BODY[1]/TABLE[2]/TBODY[1]/TR[1]/TD[4]/A[1]",
+        "width" : 93,
+        "height" : 16
+      }, {
+        "top" : 63,
+        "left" : 1122,
+        "xpath" : "/HTML[1]/BODY[1]/TABLE[2]/TBODY[1]/TR[1]/TD[6]/A[1]",
+        "width" : 53,
+        "height" : 16
+      }, {
+        "top" : 377,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[21]/TD[1]/INPUT[1]",
+        "width" : 58,
+        "height" : 21
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 1,
+      "id" : 0,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 0,
+      "timeAdded" : 1782287099102,
+      "onURL" : true,
+      "nearestState" : "null"
+    },
+    "state1" : {
+      "name" : "state1",
+      "url" : "http://127.0.0.1:8080/timeclock.php",
+      "candidateElements" : [ ],
+      "fanIn" : 2,
+      "fanOut" : 1,
+      "id" : 1,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 1,
+      "timeAdded" : 1782287100373,
+      "onURL" : false,
+      "nearestState" : "index"
+    }
+  },
+  "edges" : [ {
+    "from" : "index",
+    "to" : "state1",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={href=index.php}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state1",
+    "to" : "state1",
+    "text" : "http://127.0.0.1:8080/",
+    "id" : "url http://127.0.0.1:8080/",
+    "element" : "unkown",
+    "eventType" : "reload"
+  } ],
+  "statistics" : {
+    "duration" : "1 second",
+    "crawlPaths" : 1,
+    "averageDomSize" : "6.416 kB",
+    "edges" : 2,
+    "startDate" : "2026-06-24 09:44:37 CEST",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "leastFanIn" : {
+        "id" : "index",
+        "count" : 0
+      },
+      "mostFanOut" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "mostFanIn" : {
+        "id" : "state1",
+        "count" : 2
+      },
+      "totalNumberOfStates" : 2,
+      "urls" : {
+        "http://127.0.0.1:8080/" : [ "index" ],
+        "http://127.0.0.1:8080/timeclock.php" : [ "state1" ]
+      }
+    },
+    "failedEvents" : 0
+  },
+  "exitStatus" : "EXHAUSTED"
+}

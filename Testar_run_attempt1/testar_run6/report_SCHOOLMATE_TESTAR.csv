@@ -1,0 +1,12 @@
+file,total_lines,covered_lines,coverage_percent
+coverage-scripts/coverage_start.php,1,1,100
+coverage-scripts/coverage_stop.php,18,3,16.67
+DBFunctions.php,31,3,9.68
+Login.php,14,14,100
+ValidateLogin.php,41,10,24.39
+connect.php,5,5,100
+footer.php,2,2,100
+header.php,10,7,70
+index.php,45,25,55.56
+maketop.php,2,2,100
+TOTAL,169,72,42.6

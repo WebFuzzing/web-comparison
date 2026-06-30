@@ -1,0 +1,64 @@
+{
+  "states" : {
+    "index" : {
+      "name" : "index",
+      "url" : "http://127.0.0.1:8080/",
+      "candidateElements" : [ {
+        "top" : 298,
+        "left" : 576,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[4]/BUTTON[1]",
+        "width" : 32,
+        "height" : 32
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 0,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 0,
+      "timeAdded" : 1782035382554,
+      "onURL" : true,
+      "nearestState" : "null"
+    }
+  },
+  "edges" : [ {
+    "from" : "index",
+    "to" : "index",
+    "text" : "http://127.0.0.1:8080/",
+    "id" : "url http://127.0.0.1:8080/",
+    "element" : "unkown",
+    "eventType" : "reload"
+  } ],
+  "statistics" : {
+    "duration" : "3 seconds",
+    "crawlPaths" : 0,
+    "averageDomSize" : "2.209 kB",
+    "edges" : 1,
+    "startDate" : "2026-06-21 11:49:17 CEST",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "leastFanIn" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "mostFanOut" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "mostFanIn" : {
+        "id" : "index",
+        "count" : 1
+      },
+      "totalNumberOfStates" : 1,
+      "urls" : {
+        "http://127.0.0.1:8080/" : [ "index" ]
+      }
+    },
+    "failedEvents" : 0
+  },
+  "exitStatus" : "EXHAUSTED"
+}

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+				<a class="brand" href="../index.html#graph">Crawl overview</a>
+			<ul class="nav">
+					<li class="active"><a href="#">State inspector</a></li>
+			</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+					<p>Hover over a state highlights the connected edges</p>
+					<p>Single click over a state highlights all its near-duplicates</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state6</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://127.0.0.1:8080/parabank/services/store-01V2?wsdl'>http://127.0.0.1:8080/parabank/services/store-01V2?wsdl</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state4</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>-1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>6</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state6.png' /> 
+			</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;&lt;style id=&quot;xml-viewer-style&quot;&gt;/* Copyright 2014 The Chromium Authors
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+:root {
+  color-scheme: light dark;
+}
+
+div.header {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.header {
+    border-bottom: 2px solid white;
+  }
+}
+
+div.folder &amp;gt; div.hidden {
+    display:none;
+}
+
+div.folder &amp;gt; span.hidden {
+    display:none;
+}
+
+.pretty-print {
+    margin-top: 1em;
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+#webkit-xml-viewer-source-xml {
+    display: none;
+}
+
+.opened {
+    margin-left: 1em;
+}
+
+.comment {
+    white-space: pre;
+}
+
+.folder-button {
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    vertical-align: bottom;
+}
+
+.fold {
+    background: url(&quot;data:image/svg+xml,&amp;lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&amp;gt;&amp;lt;path d='M0 0 L8 0 L4 7 Z'/&amp;gt;&amp;lt;/svg&amp;gt;&quot;);
+    height: 10px;
+}
+
+.open {
+    background: url(&quot;data:image/svg+xml,&amp;lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&amp;gt;&amp;lt;path d='M0 0 L0 8 L7 4 Z'/&amp;gt;&amp;lt;/svg&amp;gt;&quot;);
+    height: 10px;
+}
+&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;webkit-xml-viewer-source-xml&quot;&gt;&lt;wsdl:definitions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:tns=&quot;http://bookstore2.parasoft.com/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; name=&quot;Bookstore2&quot; targetNamespace=&quot;http://bookstore2.parasoft.com/&quot;&gt;
+  &lt;wsdl:types&gt;
+&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tns=&quot;http://bookstore2.parasoft.com/&quot; attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://bookstore2.parasoft.com/&quot; version=&quot;1.0&quot;&gt;
+  &lt;xs:element name=&quot;addItemToCart&quot; type=&quot;tns:addItemToCart&quot;/&gt;
+  &lt;xs:element name=&quot;addItemToCartResponse&quot; type=&quot;tns:addItemToCartResponse&quot;/&gt;
+  &lt;xs:element name=&quot;addNewItemToInventory&quot; type=&quot;tns:addNewItemToInventory&quot;/&gt;
+  &lt;xs:element name=&quot;addNewItemToInventoryResponse&quot; type=&quot;tns:addNewItemToInventoryResponse&quot;/&gt;
+  &lt;xs:element name=&quot;getItemByIdentifier&quot; type=&quot;tns:getItemByIdentifier&quot;/&gt;
+  &lt;xs:element name=&quot;getItemByIdentifierResponse&quot; type=&quot;tns:getItemByIdentifierResponse&quot;/&gt;
+  &lt;xs:element name=&quot;getItemByTitle&quot; type=&quot;tns:getItemByTitle&quot;/&gt;
+  &lt;xs:element name=&quot;getItemByTitleResponse&quot; type=&quot;tns:getItemByTitleResponse&quot;/&gt;
+  &lt;xs:element name=&quot;getItemsInCart&quot; type=&quot;tns:getItemsInCart&quot;/&gt;
+  &lt;xs:element name=&quot;getItemsInCartResponse&quot; type=&quot;tns:getItemsInCartResponse&quot;/&gt;
+  &lt;xs:element name=&quot;submitOrder&quot; type=&quot;tns:submitOrder&quot;/&gt;
+  &lt;xs:element name=&quot;submitOrderResponse&quot; type=&quot;tns:submitOrderResponse&quot;/&gt;
+  &lt;xs:element name=&quot;updateItemInCart&quot; type=&quot;tns:updateItemInCart&quot;/&gt;
+  &lt;xs:element name=&quot;updateItemInCartResponse&quot; type=&quot;tns:updateItemInCartResponse&quot;/&gt;
+  &lt;xs:complexType name=&quot;updateItemInCart&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;cartId&quot; type=&quot;xs:int&quot;/&gt;
+      &lt;xs:element name=&quot;itemId&quot; type=&quot;xs:int&quot;/&gt;
+      &lt;xs:element name=&quot;quantity&quot; type=&quot;xs:int&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;updateItemInCartResponse&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;updatedItem&quot; type=&quot;tns:displayOrder&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;displayOrder&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;cartId&quot; type=&quot;xs:int&quot;/&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;item&quot; type=&quot;tns:order&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;order&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;book&quot; type=&quot;tns:book&quot;/&gt;
+      &lt;xs:element name=&quot;quantity&quot; type=&quot;xs:int&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;book&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;authors&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;description&quot; type=&quot;xs:string&quot;/&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;genre&quot; type=&quot;xs:string&quot;/&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;ISBN&quot; type=&quot;xs:string&quot;/&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;productInfo&quot; type=&quot;tns:productInfo&quot;/&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;publicationDate&quot; type=&quot;xs:dateTime&quot;/&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;publisher&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;productInfo&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;amount&quot; type=&quot;xs:decimal&quot;/&gt;
+      &lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;name&quot; type=&quot;xs:string&quot;/&gt;
+      &lt;xs:element name=&quot;stockQuantity&quot; type=&quot;xs:int&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;addItemToCart&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;cartId&quot; type=&quot;xs:int&quot;/&gt;
+      &lt;xs:element name=&quot;itemId&quot; type=&quot;xs:int&quot;/&gt;
+      &lt;xs:element name=&quot;quantity&quot; type=&quot;xs:int&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;addItemToCartResponse&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;itemAdded&quot; type=&quot;tns:displayOrder&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;getItemByIdentifier&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;getItemByIdentifierResponse&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;book&quot; type=&quot;tns:book&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;getItemsInCart&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;cartId&quot; type=&quot;xs:int&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;getItemsInCartResponse&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;cart&quot; type=&quot;tns:cartManager&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;cartManager&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;cartId&quot; type=&quot;xs:int&quot;/&gt;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;item&quot; nillable=&quot;true&quot; type=&quot;tns:order&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;submitOrder&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;cartId&quot; type=&quot;xs:int&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;submitOrderResponse&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;orderInformation&quot; type=&quot;tns:submittedOrder&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;submittedOrder&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;orderTime&quot; type=&quot;xs:dateTime&quot;/&gt;
+      &lt;xs:element name=&quot;success&quot; type=&quot;xs:boolean&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;getItemByTitle&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;titleKeyword&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;getItemByTitleResponse&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;book&quot; type=&quot;tns:book&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;addNewItemToInventory&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;book&quot; type=&quot;tns:book&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:complexType name=&quot;addNewItemToInventoryResponse&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;book&quot; type=&quot;tns:book&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;Exception&quot; type=&quot;tns:Exception&quot;/&gt;
+  &lt;xs:complexType name=&quot;Exception&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;
+  &lt;/wsdl:types&gt;
+  &lt;wsdl:message name=&quot;Exception&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:Exception&quot; name=&quot;Exception&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;updateItemInCartResponse&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:updateItemInCartResponse&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;submitOrderResponse&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:submitOrderResponse&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;addItemToCart&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:addItemToCart&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;getItemByIdentifier&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:getItemByIdentifier&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;getItemByTitle&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:getItemByTitle&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;getItemsInCartResponse&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:getItemsInCartResponse&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;getItemByIdentifierResponse&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:getItemByIdentifierResponse&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;addNewItemToInventory&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:addNewItemToInventory&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;getItemByTitleResponse&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:getItemByTitleResponse&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;addNewItemToInventoryResponse&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:addNewItemToInventoryResponse&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;updateItemInCart&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:updateItemInCart&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;getItemsInCart&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:getItemsInCart&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;submitOrder&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:submitOrder&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;addItemToCartResponse&quot;&gt;
+    &lt;wsdl:part element=&quot;tns:addItemToCartResponse&quot; name=&quot;parameters&quot;&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:portType name=&quot;Bookstore&quot;&gt;
+    &lt;wsdl:operation name=&quot;updateItemInCart&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:updateItemInCart&quot; name=&quot;updateItemInCart&quot;&gt;
+    &lt;/wsdl:input&gt;
+      &lt;wsdl:output message=&quot;tns:updateItemInCartResponse&quot; name=&quot;updateItemInCartResponse&quot;&gt;
+    &lt;/wsdl:output&gt;
+      &lt;wsdl:fault message=&quot;tns:Exception&quot; name=&quot;Exception&quot;&gt;
+    &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;addItemToCart&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:addItemToCart&quot; name=&quot;addItemToCart&quot;&gt;
+    &lt;/wsdl:input&gt;
+      &lt;wsdl:output message=&quot;tns:addItemToCartResponse&quot; name=&quot;addItemToCartResponse&quot;&gt;
+    &lt;/wsdl:output&gt;
+      &lt;wsdl:fault message=&quot;tns:Exception&quot; name=&quot;Exception&quot;&gt;
+    &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;getItemByIdentifier&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:getItemByIdentifier&quot; name=&quot;getItemByIdentifier&quot;&gt;
+    &lt;/wsdl:input&gt;
+      &lt;wsdl:output message=&quot;tns:getItemByIdentifierResponse&quot; name=&quot;getItemByIdentifierResponse&quot;&gt;
+    &lt;/wsdl:output&gt;
+      &lt;wsdl:fault message=&quot;tns:Exception&quot; name=&quot;Exception&quot;&gt;
+    &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;getItemsInCart&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:getItemsInCart&quot; name=&quot;getItemsInCart&quot;&gt;
+    &lt;/wsdl:input&gt;
+      &lt;wsdl:output message=&quot;tns:getItemsInCartResponse&quot; name=&quot;getItemsInCartResponse&quot;&gt;
+    &lt;/wsdl:output&gt;
+      &lt;wsdl:fault message=&quot;tns:Exception&quot; name=&quot;Exception&quot;&gt;
+    &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;submitOrder&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:submitOrder&quot; name=&quot;submitOrder&quot;&gt;
+    &lt;/wsdl:input&gt;
+      &lt;wsdl:output message=&quot;tns:submitOrderResponse&quot; name=&quot;submitOrderResponse&quot;&gt;
+    &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;getItemByTitle&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:getItemByTitle&quot; name=&quot;getItemByTitle&quot;&gt;
+    &lt;/wsdl:input&gt;
+      &lt;wsdl:output message=&quot;tns:getItemByTitleResponse&quot; name=&quot;getItemByTitleResponse&quot;&gt;
+    &lt;/wsdl:output&gt;
+      &lt;wsdl:fault message=&quot;tns:Exception&quot; name=&quot;Exception&quot;&gt;
+    &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;addNewItemToInventory&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:addNewItemToInventory&quot; name=&quot;addNewItemToInventory&quot;&gt;
+    &lt;/wsdl:input&gt;
+      &lt;wsdl:output message=&quot;tns:addNewItemToInventoryResponse&quot; name=&quot;addNewItemToInventoryResponse&quot;&gt;
+    &lt;/wsdl:output&gt;
+      &lt;wsdl:fault message=&quot;tns:Exception&quot; name=&quot;Exception&quot;&gt;
+    &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:portType&gt;
+  &lt;wsdl:binding name=&quot;Bookstore2SoapBinding&quot; type=&quot;tns:Bookstore&quot;&gt;
+    &lt;soap:binding style=&quot;document&quot; transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/&gt;
+    &lt;wsdl:operation name=&quot;updateItemInCart&quot;&gt;
+      &lt;soap:operation soapAction=&quot;&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input name=&quot;updateItemInCart&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output name=&quot;updateItemInCartResponse&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+      &lt;wsdl:fault name=&quot;Exception&quot;&gt;
+        &lt;soap:fault name=&quot;Exception&quot; use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;addItemToCart&quot;&gt;
+      &lt;soap:operation soapAction=&quot;&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input name=&quot;addItemToCart&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output name=&quot;addItemToCartResponse&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+      &lt;wsdl:fault name=&quot;Exception&quot;&gt;
+        &lt;soap:fault name=&quot;Exception&quot; use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;getItemByIdentifier&quot;&gt;
+      &lt;soap:operation soapAction=&quot;&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input name=&quot;getItemByIdentifier&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output name=&quot;getItemByIdentifierResponse&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+      &lt;wsdl:fault name=&quot;Exception&quot;&gt;
+        &lt;soap:fault name=&quot;Exception&quot; use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;getItemsInCart&quot;&gt;
+      &lt;soap:operation soapAction=&quot;&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input name=&quot;getItemsInCart&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output name=&quot;getItemsInCartResponse&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+      &lt;wsdl:fault name=&quot;Exception&quot;&gt;
+        &lt;soap:fault name=&quot;Exception&quot; use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;submitOrder&quot;&gt;
+      &lt;soap:operation soapAction=&quot;&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input name=&quot;submitOrder&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output name=&quot;submitOrderResponse&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;getItemByTitle&quot;&gt;
+      &lt;soap:operation soapAction=&quot;&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input name=&quot;getItemByTitle&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output name=&quot;getItemByTitleResponse&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+      &lt;wsdl:fault name=&quot;Exception&quot;&gt;
+        &lt;soap:fault name=&quot;Exception&quot; use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;addNewItemToInventory&quot;&gt;
+      &lt;soap:operation soapAction=&quot;&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input name=&quot;addNewItemToInventory&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output name=&quot;addNewItemToInventoryResponse&quot;&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+      &lt;wsdl:fault name=&quot;Exception&quot;&gt;
+        &lt;soap:fault name=&quot;Exception&quot; use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:service name=&quot;Bookstore2&quot;&gt;
+    &lt;wsdl:port binding=&quot;tns:Bookstore2SoapBinding&quot; name=&quot;CartServicePort&quot;&gt;
+      &lt;soap:address location=&quot;http://127.0.0.1:8080/parabank/services/store-01V2&quot;/&gt;
+    &lt;/wsdl:port&gt;
+  &lt;/wsdl:service&gt;
+&lt;/wsdl:definitions&gt;&lt;/div&gt;&lt;div class=&quot;header&quot;&gt;&lt;span&gt;This XML file does not appear to have any style information associated with it. The document tree is shown below.&lt;/span&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&quot;pretty-print&quot;&gt;&lt;div class=&quot;folder&quot; id=&quot;folder0&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:definitions&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;xmlns:xsd&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://www.w3.org/2001/XMLSchema&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;xmlns:wsdl&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://schemas.xmlsoap.org/wsdl/&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;xmlns:tns&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://bookstore2.parasoft.com/&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;xmlns:soap&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://schemas.xmlsoap.org/wsdl/soap/&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;xmlns:ns1&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://schemas.xmlsoap.org/soap/http&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Bookstore2&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;targetNamespace&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://bookstore2.parasoft.com/&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder1&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:types&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder2&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:schema&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;xmlns:xs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://www.w3.org/2001/XMLSchema&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;xmlns:tns&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://bookstore2.parasoft.com/&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;attributeFormDefault&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;unqualified&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;elementFormDefault&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;unqualified&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;targetNamespace&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://bookstore2.parasoft.com/&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;version&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;1.0&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addItemToCartResponse&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventoryResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addNewItemToInventoryResponse&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifierResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByIdentifierResponse&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitleResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByTitleResponse&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemsInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:submitOrder&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrderResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:submitOrderResponse&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:updateItemInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder3&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder4&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;cartId&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;itemId&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;quantity&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder5&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder6&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updatedItem&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:displayOrder&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder7&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;displayOrder&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder8&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;cartId&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;item&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:order&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder9&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;order&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder10&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;book&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:book&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;quantity&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder11&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;book&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder12&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;maxOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;unbounded&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;authors&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;nillable&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;true&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:string&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;description&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:string&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;genre&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:string&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;ISBN&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:string&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;productInfo&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:productInfo&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;publicationDate&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:dateTime&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;publisher&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:string&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder13&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;productInfo&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder14&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;amount&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:decimal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;id&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;name&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:string&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;stockQuantity&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder15&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder16&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;cartId&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;itemId&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;quantity&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder17&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder18&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;itemAdded&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:displayOrder&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder19&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder20&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;id&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder21&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifierResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder22&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;book&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:book&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder23&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder24&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;cartId&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder25&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder26&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;cart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:cartManager&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder27&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;cartManager&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder28&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;cartId&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;maxOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;unbounded&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;item&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;nillable&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;true&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:order&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder29&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder30&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;cartId&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:int&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder31&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrderResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder32&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;orderInformation&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:submittedOrder&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder33&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submittedOrder&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder34&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;orderTime&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:dateTime&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;success&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:boolean&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder35&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder36&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;titleKeyword&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:string&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder37&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitleResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder38&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;maxOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;unbounded&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;book&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:book&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder39&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder40&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;book&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:book&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder41&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventoryResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder42&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;book&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:book&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Exception&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder43&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:complexType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder44&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;xs:element&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;minOccurs&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;0&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;message&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;xs:string&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:sequence&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:complexType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/xs:schema&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:types&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder45&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder46&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:updateItemInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder47&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrderResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:submitOrderResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder48&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder49&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder50&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder51&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemsInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder52&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifierResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByIdentifierResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder53&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder54&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitleResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByTitleResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder55&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventoryResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addNewItemToInventoryResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder56&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder57&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder58&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder59&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:message&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:part&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;element&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addItemToCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;parameters&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:part&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:message&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder60&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:portType&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Bookstore&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder61&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:updateItemInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder62&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addItemToCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder63&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByIdentifierResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifierResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder64&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemsInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder65&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:submitOrderResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrderResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder66&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:getItemByTitleResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitleResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder67&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:addNewItemToInventoryResponse&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventoryResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;message&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:portType&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder68&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:binding&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Bookstore2SoapBinding&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;type&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Bookstore&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:binding&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;style&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;document&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;transport&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://schemas.xmlsoap.org/soap/http&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder69&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;soapAction&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;style&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;document&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder70&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder71&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;updateItemInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder72&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder73&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;soapAction&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;style&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;document&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder74&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder75&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addItemToCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder76&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder77&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;soapAction&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;style&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;document&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder78&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifier&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder79&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByIdentifierResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder80&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder81&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;soapAction&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;style&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;document&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder82&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCart&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder83&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemsInCartResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder84&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder85&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;soapAction&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;style&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;document&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder86&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrder&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder87&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;submitOrderResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder88&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;soapAction&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;style&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;document&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder89&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitle&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder90&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;getItemByTitleResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder91&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder92&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:operation&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;soapAction&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;style&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;document&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder93&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:input&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventory&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:input&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder94&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:output&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;addNewItemToInventoryResponse&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:body&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:output&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder95&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+        &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:fault&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Exception&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;use&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;literal&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:fault&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:operation&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:binding&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder96&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:service&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;Bookstore2&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;div class=&quot;folder&quot; id=&quot;folder97&quot;&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;folder-button fold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;wsdl:port&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;binding&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;tns:Bookstore2SoapBinding&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;name&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;CartServicePort&lt;/span&gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;opened&quot;&gt;&lt;span&gt;
+      &lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;soap:address&lt;span class=&quot;html-attribute&quot;&gt; &lt;span class=&quot;html-attribute-name&quot;&gt;location&lt;/span&gt;=&quot;&lt;span class=&quot;html-attribute-value&quot;&gt;http://127.0.0.1:8080/parabank/services/store-01V2&lt;/span&gt;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;
+    &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:port&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+  &lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:service&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;folded hidden&quot;&gt;...&lt;/span&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;html-tag&quot;&gt;&amp;lt;/wsdl:definitions&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

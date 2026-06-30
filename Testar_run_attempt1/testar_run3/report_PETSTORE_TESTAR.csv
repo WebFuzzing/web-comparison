@@ -1,0 +1,65 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,OrderLineService,50,0,6,0,11,0,5,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,AbstractService,151,0,4,0,34,0,13,0,11,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,StatisticService,3,0,0,0,1,0,1,0,1,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,CatalogService,241,0,14,0,52,0,30,0,23,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,ItemService,123,0,14,0,17,0,9,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,InventoryService,3,0,0,0,1,0,1,0,1,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,ProductService,93,0,10,0,14,0,7,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,CategoryService,79,0,8,0,11,0,6,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,ShippingService,3,0,0,0,1,0,1,0,1,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,PurchaseOrderDecorator,3,0,0,0,1,0,1,0,1,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,CustomerService,277,0,20,0,46,0,20,0,10,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,PurchaseOrderService,277,0,26,0,37,0,19,0,6,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.service,CountryService,169,0,20,0,20,0,12,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.util,ConfigPropertyProducer,28,0,0,0,9,0,3,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.util,NumberProducer,3,0,0,0,1,0,1,0,1,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.util,LoggingInterceptor,68,0,0,0,6,0,2,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.util,DatabaseProducer,3,0,0,0,1,0,1,0,1,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.util,LoggingProducer,9,0,0,0,2,0,2,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,PurchaseOrder,255,18,10,0,55,5,38,1,33,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,CreditCard,113,3,10,0,24,2,15,1,10,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,CreditCardConverter,3,0,0,0,1,0,1,0,1,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,Address,167,8,12,0,30,3,22,1,16,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,Product,97,3,10,0,26,2,19,1,14,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,CreditCardType,0,21,0,0,0,2,0,1,0,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,Customer,263,8,10,0,73,3,38,1,33,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,Item,162,3,10,0,34,2,23,1,18,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,UserRole,0,15,0,0,0,2,0,1,0,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,Category,72,3,6,0,22,2,15,1,12,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,Country,102,3,6,0,34,2,21,1,18,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.model,OrderLine,122,3,10,0,23,2,18,1,13,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,ProductBean.new Converter() {...},24,0,2,0,5,0,4,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,OrderLineBean.new Converter() {...},24,0,2,0,5,0,4,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,PurchaseOrderBean.new Converter() {...},24,0,2,0,5,0,4,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,CategoryBean.new Converter() {...},24,0,2,0,5,0,4,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,CountryBean.new Converter() {...},24,0,2,0,5,0,4,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,PurchaseOrderBean,451,0,28,0,93,0,38,0,24,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,CustomerBean,446,0,28,0,93,0,38,0,24,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,ItemBean,399,0,22,0,90,0,35,0,24,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,CustomerBean.new Converter() {...},24,0,2,0,5,0,4,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,CategoryBean,353,0,16,0,84,0,32,0,24,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,OrderLineBean,324,0,14,0,84,0,31,0,24,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,ItemBean.new Converter() {...},24,0,2,0,5,0,4,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,CountryBean,446,0,28,0,93,0,38,0,24,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.admin,ProductBean,368,0,18,0,87,0,33,0,24,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.rest,RestApplication,0,3,0,0,0,1,0,1,0,1
+JaCoCo Coverage Report,org.agoncal.application.petstore.rest,CustomerEndpoint,111,0,8,0,29,0,10,0,6,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.rest,CountryEndpoint,111,0,8,0,29,0,10,0,6,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.rest,ProductEndpoint,111,0,8,0,29,0,10,0,6,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.rest,CategoryEndpoint,111,0,8,0,29,0,10,0,6,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.rest,ItemEndpoint,111,0,8,0,29,0,10,0,6,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.security,LoginContextProducer,16,0,0,0,5,0,2,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.security,SimpleLoginModule,130,0,4,0,33,0,9,0,7,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.security,SimpleCallbackHandler,50,0,6,0,12,0,5,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view,AbstractBean,87,0,0,0,19,0,7,0,7,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view,ViewUtils,120,0,16,0,20,0,10,0,2,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view,DebugBean,69,0,2,0,11,0,6,0,5,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view,LocaleBean,27,0,0,0,8,0,4,0,4,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view,ExceptionInterceptor,52,0,0,0,10,0,3,0,3,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.shopping,CredentialsBean,24,0,0,0,10,0,7,0,7,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.shopping,ShoppingCartBean,203,0,24,0,47,0,28,0,16,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.shopping,ShoppingCartItem,116,0,10,0,26,0,14,0,9,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.shopping,CatalogBean,94,0,0,0,30,0,19,0,19,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.view.shopping,AccountBean,174,0,22,0,36,0,20,0,9,0
+JaCoCo Coverage Report,org.agoncal.application.petstore.exceptions,ValidationException,7,0,0,0,4,0,2,0,2,0

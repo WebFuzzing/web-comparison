@@ -1,0 +1,744 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<style>
+	html,body {
+		height: 100%;
+	}
+
+	#wrap {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -40px;
+	}
+
+	#push, footer {
+		height: 40px;
+	}
+
+	footer {
+		background-color: #f5f5f5;
+	}
+
+	footer small {
+		display: inline;
+		margin-top: 10px;
+	}
+
+	.url-table td {
+		word-wrap: break-word;
+		max-width: 700px;
+	}
+
+	@media (max-width: 979px) and (min-width: 768px) {
+		.url-table td {
+			max-width: 500px;
+		}
+	}
+
+	@media ( max-width : 767px) {
+		#footer {
+			margin-left: -20px;
+			margin-right: -20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.url-table td {
+			max-width: 450px;
+		}
+	}
+
+
+	#wrap>.container {
+		padding-top: 60px;
+	}
+
+
+	.panel-right {
+		position: absolute;
+		right: 10px;
+		top: 70px;
+		left: auto;
+		display: block;
+		background-color: rgb(255, 255, 255);
+		background-color: rgba(255, 255, 255, .9);
+		max-width: 300px;
+	}
+
+	.panel-right dd {
+		text-transform: capitalize;
+		word-wrap: break-word;
+	}
+
+
+</style>
+<script src="lib/vivagraph-0.12.0.min.js"></script>
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+				<a class="brand" href="#">Crawl overview</a>
+			<ul class="nav">
+					<li class="active"><a href="#graph" class="nav-link">State graph</a></li>
+					<li><a href="#statistics" class="nav-link">Statistics</a></li>
+					<li><a href="#urls" class="nav-link">URL's</a></li>
+					<li><a href="#config" class="nav-link">Configuration</a></li>
+			</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+					<p>Hover over a state highlights the connected edges</p>
+					<p>Single click over a state highlights all its near-duplicates</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>		<div class="container page" id="container-graph" style="width: 100%; padding-top: 40px;">
+
+			<div class="popover fade panel-right">
+				<div class="popover-inner">
+					<h3 class="popover-title">Edge info</h3>
+					<div class="popover-content">
+						<dl>
+							<dt>Element name</dt>
+							<dd name='elemName'></dd>
+						</dl>
+						<dl>
+							<dt>From</dt>
+							<dd name='from'></dd>
+						</dl>
+						<dl>
+							<dt>To</dt>
+							<dd name='to'></dd>
+						</dl>
+						<dl>
+							<dt>Identified by</dt>
+							<dd name='id'></dd>
+						</dl>
+						<dl>
+							<dt>Element</dt>
+							<dd name='element' style="text-transform: none;"></dd>
+						</dl>
+						<dl>
+							<dt>Event type</dt>
+							<dd name='eventType'></dd>
+						</dl>
+						<button class="btn btn-small" id='hideButton'>Hide</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container page" id="container-statistics" style="display: none;">
+
+<section id='crawlResults'>
+	<div class="page-header">
+		<h1>Crawl results</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<th>Crawl time</th>
+				<td>4 seconds</td>
+			</tr>
+			<tr>
+				<th>Exit status</th>
+				<td>Exhausted</td>
+			<tr>
+				<th>Number of states</th>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th><a href="#urls" class="nav-link">URL's visited</a></th>
+				<td>4</td>
+			</tr>
+			<tr>
+				<th>Number of edges</th>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>Number of crawl paths</th>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Failed events</th>
+				<td>0</td>
+			<tr>
+				<th>Average DOM length</th>
+				<td>7.121 kB</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section id='highs-and-low'>
+	<div class="page-header">
+		<h1>Highs and lows</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<th>Highest fan-out</th> 
+				<td><a href="states/index.html">index</a></td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>Lowest fan-out</th> 
+				<td><a href="states/state9.html">state9</a></td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>Highest fan-in</th> 
+				<td><a href="states/index.html">index</a></td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th>Lowest fan-in</th> 
+				<td><a href="states/state9.html">state9</a></td>
+				<td>1</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+		</div>
+		<div class="container page" id="container-urls" style="display: none;">
+ 
+<div class="page-header">
+	<h1>URL's visited</h1>
+</div>
+<table class="table table-bordered table-striped url-table">
+	<tbody>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/index.php">http://127.0.0.1:8080/index.php</a></td>
+			<td> <a
+				href="states/state9.html">state9</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a></td>
+			<td> <a
+				href="states/index.html">index</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/about.php">http://127.0.0.1:8080/about.php</a></td>
+			<td> <a
+				href="states/state5.html">state5</a>, 
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://127.0.0.1:8080/TOS.html">http://127.0.0.1:8080/TOS.html</a></td>
+			<td> <a
+				href="states/state2.html">state2</a>, 
+			</td>
+		</tr>
+	</tbody>
+</table>
+		</div>
+		<div class="container page" id="container-config" style="display: none;">
+ 
+<section id='crawlConfig'>
+	<div class="page-header">
+		<h1>Crawl configuration</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<td>Output Dir</td> 
+				<td>C:\Users\aise\Documents\web-comparison\outputfolderSOCIALNETWORK\127.0.0.1\crawl0</td> 
+			</tr>
+			<tr>
+				<td>Url</td> 
+				<td>http://127.0.0.1:8080/</td> 
+			</tr>
+			<tr>
+				<td>State Vertex Factory</td> 
+				<td>com.crawljax.core.state.DefaultStateVertexFactory@47b269c4</td> 
+			</tr>
+			<tr>
+				<td>Proxy Configuration</td> 
+				<td>NOTHING</td> 
+			</tr>
+			<tr>
+				<td>Maximum Runtime</td> 
+				<td>1 hour</td> 
+			</tr>
+			<tr>
+				<td>Maximum States</td> 
+				<td>&infin;</td> 
+			</tr>
+			<tr>
+				<td>Maximum Depth</td> 
+				<td>&infin;</td> 
+			</tr>
+			<tr>
+				<td>Browser Config</td> 
+				<td>1 browsers of type CHROME using builder Default web driver factory</td> 
+			</tr>
+			<tr>
+				<td>Crawl Rules</td> 
+				<td><pre><code>{
+  &quot;crawlEvents&quot; : [ &quot;click&quot; ],
+  &quot;invariants&quot; : [ ],
+  &quot;oracleComparators&quot; : [ {
+    &quot;preConditions&quot; : [ ],
+    &quot;id&quot; : &quot;SimpleComparator&quot;,
+    &quot;oracle&quot; : { }
+  } ],
+  &quot;ignoredFrameIdentifiers&quot; : [ ],
+  &quot;preCrawlConfig&quot; : {
+    &quot;waitConditions&quot; : [ ],
+    &quot;crawlConditions&quot; : [ ],
+    &quot;includedElements&quot; : [ {
+      &quot;tagName&quot; : &quot;A&quot;,
+      &quot;id&quot; : &quot;id306115458&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;withXpathExpression&quot; : null,
+      &quot;eventableCondition&quot; : null
+    }, {
+      &quot;tagName&quot; : &quot;BUTTON&quot;,
+      &quot;id&quot; : &quot;id1302227152&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;withXpathExpression&quot; : null,
+      &quot;eventableCondition&quot; : null
+    }, {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id1122606666&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@type='submit']&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id1122606666&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@type='submit']&quot;,
+        &quot;linkedInputFields&quot; : [ ]
+      }
+    }, {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id1847637306&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@type='button']&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id1847637306&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@type='button']&quot;,
+        &quot;linkedInputFields&quot; : [ ]
+      }
+    } ],
+    &quot;excludedElements&quot; : [ ],
+    &quot;filterAttributeNames&quot; : [ &quot;closure_hashcode_(\\w)*&quot;, &quot;jquery[0-9]+&quot; ]
+  },
+  &quot;formFillMode&quot; : &quot;NORMAL&quot;,
+  &quot;formFillOrder&quot; : &quot;NORMAL&quot;,
+  &quot;inputSpecification&quot; : {
+    &quot;formInputs&quot; : { },
+    &quot;forms&quot; : [ ],
+    &quot;crawlElements&quot; : [ ]
+  },
+  &quot;testInvariantsWhileCrawling&quot; : true,
+  &quot;clickOnce&quot; : true,
+  &quot;randomizeCandidateElements&quot; : false,
+  &quot;crawlFrames&quot; : true,
+  &quot;crawlHiddenAnchors&quot; : false,
+  &quot;waitAfterReloadUrl&quot; : 200,
+  &quot;waitAfterEvent&quot; : 200,
+  &quot;followExternalLinks&quot; : false,
+  &quot;crawlPriorityMode&quot; : &quot;NORMAL&quot;,
+  &quot;crawlNearDuplicates&quot; : true,
+  &quot;delayNearDuplicateCrawling&quot; : true,
+  &quot;applyNonSelAdvantage&quot; : false,
+  &quot;avoidUnrelatedBacktracking&quot; : false,
+  &quot;useEquivalentReset&quot; : false,
+  &quot;avoidDifferentBacktracking&quot; : false,
+  &quot;skipExploredActions&quot; : true,
+  &quot;maxRepeatExploredActions&quot; : 2,
+  &quot;usefulFragmentRules&quot; : {
+    &quot;thresholdWidth&quot; : 50.0,
+    &quot;thresholdHeight&quot; : 50.0,
+    &quot;subtreeWidth_and&quot; : 1,
+    &quot;subtreeWidth_or&quot; : 4
+  },
+  &quot;restoreConnectedEdges&quot; : false,
+  &quot;allCrawlElements&quot; : [ {
+    &quot;tagName&quot; : &quot;A&quot;,
+    &quot;id&quot; : &quot;id306115458&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;withXpathExpression&quot; : null,
+    &quot;eventableCondition&quot; : null
+  }, {
+    &quot;tagName&quot; : &quot;BUTTON&quot;,
+    &quot;id&quot; : &quot;id1302227152&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;withXpathExpression&quot; : null,
+    &quot;eventableCondition&quot; : null
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id1122606666&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@type='submit']&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id1122606666&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@type='submit']&quot;,
+      &quot;linkedInputFields&quot; : [ ]
+    }
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id1847637306&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@type='button']&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id1847637306&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@type='button']&quot;,
+      &quot;linkedInputFields&quot; : [ ]
+    }
+  } ]
+}</code></pre></td> 
+			</tr>
+			<tr>
+				<td>Crawl Scope</td> 
+				<td>DefaultCrawlScope{url=http://127.0.0.1:8080/}</td> 
+			</tr>
+			<tr>
+				<td>Basic Auth Url</td> 
+				<td>null</td> 
+			</tr>
+			<tr>
+				<td>Plugins</td> 
+				<td><ul><li>CrawlOverview</li></ul></td> 
+			</tr>
+			<tr>
+				<td>Site Dir</td> 
+				<td>C:\Users\aise\Documents\web-comparison\outputfolderSOCIALNETWORK\127.0.0.1</td> 
+			</tr>
+		</tbody>
+	</table>
+</section>
+<section id='versionInfo'>
+	<div class="page-header">
+		<h1>Version info</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<td>Crawljax version</td>
+				<td>5.2.3</td>
+			</tr>
+		</tbody>
+	</table>
+</section>		</div>
+		<div class="container page" id="container-clusters" style="display: none;">
+			
+		</div>
+		<div id="push"></div>
+	</div>
+	<footer>
+		<div class="container">
+			<small class="pull-left muted">Crawl of <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a> at Sun Jun 21 11:58:25 CEST 2026</small>
+			<small class="pull-right muted">Crawled by <a href="http://crawljax.com">Crawljax</a> 5.2.3</small>
+		</div>
+	</footer>
+	<script src="js/graphbuilder.js"></script>
+
+	<script>
+		var edges = [ {
+  "from" : "index",
+  "to" : "state2",
+  "text" : "Terms of Service",
+  "id" : "xpath /HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[9]/TD[2]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Terms of Service, attributes={href=TOS.html}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "index",
+  "text" : "http://127.0.0.1:8080/",
+  "id" : "url http://127.0.0.1:8080/",
+  "element" : "unkown",
+  "eventType" : "reload"
+}, {
+  "from" : "index",
+  "to" : "state5",
+  "text" : "About",
+  "id" : "xpath /HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/A[2]",
+  "element" : "Element{node=[A: null], tag=A, text=About, attributes={alt=About The Brotherhood, href=about.php}}",
+  "eventType" : "click"
+}, {
+  "from" : "state5",
+  "to" : "index",
+  "text" : "the homepage",
+  "id" : "xpath /HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/P[3]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=the homepage, attributes={href=index.php}}",
+  "eventType" : "click"
+}, {
+  "from" : "index",
+  "to" : "state9",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[8]/TD[2]/INPUT[1]",
+  "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={type=submit, value=Register}}",
+  "eventType" : "click"
+} ];
+		var states = {
+  "state9" : {
+    "name" : "state9",
+    "url" : "http://127.0.0.1:8080/index.php",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 9,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 9,
+    "timeAdded" : 1782035932708,
+    "onURL" : false,
+    "nearestState" : "state5"
+  },
+  "index" : {
+    "name" : "index",
+    "url" : "http://127.0.0.1:8080/",
+    "candidateElements" : [ {
+      "top" : 46,
+      "left" : 6,
+      "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 179,
+      "height" : 17
+    }, {
+      "top" : 413,
+      "left" : 1057,
+      "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[9]/TD[2]/A[1]",
+      "width" : 109,
+      "height" : 17
+    }, {
+      "top" : 513,
+      "left" : 369,
+      "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/A[1]",
+      "width" : 39,
+      "height" : 17
+    }, {
+      "top" : 513,
+      "left" : 419,
+      "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/A[2]",
+      "width" : 40,
+      "height" : 17
+    }, {
+      "top" : 513,
+      "left" : 469,
+      "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/A[3]",
+      "width" : 109,
+      "height" : 17
+    }, {
+      "top" : 6,
+      "left" : 1129,
+      "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/FORM[1]/INPUT[3]",
+      "width" : 49,
+      "height" : 21
+    }, {
+      "top" : 346,
+      "left" : 979,
+      "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[8]/TD[2]/INPUT[1]",
+      "width" : 66,
+      "height" : 21
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 3,
+    "id" : 0,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 0,
+    "timeAdded" : 1782035927819,
+    "onURL" : true,
+    "nearestState" : "null"
+  },
+  "state5" : {
+    "name" : "state5",
+    "url" : "http://127.0.0.1:8080/about.php",
+    "candidateElements" : [ {
+      "top" : 312,
+      "left" : 184,
+      "xpath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/P[3]/A[1]",
+      "width" : 89,
+      "height" : 17
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 5,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 5,
+    "timeAdded" : 1782035931077,
+    "onURL" : false,
+    "nearestState" : "state2"
+  },
+  "state2" : {
+    "name" : "state2",
+    "url" : "http://127.0.0.1:8080/TOS.html",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 2,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 2,
+    "timeAdded" : 1782035929747,
+    "onURL" : false,
+    "nearestState" : "index"
+  }
+};
+
+		$(document).ready(
+				function() {
+					$.each(states, function() {
+						graph.addNode(this.name, {
+							img : 'screenshots/' + this.name + '_small.jpg',
+							url : "states/" + this.name + ".html"
+						});
+					});
+
+					var edgesSeen = {};
+					$.each(edges, function() {
+						var edgeKey = this.from + "-to-" + this.to;
+						if (!(edgeKey in edgesSeen)) {
+							edgesSeen[edgeKey] = true;
+							graph.addLink(this.from, this.to, {
+								text : this.text,
+								id : this.id,
+								eventType : this.eventType,
+								element : this.element
+
+							});
+						}
+					});
+
+					$("#hideButton").click(function() {
+						$(".panel-right").removeClass("in");
+						$('path[stroke="red"]').attr("stroke", "grey");
+					});
+
+					$("a[rel='popover']").popover({
+						content : $("#popup-content").html(),
+						html : true,
+						trigger : "hover"
+					});
+
+					$("a[data-toggle='tooltip']").tooltip();
+
+					var paused = false;
+					$("#pauseButton").click(
+							function() {
+								if (paused) {
+									renderer.resume();
+									paused = false;
+									$(this).children(":first").attr("class",
+											"icon-pause");
+								} else {
+									renderer.pause();
+									paused = true;
+									$(this).children(":first").attr("class",
+											"icon-play");
+								}
+							});
+
+
+					/* Makes nav links update the nav toolback with current page */
+					$('.nav-link').click(function(e) {
+						/* Example: #url */
+						var target = e.target.hash;
+
+						updateNav(target);
+					});
+
+					/* page: a string with target page, like "#nav" */
+					function updateNav(page) {
+						/* Removes active class from previous active link */
+						$('.navbar li').removeClass('active');
+
+						/* Find correct link on nav-bar and add active class to it */
+						$('.navbar li').each(function(index, element) {
+							if ($(element).find('a').get(0).hash === page) {
+								$(element).addClass('active');
+
+								return false;
+							}
+						});
+					}
+
+					function loadPage(page) {
+						$('.page').hide();
+						$('#container-' + page).show();
+
+						if (page === "graph") {
+							$('.graphBtn').show();
+						} else {
+							$('.graphBtn').hide();
+						}
+					}
+
+					$(window).on(
+							'hashchange',
+							function(e) {
+								pageRef = window.location.hash.substring(1);
+								if ($("#container-" + pageRef).length == 0
+										&& pageRef !== "graph") {
+									window.location.hash = "graph";
+								} else {
+									loadPage(pageRef);
+								}
+							});
+
+					$(window).trigger('hashchange');
+				});
+
+
+
+		function showInfo(link) {
+			$(".panel-right").addClass("in");
+			$(".panel-right [name='elemName']").text(link.data.text);
+			$(".panel-right [name='from']").html(asStateLink(link.fromId));
+			$(".panel-right [name='to']").html(asStateLink(link.toId));
+			$(".panel-right [name='id']").text(link.data.id);
+			$(".panel-right [name='element']").text(link.data.element);
+			$(".panel-right [name='eventType']").text(link.data.eventType);
+		}
+
+		function asStateLink(name) {
+			return "<a href='states/" + name + ".html' target='_new'>" + name
+					+ "</a>";
+		}
+
+		$('#container-graph svg').css("width", "100%");
+		function resize() {
+			$('#container-graph').css("height", window.innerHeight - 80);
+			$('#container-graph svg').css("height", window.innerHeight - 80);
+		}
+		$(window).resize(resize);
+		resize();
+	</script>
+
+</body>
+</html>

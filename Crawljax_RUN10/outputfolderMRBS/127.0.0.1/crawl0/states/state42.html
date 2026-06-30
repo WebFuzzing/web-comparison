@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+				<a class="brand" href="../index.html#graph">Crawl overview</a>
+			<ul class="nav">
+					<li class="active"><a href="#">State inspector</a></li>
+			</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+					<p>Hover over a state highlights the connected edges</p>
+					<p>Single click over a state highlights all its near-duplicates</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state42</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://127.0.0.1:8080/admin.php'>http://127.0.0.1:8080/admin.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state26</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>-1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>42</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state42.png' /> 
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[3]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 126px; top: 258px; width: 133px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state43.html'"></div>
+				<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[2]/DIV[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 126px; top: 206px; width: 54px; height: 23px; border: 2px solid orange;  " ></div>
+			</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html lang=&quot;en&quot; class=&quot;js&quot;&gt;&lt;!--&lt;![endif]--&gt;&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;csrf_token&quot; content=&quot;aab96898eb3016c65329f9c55f050b3ba8f8bda0de8e87cc9157b8763c83e482&quot;&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex, nofollow, noarchive&quot;&gt;
+&lt;title&gt;Meeting Room Booking System&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery/ui/css/jquery-ui.structure.min.css?v=1774485392&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery/ui/css/cupertino/jquery-ui.theme.min.css?v=1774485392&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery/datatables/datatables.min.css?v=1774485392&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/flatpickr/css/flatpickr.min.css?v=1774485392&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery/select2/dist/css/select2.min.css?v=1774485392&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/mrbs.css.php?v=1774485392&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/mrbs-print.css.php?v=1774485392&quot; media=&quot;print&quot;&gt;
+&lt;!--[if IE]&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/mrbs-ie.css?v=1774485392&quot;&gt;
+&lt;![endif]--&gt;
+&lt;script src=&quot;js/init.js.php?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery/jquery-migrate-3.5.0.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery/ui/jquery-ui.min.js?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/functions.js.php?area=&amp;amp;v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/general.js.php?area=&amp;amp;v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/flatpickr/flatpickr.min.js?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/flatpickr/l10n/en.js?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/datepicker.js.php?area=&amp;amp;lang=en&amp;amp;v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery/select2/dist/js/select2.full.min.js?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery/select2/dist/js/i18n/en.js?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery/datatables/datatables.min.js?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery/datatables/plugins.js?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/datatables.js.php?area=&amp;amp;v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/admin.js.php?area=&amp;amp;v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;!--[if lte IE 8]&gt;
+&lt;script src=&quot;js/html5shiv.min.js?v=1774485392&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body class=&quot;admin&quot; data-view=&quot;day&quot; data-view_all=&quot;1&quot; data-area=&quot;0&quot; data-room=&quot;0&quot; data-page=&quot;admin&quot; data-page-date=&quot;2026-06-25&quot; data-is-admin=&quot;false&quot; data-is-book-admin=&quot;false&quot; data-lang-prefs=&quot;[&amp;quot;en-US&amp;quot;,&amp;quot;en&amp;quot;,&amp;quot;en&amp;quot;,&amp;quot;en&amp;quot;]&quot;&gt;
+&lt;div class=&quot;unsupported_message&quot;&gt;
+&lt;header class=&quot;banner simple&quot;&gt;
+&lt;div class=&quot;company&quot;&gt;
+&lt;span&gt;Your Company&lt;/span&gt;&lt;a href=&quot;index.php&quot;&gt;Meeting Room Booking System&lt;/a&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+&lt;div class=&quot;contents&quot;&gt;
+&lt;p&gt;Unfortunately your browser isn't supported by MRBS.  You will need to upgrade to a more recent version, or else use another browser.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;header class=&quot;banner&quot;&gt;
+&lt;div class=&quot;company&quot;&gt;
+&lt;span&gt;Your Company&lt;/span&gt;&lt;a href=&quot;index.php&quot;&gt;Meeting Room Booking System&lt;/a&gt;
+&lt;/div&gt;
+&lt;nav class=&quot;container&quot;&gt;
+&lt;nav&gt;
+&lt;nav class=&quot;menu&quot;&gt;
+&lt;a href=&quot;help.php?view=day&amp;amp;page_date=2026-06-25&amp;amp;area=0&amp;amp;room=0&quot;&gt;Help&lt;/a&gt;
+&lt;/nav&gt;
+&lt;nav class=&quot;logon&quot;&gt;
+&lt;/nav&gt;
+&lt;/nav&gt;
+&lt;nav&gt;
+&lt;form method=&quot;get&quot; id=&quot;form_nav&quot; class=&quot;&quot; action=&quot;index.php&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;view&quot; value=&quot;day&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;area&quot; value=&quot;0&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;page_date&quot; value=&quot;2026-06-25&quot; class=&quot;navigation flatpickr-input&quot; aria-label=&quot;Go to&quot; required=&quot;&quot; data-submit=&quot;form_nav&quot;&gt;&lt;input class=&quot;navigation form-control input&quot; placeholder=&quot;&quot; required=&quot;&quot; tabindex=&quot;0&quot; type=&quot;text&quot; readonly=&quot;readonly&quot; aria-label=&quot;Go to&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Go to&quot;&gt;
+&lt;/form&gt;
+&lt;/nav&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+&lt;div class=&quot;contents&quot;&gt;
+&lt;form method=&quot;post&quot; class=&quot;standard&quot; id=&quot;logon&quot; action=&quot;admin.php&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;MAX_FILE_SIZE&quot; value=&quot;2097152&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;aab96898eb3016c65329f9c55f050b3ba8f8bda0de8e87cc9157b8763c83e482&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;returl&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;target_url&quot; value=&quot;index.php&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;action&quot; value=&quot;SetName&quot;&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Please log in&lt;/legend&gt;
+&lt;div&gt;
+&lt;label title=&quot;Username or email address&quot; for=&quot;username&quot; style=&quot;width: 66.7656px;&quot;&gt;User&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; placeholder=&quot;Username or email address&quot; required=&quot;&quot; autofocus=&quot;&quot; autocomplete=&quot;username&quot;&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;label for=&quot;password&quot; style=&quot;width: 66.7656px;&quot;&gt;Password&lt;/label&gt;
+&lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; autocomplete=&quot;current-password&quot;&gt;&lt;div class=&quot;eye off&quot;&gt;&lt;!-- Based on https://www.iconfinder.com/icons/3325118/eye_off_icon by Cole Bemis Licensed under Creative Commons Attribution 3.0 Unported --&gt; &lt;svg fill=&quot;none&quot; height=&quot;24&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;   &lt;path d=&quot;M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24&quot;&gt;&lt;/path&gt;   &lt;line x1=&quot;1&quot; x2=&quot;23&quot; y1=&quot;1&quot; y2=&quot;23&quot;&gt;&lt;/line&gt; &lt;/svg&gt; &lt;/div&gt;&lt;div class=&quot;eye&quot;&gt;&lt;!-- Based on https://www.iconfinder.com/icons/3325119/eye_icon by Cole Bemis. Licensed under Creative Commons Attribution 3.0 Unported --&gt; &lt;svg fill=&quot;none&quot; height=&quot;24&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;   &lt;path d=&quot;M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z&quot;&gt;&lt;/path&gt;   &lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;3&quot;&gt;&lt;/circle&gt; &lt;/svg&gt; &lt;/div&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset&gt;
+&lt;div&gt;
+&lt;label style=&quot;width: 66.7656px;&quot;&gt;&lt;/label&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Log in&quot;&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset&gt;
+&lt;div&gt;
+&lt;label style=&quot;width: 66.7656px;&quot;&gt;&lt;/label&gt;
+&lt;a href=&quot;reset_password.php&quot;&gt;Lost your password?&lt;/a&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;flatpickr-calendar animate&quot; tabindex=&quot;-1&quot;&gt;&lt;div class=&quot;flatpickr-months&quot;&gt;&lt;span class=&quot;flatpickr-prev-month&quot;&gt;&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 0 17 17&quot;&gt;&lt;g&gt;&lt;/g&gt;&lt;path d=&quot;M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;div class=&quot;flatpickr-month&quot;&gt;&lt;div class=&quot;flatpickr-current-month&quot;&gt;&lt;select class=&quot;flatpickr-monthDropdown-months&quot; aria-label=&quot;Month&quot; tabindex=&quot;-1&quot;&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;0&quot; tabindex=&quot;-1&quot;&gt;January&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;1&quot; tabindex=&quot;-1&quot;&gt;February&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;2&quot; tabindex=&quot;-1&quot;&gt;March&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;3&quot; tabindex=&quot;-1&quot;&gt;April&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;4&quot; tabindex=&quot;-1&quot;&gt;May&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;5&quot; tabindex=&quot;-1&quot;&gt;June&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;6&quot; tabindex=&quot;-1&quot;&gt;July&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;7&quot; tabindex=&quot;-1&quot;&gt;August&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;8&quot; tabindex=&quot;-1&quot;&gt;September&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;9&quot; tabindex=&quot;-1&quot;&gt;October&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;10&quot; tabindex=&quot;-1&quot;&gt;November&lt;/option&gt;&lt;option class=&quot;flatpickr-monthDropdown-month&quot; value=&quot;11&quot; tabindex=&quot;-1&quot;&gt;December&lt;/option&gt;&lt;/select&gt;&lt;div class=&quot;numInputWrapper&quot;&gt;&lt;input class=&quot;numInput cur-year&quot; type=&quot;number&quot; tabindex=&quot;-1&quot; aria-label=&quot;Year&quot;&gt;&lt;span class=&quot;arrowUp&quot;&gt;&lt;/span&gt;&lt;span class=&quot;arrowDown&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;flatpickr-next-month&quot;&gt;&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 0 17 17&quot;&gt;&lt;g&gt;&lt;/g&gt;&lt;path d=&quot;M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;flatpickr-innerContainer&quot;&gt;&lt;div class=&quot;flatpickr-rContainer&quot;&gt;&lt;div class=&quot;flatpickr-weekdays&quot;&gt;&lt;div class=&quot;flatpickr-weekdaycontainer&quot;&gt;
+      &lt;span class=&quot;flatpickr-weekday&quot;&gt;
+        Sun&lt;/span&gt;&lt;span class=&quot;flatpickr-weekday&quot;&gt;Mon&lt;/span&gt;&lt;span class=&quot;flatpickr-weekday&quot;&gt;Tue&lt;/span&gt;&lt;span class=&quot;flatpickr-weekday&quot;&gt;Wed&lt;/span&gt;&lt;span class=&quot;flatpickr-weekday&quot;&gt;Thu&lt;/span&gt;&lt;span class=&quot;flatpickr-weekday&quot;&gt;Fri&lt;/span&gt;&lt;span class=&quot;flatpickr-weekday&quot;&gt;Sat
+      &lt;/span&gt;
+      &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;flatpickr-days&quot; tabindex=&quot;-1&quot;&gt;&lt;div class=&quot;dayContainer&quot;&gt;&lt;span class=&quot;flatpickr-day prevMonthDay mrbs-weekend&quot; aria-label=&quot;2026-05-31&quot; tabindex=&quot;-1&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-01&quot; tabindex=&quot;-1&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-02&quot; tabindex=&quot;-1&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-03&quot; tabindex=&quot;-1&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-04&quot; tabindex=&quot;-1&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-05&quot; tabindex=&quot;-1&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;flatpickr-day mrbs-weekend&quot; aria-label=&quot;2026-06-06&quot; tabindex=&quot;-1&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;flatpickr-day mrbs-weekend&quot; aria-label=&quot;2026-06-07&quot; tabindex=&quot;-1&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-08&quot; tabindex=&quot;-1&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-09&quot; tabindex=&quot;-1&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-10&quot; tabindex=&quot;-1&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-11&quot; tabindex=&quot;-1&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-12&quot; tabindex=&quot;-1&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;flatpickr-day mrbs-weekend&quot; aria-label=&quot;2026-06-13&quot; tabindex=&quot;-1&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;flatpickr-day mrbs-weekend&quot; aria-label=&quot;2026-06-14&quot; tabindex=&quot;-1&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-15&quot; tabindex=&quot;-1&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-16&quot; tabindex=&quot;-1&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-17&quot; tabindex=&quot;-1&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-18&quot; tabindex=&quot;-1&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-19&quot; tabindex=&quot;-1&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;flatpickr-day mrbs-weekend&quot; aria-label=&quot;2026-06-20&quot; tabindex=&quot;-1&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;flatpickr-day mrbs-weekend&quot; aria-label=&quot;2026-06-21&quot; tabindex=&quot;-1&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-22&quot; tabindex=&quot;-1&quot;&gt;22&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-23&quot; tabindex=&quot;-1&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-24&quot; tabindex=&quot;-1&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;flatpickr-day today selected&quot; aria-label=&quot;2026-06-25&quot; aria-current=&quot;date&quot; tabindex=&quot;-1&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-26&quot; tabindex=&quot;-1&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;flatpickr-day mrbs-weekend&quot; aria-label=&quot;2026-06-27&quot; tabindex=&quot;-1&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;flatpickr-day mrbs-weekend&quot; aria-label=&quot;2026-06-28&quot; tabindex=&quot;-1&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-29&quot; tabindex=&quot;-1&quot;&gt;29&lt;/span&gt;&lt;span class=&quot;flatpickr-day&quot; aria-label=&quot;2026-06-30&quot; tabindex=&quot;-1&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay&quot; aria-label=&quot;2026-07-01&quot; tabindex=&quot;-1&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay&quot; aria-label=&quot;2026-07-02&quot; tabindex=&quot;-1&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay&quot; aria-label=&quot;2026-07-03&quot; tabindex=&quot;-1&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay mrbs-weekend&quot; aria-label=&quot;2026-07-04&quot; tabindex=&quot;-1&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay mrbs-weekend&quot; aria-label=&quot;2026-07-05&quot; tabindex=&quot;-1&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay&quot; aria-label=&quot;2026-07-06&quot; tabindex=&quot;-1&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay&quot; aria-label=&quot;2026-07-07&quot; tabindex=&quot;-1&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay&quot; aria-label=&quot;2026-07-08&quot; tabindex=&quot;-1&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay&quot; aria-label=&quot;2026-07-09&quot; tabindex=&quot;-1&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay&quot; aria-label=&quot;2026-07-10&quot; tabindex=&quot;-1&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;flatpickr-day nextMonthDay mrbs-weekend&quot; aria-label=&quot;2026-07-11&quot; tabindex=&quot;-1&quot;&gt;11&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[3]/DIV[1]/A[1]</td>
+							<td><a href="state43.html">state43</a></td>
+						</tr>
+						<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[2]/DIV[1]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>
