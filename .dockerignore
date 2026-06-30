@@ -1,0 +1,8 @@
+tools/cytestion/node_modules
+**/node_modules
+suts/*/coverage
+suts/*/target
+*.log
+cytestion_run*/
+apogen_run*/
+.git
