@@ -1,0 +1,17 @@
+file,total_lines,covered_lines,coverage_percent
+coverage-scripts/coverage_start.php,1,1,100
+coverage-scripts/coverage_stop.php,18,3,16.67
+admin/header.php,53,31,58.49
+config.inc.php,49,49,100
+display.php,77,9,11.69
+footer.php,13,12,92.31
+functions.php,203,58,28.57
+header.php,61,33,54.1
+index.php,3,3,100
+leftmain.php,314,57,18.15
+login.php,47,34,72.34
+reports/index.php,35,20,57.14
+reports/topmain.php,42,26,61.9
+timeclock.php,155,64,41.29
+topmain.php,56,28,50
+TOTAL,1127,428,37.98
